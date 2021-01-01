@@ -1,0 +1,9666 @@
+;GPRS Connections Operators Information File - BVRP Software
+;May 25th, 2006, Sbarlow, Added Vivitel, Digicel, Vivacell Armenia Updated Mobi's, MTC Vodafone Bahrein MMS 
+;May 24th, 2006, Sbarlow, Added Vodafone Albania, Also updated multiple icons for carriers
+;May 18th, 2006, Sbarlow, Added UMTS to Cingular
+;May 17th, 2006, Sbarlow, Changed cingular Sock proxy to localhost:1080
+;May 4th, 2006, Sbarlow, Moved network Numbers from BPL MMS to Hutch MMS, Also updated telstra wap 2.0 with the correct apn and port numbers. Also added the carrier Coriolis
+;May 3rd, 2006, Sbarlow, Added HTTP proxy to TWN
+;April 6th, 2006, Sbarlow, Removed cingular wap settings
+;April 4th, 2006, Sbarlow, Changed C&W Carriers to there respect country (ones we didnt support untill now) Also deleted obsolete carriers.
+;March 30th, 2006, SBarlow, Added APN to AT&T's MMS, Singtel WAP changed to "IDEAS WAP GPRS", Corrected Network number for hutch 4042 to 40427
+;March 27th, 2006, SBarlow, Network Numbers Added to Hutched 40427,40443,40446, Removed from BPL mobile, Also updated Pakistan carriers with WAP Proxies
+;March 2nd, 2006, SBarlow, Modified Singtel's CSD number
+;March 1st, 2006, SBarlow, Added CellC MMS settings and new carrier Scancom Ghana
+;Febuary 22st, 2006, SBarlow, Added WAP information for Cingular, Added a Proxy for TWN China
+;Febuary 21st, 2006, SBarlow, Added Carrier - IDEA, Waird Telecom, Mobilnk. Also Added internet APN's for Telenor and Ufone.
+;Febuary 20th, 2006, SBarlow, Added Carriers - Unefon, Iusacell, Unefon, Centennial Puerto Rico, Centenial Dominica, Movilnet, Movistar Venezula
+;
+;
+;
+;
+; QOSRequested=%PRECEDENCE%,%DELAY%,%RELIABILITY%,%PEAK%,%MEAN%
+; QOSMinimum=%PRECEDENCE%,%DELAY%,%RELIABILITY%,%PEAK%,%MEAN%
+;   where :
+;    %PRECEDENCE% = 0-3 with 0 (Subscribed), 1 (High), 2 (Normal), 3 (Low)
+;    %DELAY% = 0-4 with 0 (Subscribed), 4 (Best effort)
+;    %RELIABILITY% = 0-5 with 0 (Subscribed)
+;                             1 (Acknowledged GTP, LLC, RLC; Protected data)
+;                             2 (Unacknowledged GTP; Acknowledged LLC, RLC; Protected data)
+;                             3 (Unacknowledged GTP, LLC, RLC; Protected data)
+;                             4 (Unacknowledged GTP, LLC; Acknowledged RLC; Protected data)
+;                             5 (Unacknowledged GTP, LLC, RLC; Unprotected data)
+;    %PEAK% = 0 - 9 with 0 (Subscribed)
+;                        1 Up to 1 000 bytes/s
+;                        2 Up to 2 000 bytes/s
+;                        3 Up to 4 000 bytes/s
+;                        4 Up to 8 000 bytes/s
+;                        5 Up to 16 000 bytes/s
+;                        6 Up to 32 000 bytes/s
+;                        7 Up to 64 000 bytes/s
+;                        8 Up to 128 000 bytes/s
+;                        9 Up to 256 000 bytes/s
+;   %MEAN% = 0 - 31 with 0 (Subscribed)
+;                        1 - 100 bytes/h
+;                        2 - 200 bytes/h
+;                        3 - 500 bytes/h
+;                        4 - 1 000 bytes/h
+;                        5 - 2 000 bytes/h
+;                        6 - 5 000 bytes/h
+;                        7 - 10 000 bytes/h
+;                        8 - 20 000 bytes/h
+;                        9 - 50 000 bytes/h
+;                        10 - 100 000 bytes/h
+;                        11 - 200 000 bytes/h
+;                        12 - 500 000 bytes/h
+;                        13 - 1 000 000 bytes/h
+;                        14 - 2 000 000 bytes/h
+;                        15 - 5 000 000 bytes/h
+;                        16 - 10 000 000 bytes/h
+;                        17 - 20 000 000 bytes/h
+;                        18 - 50 000 000 bytes/h
+;                        31 - Best effort
+
+
+[3 AUS]
+; AUSTRALIA
+IconIndex=-229
+CountryProvider=61
+HomeNetworkNumber=50506
+Network=GPRS
+; GPRS
+GPRS=3 GPRS
+APN=3netaccess
+GPRS SplCmd=1
+
+[3 DK]
+; DENMARK
+IconIndex=-229
+CountryProvider=45
+HomeNetworkNumber=23806
+Network=GPRS
+; GPRS
+GPRS=3 Opkobling
+APN=data.tre.dk
+GPRS SplCmd=1
+
+[3 HK]
+; HONG KONG
+IconIndex=-229
+CountryProvider=852
+HomeNetworkNumber=45403
+Network=GPRS,UMTS,WAPGPRS
+; GPRS
+GPRS=3-DUALBAND
+APN=web-g.three.com.hk
+QOSRequested=3,4,3,0,0
+GPRS SplCmd=1
+; UMTS
+UMTS=3
+UMTS APN=mobile.three.com.hk
+UMTS QOSRequested=3,4,3,0,0
+UMTS SplCmd=1
+; WAP GPRS
+
+[3 ITA]
+; ITALY
+IconIndex=-229
+CountryProvider=39
+HomeNetworkNumber=22299
+Network=GPRS
+; GPRS
+GPRS=3 Internet
+APN=tre.it
+Username=tre
+Password=tre
+GPRS SplCmd=1
+
+[3 SE]
+; SWEDEN
+IconIndex=-229
+CountryProvider=46
+HomeNetworkNumber=24002
+Network=GPRS
+; GPRS
+GPRS=3 Uppkoppling
+APN=data.tre.se
+GPRS SplCmd=1
+
+[3 UK]
+; UNITED KINGDOM
+IconIndex=-229
+CountryProvider=44
+HomeNetworkNumber=23420
+Network=GPRS
+; GPRS
+GPRS=3 Internet
+APN=three.co.uk,internet.three
+GPRS SplCmd=1
+
+[3 UK]
+; SCOTLAND
+IconIndex=-229
+CountryProvider=44
+HomeNetworkNumber=23420
+Network=GPRS
+; GPRS
+GPRS=3 Internet
+APN=three.co.uk,internet.three
+GPRS SplCmd=1
+
+[3-DUALBAND-]
+; HONG KONG
+IconIndex=-229
+CountryProvider=852
+HomeNetworkNumber=45404
+Network=GPRS
+; GPRS
+GPRS=3-DUALBAND
+APN=web-g.three.com.hk
+QOSRequested=3,4,3,0,0
+GPRS SplCmd=1
+
+[A1 Mobilkom]
+; AUSTRIA
+IconIndex=-170
+CountryProvider=43
+HomeNetworkNumber=23201
+Network=GPRS,CSD
+; GPRS
+GPRS=Mobilkom A1 GPRS
+APN=A1.net
+Username=ppp@A1plus.at
+Password=ppp
+DNS1=194.48.124.200
+DNS2=194.48.139.254
+; CSD
+CSD=Mobilkom A1 GSM Data
+CSD PhoneNumber=+43664684000
+CSD Username=ppp@A1plus.at
+CSD Password=ppp
+
+[AirTel]
+; INDIA
+IconIndex=-322
+CountryProvider=91
+HomeNetworkNumber=40403,40490,40492,40494,40495,40496,40402,40445,40449,40497,40498,40493,40410,40431,40402,40445,40440
+WAP Proxy=202.56.231.117:9201
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=Airtel GPRS
+APN=airtelgprs.com
+; WAP GRPS
+WAPGPRS=Airtel WAP GPRS
+WAPGPRS APN=airtelfun.com
+
+[Aktel]
+; BANGLADESH
+IconIndex=-236
+CountryProvider=880
+HomeNetworkNumber=47002
+WAP Proxy=192.168.23.7
+Network=WAPGPRS
+; WAP GRPS
+WAPGPRS=Aktel WAP GPRS
+WAPGPRS APN=WAP
+WAPGPRS IP=192.168.23.7
+
+[Alands]
+; FINLAND
+IconIndex=-120
+CountryProvider=358
+HomeNetworkNumber=24414
+Network=GPRS,WAPCSD
+; GPRS
+GPRS=Aland GPRS
+APN=internet
+; WAP CSD
+WAPCSD=Aland WAP
+WAPCSD Phonenumber=+3584575777770
+WAPCSD IP=194.110.177.70
+
+[Alfa]
+; LEBANON
+IconIndex=-237
+CountryProvider=961
+HomeNetworkNumber=96101
+Network=GPRS
+; GPRS
+GPRS=Alfa GPRS
+APN=internet.mic1.com.lb
+Username=mic1
+Password=mic1
+
+[Aliant]
+; CANADA
+IconIndex=-323
+CountryProvider=107
+HomeNetworkNumber=16408, 16430, 16414, 16390
+Network=1xRTT
+; 1XRTT
+1xRTT=(High Speed Packet Data)
+1xRTT PhoneNumber=#777
+1xRTT Username=%MIN%@1x.wirefree.ca
+1xRTT Password=12345
+
+[ALLTEL]
+; UNITED STATES
+CountryProvider=1
+HomeNetworkNumber=42,53,54,57,74,79,83,84,85,97,100,114,116,120,126,130,142,144,152,156,182,188,204,205,208,212,216,220,240,244,256,260,281,312,318,342,348,350,368,374,376,386,392,396,416,418,424,440,444,448,478,520,544,546,550,578,1038,1058,1093,1124,1148,1258,1271,1332,1336,1338,1375,1383,1385,1400,1466,1493,1499,1528,1530,1532,1534,1536,1538,1540,1542,1544,1546,1640,1650,1652,1750,1752,1818,1872,1989,2038,3226,5667,30524
+SMTP Domain=message.alltel.com
+Network=1xRTT,CDMA
+; 1XRTT
+1xRTT=(High Speed Packet Data)
+1xRTT PhoneNumber=#777
+1xRTT Username=%MIN%@alltel.net
+1xRTT Password=alltel
+; CDMA
+CDMA=Quick 2 Net (QNC)
+CDMA PhoneNumber=#762
+CDMA Username=qnc
+CDMA Password=qnc
+; MMS
+MMS Center=http://mms.alltel.com/servlets/mms
+MMS HTTPGw=mms.alltel.com:8080
+MMS Auth=ALLTEL
+
+[AMC]
+; ALBANIA
+IconIndex=-238
+CountryProvider=355
+HomeNetworkNumber=27601
+Network=GPRS
+; GPRS
+GPRS=AMC GPRS
+APN=internet
+
+[Amena]
+; SPAIN
+IconIndex=-222
+CountryProvider=34
+HomeNetworkNumber=21403
+SMTP=smtp.amenamail.com
+Network=GPRS,UMTS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Amena GPRS
+APN=internet
+Username=CLIENTE
+Password=AMENA
+DNS1=213.143.33.8
+DNS2=213.143.32.20
+; UMTS
+UMTS=Amena UMTS
+UMTS APN=internet
+UMTS Username=CLIENTE
+UMTS Password=AMENA
+UMTS DNS1=213.143.33.8
+UMTS DNS2=213.143.32.20
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=Amena WAP GPRS
+WAPGPRS APN=amenawap
+WAPGPRS Username=CLIENTE
+WAPGPRS Password=AMENA
+WAPGPRS IP=10.132.61.10
+; WAP CSD
+WAPCSD=Amena WAP GSM
+WAPCSD Phonenumber=+34656200111
+WAPCSD Username=CLIENTE
+WAPCSD Password=AMENA
+WAPCSD IP=10.132.61.10
+
+[Ancel]
+; URUGUAY
+IconIndex=-324
+CountryProvider=598
+HomeNetworkNumber=74801
+Network=GPRS
+; GPRS
+GPRS=gprsAncel
+APN=gprs
+
+[Areeba]
+; CYPRUS
+IconIndex=-299
+CountryProvider=357
+HomeNetworkNumber=28
+SMTP=mail.areeba.com.cy
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=Areeba GPRS
+APN=gprs.areeba.com.cy
+; WAP GRPS
+WAPGPRS=Areeba WAP GPRS
+WAPGPRS APN=wap.areeba.com.cy
+WAPGPRS Username=wap
+WAPGPRS Password=wap
+WAPGPRS IP=172.24.97.3
+
+[Avea]
+; TURKEY
+IconIndex=-300
+CountryProvider=90
+HomeNetworkNumber=28604,28603
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Avea GPRS
+APN=internet
+; WAP GRPS
+WAPGPRS=Avea Wap GPRS
+WAPGPRS APN=wap.avea.com.tr
+WAPGPRS Username=wap
+WAPGPRS Password=wap
+WAPGPRS IP=213.161.151.201
+; WAP CSD
+WAPCSD=Avea Wap GSM
+WAPCSD Phonenumber=+905597007000
+WAPCSD Username=wap
+WAPCSD Password=wap
+WAPCSD IP=213.161.151.201
+
+[Azercell]
+; AZERBAIJAN
+IconIndex=-240
+CountryProvider=994
+HomeNetworkNumber=40001
+Network=WAPGPRS
+; WAP GRPS
+WAPGPRS=Azercell WAP
+WAPGPRS APN=wap
+WAPGPRS IP=10.0.154.101
+
+[Bakcell]
+; AZERBAIJAN
+IconIndex=-241
+CountryProvider=994
+HomeNetworkNumber=40002
+Network=WAPGPRS
+; WAP GRPS
+WAPGPRS=Bakcell WAP
+WAPGPRS APN=mms
+WAPGPRS IP=213.172.91.46
+
+[Base - Business Internet]
+; BELGIUM
+IconIndex=-301
+CountryProvider=32
+HomeNetworkNumber=20620
+Network=GPRS,CSD,WAPGPRS,WAPCSD
+; GPRS
+GPRS=BASE Internet
+APN=busint.base.be
+Username=BusinessInternet
+Password=busint
+DNS1=195.16.0.33
+DNS2=195.16.0.58
+; CSD
+CSD=Base GSM
+CSD PhoneNumber=+32486927927
+CSD Username=BASE
+CSD Password=1234
+; WAP GRPS
+WAPGPRS=Base WAP GPRS
+WAPGPRS APN=gprs.base.be
+WAPGPRS IP=172.31.198.37
+; WAP CSD
+WAPCSD=Base WAP GSM
+WAPCSD Phonenumber=+32486927927
+WAPCSD Username=BASE
+WAPCSD Password=1234
+WAPCSD IP=172.31.198.37
+
+[Base - Internet]
+; BELGIUM
+IconIndex=-301
+CountryProvider=32
+HomeNetworkNumber=20620
+Network=GPRS,CSD,WAPGPRS,WAPCSD
+; GPRS
+GPRS=BASE Internet
+APN=internet.be
+Username=businessInternet
+Password=busint
+DNS1=195.16.0.33
+DNS2=195.16.0.58
+; CSD
+CSD=Base GSM
+CSD PhoneNumber=+32486927927
+CSD Username=base
+CSD Password=1234
+; WAP GRPS
+WAPGPRS=Base WAP GPRS
+WAPGPRS APN=gprs.base.be
+WAPGPRS IP=172.31.198.37
+; WAP CSD
+WAPCSD=Base WAP GSM
+WAPCSD Phonenumber=+32486927927
+WAPCSD Username=BASE
+WAPCSD Password=1234
+WAPCSD IP=172.31.198.37
+
+[Batelco]
+; BAHRAIN
+IconIndex=-243
+CountryProvider=973
+HomeNetworkNumber=42601
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=Batelco GPRS
+APN=internet.batelco.com
+; WAP GRPS
+WAPGPRS=Batelco WAP
+WAPGPRS APN=wap.batelco.com
+WAPGPRS Username=wap
+WAPGPRS Password=wap
+WAPGPRS IP=192.168.1.2
+; WAP CSD
+WAPCSD Phonenumber=818283
+WAPCSD Username=wap
+WAPCSD Password=wap
+WAPCSD IP=192.168.1.2
+
+[BeeLine]
+; RUSSIA
+IconIndex=-125
+CountryProvider=7
+HomeNetworkNumber=25099
+SMTP=mail.beelinegprs.ru
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Beeline GPRS
+APN=internet.beeline.ru
+Username=beeline
+Password=beeline
+; WAP GRPS
+WAPGPRS=Beeline WAP GPRS
+WAPGPRS APN=wap.beeline.ru
+WAPGPRS Username=beeline
+WAPGPRS Password=beeline
+WAPGPRS IP=192.168.17.1
+; WAP CSD
+WAPCSD=Beeline WAP
+WAPCSD Phonenumber=0671
+WAPCSD Username=beeline
+WAPCSD Password=beeline
+WAPCSD IP=192.168.17.1
+
+[Bell Mobility]
+; CANADA
+CountryProvider=107
+HomeNetworkNumber=16420, 16440, 16456, 16410, 16444, 16390, 16394, 16402, 16414, 16416, 16418, 16462, 16472, 16408, 16404, 16430, 16396, 16426, 16388, 16468, 16460
+SMTP Domain=txt.bellmobility.ca
+Network=1xRTT,CDMA
+; 1XRTT
+1xRTT=(High Speed Packet Data)
+1xRTT PhoneNumber=#777
+1xRTT Username=%MIN%@1x.bell.ca
+; CDMA
+CDMA=Standard Wireless Internet Connection (CSD)
+CDMA PhoneNumber=#888
+CDMA Username=qnc
+CDMA Password=qnc
+
+[BellSouth]
+; CHILE
+CountryProvider=56
+Network=1xRTT
+; 1XRTT
+1xRTT=BellSouth
+1xRTT PhoneNumber=#777
+1xRTT Username=bellsouth
+1xRTT Password=bellsouth
+
+[BH Telecom]
+; BOSNIA AND HERZEGOWINA
+IconIndex=-244
+CountryProvider=387
+HomeNetworkNumber=21890
+Network=WAPGPRS
+; WAP GRPS
+WAPGPRS=BH WAP GPRS
+WAPGPRS APN=bh.mobile
+WAPGPRS IP=195.222.56.41
+
+[Bite GSM]
+; LITHUANIA
+IconIndex=-170
+CountryProvider=370
+HomeNetworkNumber=24602
+Network=GPRS,CSD,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Bite GPRS
+APN=Banga
+DNS1=213.226.131.131
+DNS2=193.219.32.13
+; CSD
+CSD=Bite GSM Data
+CSD PhoneNumber=+37068593000
+; WAP GRPS
+WAPGPRS=Bite WAP GPRS
+WAPGPRS APN=banga
+WAPGPRS Username=banga
+WAPGPRS IP=213.226.131.133
+; WAP CSD
+WAPCSD=Bite WAP
+WAPCSD Phonenumber=+37068593033
+WAPCSD Username=wap
+WAPCSD Password=wap
+WAPCSD IP=213.226.131.133
+
+[BouygTel]
+; FRANCE
+IconIndex=-113
+CountryProvider=33
+HomeNetworkNumber=20820
+SMTP=smtp.6sens.com
+Network=GPRS,CSD,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Bouygues GPRS
+APN=ebouygtel.com
+DNS1=62.201.129.99
+; CSD
+CSD=Bouygues CSD
+CSD PhoneNumber=+33660637637
+; WAP GRPS
+WAPGPRS=Bouygues WAP GPRS
+WAPGPRS APN=ebouygtel.com
+WAPGPRS IP=62.201.137.17:9201
+; WAP CSD
+WAPCSD=Bouygues WAP
+WAPCSD Phonenumber=+33660639639
+WAPCSD Username=wap
+WAPCSD Password=wapwap
+WAPCSD IP=212.208.44.125:9201
+
+[BouygTel PRO]
+; FRANCE
+IconIndex=-113
+CountryProvider=33
+HomeNetworkNumber=20820
+SMTP=smtp.6sens.com
+Network=GPRS,CSD,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Bouygues PRO GPRS
+APN=a2bouygtel.com
+; CSD
+CSD=Bouygues CSD
+CSD PhoneNumber=+33660637637
+CSD ExtraDialString=+CBST=71,0,1
+; WAP GRPS
+WAPGPRS=Bouygues PRO WAP GPRS
+WAPGPRS APN=b2bouygtel.com
+WAPGPRS Username=B2B
+WAPGPRS Password=NET
+WAPGPRS IP=172.20.1.7:9201
+; WAP CSD
+WAPCSD=Bouygues PRO WAP
+WAPCSD Phonenumber=+33660640640
+WAPCSD Username=B2B
+WAPCSD Password=NET
+WAPCSD IP=172.20.1.7:9201
+WAPCSD ExtraDialString=+CBST=71,0,1
+
+[BPL Mobile]
+; INDIA
+IconIndex=-127
+CountryProvider=91
+HomeNetworkNumber=40421
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=BPL GPRS
+APN=bplgprs.com
+Username=bplmobile
+DNS1=202.169.145.34
+DNS2=202.169.129.40
+; WAP GRPS
+WAPGPRS=BPL WAP GPRS
+WAPGPRS APN=bplgprs.com
+WAPGPRS IP=203.196.249.170
+; WAP CSD
+WAPCSD=BPL WAP GSM
+WAPCSD Phonenumber=+91224404444
+WAPCSD IP=203.196.249.170
+
+[Brasil Telecom]
+; BRAZIL
+CountryProvider=55
+HomeNetworkNumber=72416
+Network=GPRS
+; GPRS
+GPRS=BrT WAP
+APN=brt.br
+Username=brt
+Password=brt
+
+[C&W Anguilla]
+; ANGUILLA
+IconIndex=-325
+CountryProvider=101
+HomeNetworkNumber=635840
+Network=GPRS
+; GPRS
+GPRS=Internet Session
+APN=internet
+
+[C&W Antigua]
+; ANTIGUA
+IconIndex=-325
+CountryProvider=102
+HomeNetworkNumber=344920
+Network=GPRS
+; GPRS
+GPRS=internet
+APN=internet
+
+[C&W Barbados]
+; BARBADOS
+IconIndex=-325
+CountryProvider=104
+HomeNetworkNumber=342600
+Network=GPRS
+; GPRS
+GPRS=Internet Session
+APN=internet
+
+[C&W Cayman]
+; CAYMAN ISLANDS
+IconIndex=-325
+CountryProvider=108
+HomeNetworkNumber=342600
+Network=GPRS
+; GPRS
+GPRS=Internet Session
+APN=internet
+
+[C&W Dominica]
+; DOMINICA
+IconFile=cable & wireless.ico
+IconIndex=-325
+CountryProvider=109
+HomeNetworkNumber=366110
+Network=GPRS
+; GPRS
+GPRS=Internet Session
+APN=internet
+
+[C&W Grenada]
+; GRANADA
+IconFile=cable & wireless.ico
+IconIndex=-325
+CountryProvider=111
+HomeNetworkNumber=352110
+Network=GPRS
+; GPRS
+GPRS=Internet Session
+APN=internet
+
+[C&W Jamaica]
+; JAMAICA
+IconFile=cable & wireless.ico
+IconIndex=-325
+CountryProvider=112
+HomeNetworkNumber=338150
+Network=GPRS
+; GPRS
+GPRS=Internet Session
+APN=internet
+
+[C&W Monserrat]
+; MONTSERRAT
+IconFile=cable & wireless.ico
+IconIndex=-325
+CountryProvider=113
+HomeNetworkNumber=354860
+Network=GPRS
+; GPRS
+GPRS=Internet Session
+APN=internet
+
+[C&W Panama]
+; PANAMA
+IconFile=cable & wireless.ico
+IconIndex=-325
+CountryProvider=507
+HomeNetworkNumber=71401
+Network=GPRS
+; GPRS
+GPRS=Cable & Wireless
+APN=apn01.cwpanama.com.pa
+; MMS
+MMS Center=http://mms.zonamovil.com.pa:80/i.bin
+MMS WapGw=172.25.3.5
+
+[C&W Saint Kitts]
+; SAINT KITTS AND NEVIS
+IconFile=cable & wireless.ico
+IconIndex=-325
+CountryProvider=115
+HomeNetworkNumber=356110
+Network=GPRS
+; GPRS
+GPRS=Internet Session
+APN=internet
+
+[C&W Saint Lucia]
+; SAINT LUCIA
+IconFile=cable & wireless.ico
+IconIndex=-325
+CountryProvider=122
+HomeNetworkNumber=358110
+Network=GPRS
+; GPRS
+GPRS=Internet Session
+APN=internet
+
+[C&W Saint Vincent]
+; SAINT-VINCENT AND THE GRENADINES
+IconFile=cable & wireless.ico
+IconIndex=-325
+CountryProvider=116
+HomeNetworkNumber=360110
+Network=GPRS
+; GPRS
+GPRS=Internet Session
+APN=internet
+
+[C&W Turk & Caicos]
+; TURK AND CAICOS ISLANDS
+IconFile=cable & wireless.ico
+IconIndex=-325
+CountryProvider=118
+HomeNetworkNumber=376350
+Network=GPRS
+; GPRS
+GPRS=Internet Session
+APN=internet
+
+[Celcom]
+; MALAYSIA
+IconIndex=-130
+CountryProvider=60
+HomeNetworkNumber=50219
+WAP Proxy=10.128.1.242:9201
+Network=GPRS,UMTS,WAPGPRS
+; GPRS
+GPRS=Celcom GPRS
+APN=celcom.net.my
+GPRS SplCmd=1
+; UMTS
+UMTS=Celcom 3G
+UMTS APN=celcom3G
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=Celcom WAP
+WAPGPRS APN=wap.celcom.net.my
+
+[CellC]
+; SOUTH AFRICA
+IconIndex=-233
+CountryProvider=27
+HomeNetworkNumber=65507
+Network=GPRS,WAPCSD
+; GPRS
+GPRS=smartdata GPRS
+APN=internet
+; WAP CSD
+WAPCSD=CellC Wap
+WAPCSD Phonenumber=+27841588001
+WAPCSD IP=196.31.116.250
+
+[Cellcom]
+; ISRAEL
+IconIndex=-128
+CountryProvider=972
+HomeNetworkNumber=42502
+Network=GPRS
+; GPRS
+GPRS=Cellcom GPRS
+APN=internetg
+
+[Cellular One]
+; GIBRALTAR
+CountryProvider=350
+Network=1xRTT,CDMA
+; 1XRTT
+1xRTT=ONExWAP
+1xRTT PhoneNumber=#777
+1xRTT Username=ONExWAP
+1xRTT Password=3GCELLONE
+; CDMA
+CDMA=Connect to your own ISP (AOL,MSN.....)
+
+[Centennial]
+; PUERTO RICO
+CountryProvider=121
+Network=1xRTT,CDMA
+; 1XRTT
+1xRTT=VZW
+1xRTT PhoneNumber=#777
+1xRTT Username=centennial
+1xRTT Password=turbonet
+1xRTT DNS1=66.231.171.2:80
+1xRTT DNS2=66.231.171.4:80
+; CDMA
+CDMA=Connect to your own ISP (AOL,MSN.....)
+
+[Centennial]
+; DOMINICA
+IconFile=centennial dominican republic.ico
+IconIndex=-326
+CountryProvider=109
+Network=1xRTT
+; 1XRTT
+1xRTT=Centennial
+1xRTT PhoneNumber=#777
+1xRTT DNS1=66.231.171.2:80
+
+[China Mobile]
+; CHINA
+IconIndex=-131
+CountryProvider=86
+HomeNetworkNumber=46000
+WAP Proxy=20.0.0.272:9201
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=China Mobile Internet
+APN=cmnet
+; WAP GRPS
+WAPGPRS=China Mobile WAP
+WAPGPRS APN=cmwap
+
+[China Unicom]
+; CHINA
+IconFile=China unicom.ico
+IconIndex=-327
+CountryProvider=86
+HomeNetworkNumber=46001
+Network=GPRS
+; GPRS
+DNS1=10.0.2.100
+QOSRequested=3,4,3,0,0
+
+[China Unicom CDMA]
+; CHINA
+IconFile=China unicom.ico
+IconIndex=-327
+CountryProvider=86
+Network=1xRTT
+; 1XRTT
+1xRTT=Unicom Internet
+1xRTT PhoneNumber=#777
+1xRTT Username=CARD
+1xRTT Password=CARD
+
+[Chunghwa]
+; TAIWAN
+IconIndex=-133
+CountryProvider=886
+HomeNetworkNumber=46692
+WAP Proxy=10.1.1.1:9201
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=Chunghwa GPRS
+APN=internet
+DNS1=168.95.1.1
+DNS2=168.95.192.1
+; WAP GRPS
+WAPGPRS=Chunghwa WAP
+WAPGPRS APN=wappie
+
+[Cingular]
+; UNITED STATES
+IconIndex=-134
+CountryProvider=1
+HomeNetworkNumber=31015,31017,31041
+HTTP Proxy=wireless.cingular.com:80
+Socks Proxy=localhost:1080
+WAP Proxy=66.209.11.61:9201
+WAP Secure Proxy=66.209.11.61:9203
+WAP Home URL=http://device.home
+SMTP Domain=cingularme.com
+Network=GPRS,UMTS
+; GPRS
+GPRS=Cingular High Speed
+APN=WAP.CINGULAR,ISP.CINGULAR
+Username=WAP@CINGULARGPRS.COM
+Password=CINGULAR1
+; UMTS
+UMTS=Cingular UMTS
+UMTS APN=isp.cingular
+UMTS Username=isppda@cingulargprs.com
+UMTS Password=cingular1
+
+[Cingular TDMA]
+; UNITED STATES
+IconIndex=-134
+CountryProvider=1
+HomeNetworkNumber=1,3,7,10,13,14,24,29,34,35,36,38,44,46,52,63,68,70,77,88,117,118,122,123,134,138,146,173,177,184,215,227,267,278,559,387,402,422,551,575,583,607,1157,1325,1489,1847,1955,3303
+Network=CDMA
+; CDMA
+CDMA=Connect to your own ISP (AOL,MSN...)
+
+[CLARO]
+; BRAZIL
+IconIndex=-227
+CountryProvider=55
+HomeNetworkNumber=72405
+Network=GPRS
+; GPRS
+GPRS=Claro GPRS
+APN=Claro.com.br
+Username=claro
+Password=claro
+
+[Connex]
+; ROMANIA
+IconIndex=-135
+CountryProvider=40
+HomeNetworkNumber=22601
+Network=GPRS,UMTS,WAPCSD
+; GPRS
+GPRS=Connex GPRS
+APN=internet.connex.ro
+GPRS SplCmd=1
+; UMTS
+UMTS=Connex 3G
+UMTS APN=internet.connex.ro
+UMTS Username=internet.connex.ro
+UMTS Password=connex
+UMTS SplCmd=1
+; WAP CSD
+WAPCSD=Connex WAP
+WAPCSD Phonenumber=720
+WAPCSD Username=wap
+WAPCSD Password=CONNEX
+WAPCSD IP=193.230.161.231
+
+[Coriolis]
+; FRANCE
+CountryProvider=33
+WAP Proxy=192.168.21.6
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Coriolis Intranet
+APN=wapcoriolis
+; WAP GRPS
+WAPGPRS=Coriolis  Wap
+WAPGPRS APN=wapcoriolis
+; WAP CSD
+WAPCSD=Coriolis WAPCSD
+WAPCSD Phonenumber=+33613000032
+
+[Cosmote]
+; GREECE
+IconIndex=-136
+CountryProvider=30
+HomeNetworkNumber=20201
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Osmote GPRS
+APN=internet
+DNS1=195.167.65.194
+; WAP GRPS
+WAPGPRS=Osmote WAP GPRS
+WAPGPRS APN=internet
+WAPGPRS IP=10.10.10.10
+; WAP CSD
+WAPCSD=Osmote WAP CSD
+WAPCSD Phonenumber=+30975000000
+WAPCSD IP=10.10.10.10
+
+[CSL]
+; HONG KONG
+IconFile=CSL hong kong.ico
+IconIndex=-228
+CountryProvider=852
+HomeNetworkNumber=45400
+WAP Proxy=192.168.59.51:9201
+Network=GPRS,CSD,WAPGPRS,WAPCSD
+; GPRS
+GPRS=CSL GPRS
+APN=hkcsl
+QOSRequested=3,4,3,0,0
+GPRS SplCmd=1
+; CSD
+CSD PhoneNumber=+852179112
+; WAP GRPS
+WAPGPRS=CSL WAP
+WAPGPRS APN=hkcsl
+; WAP CSD
+WAPCSD Phonenumber=179111
+
+[CTBC Celular]
+; BRAZIL
+IconFile=ctbc brasil.ico
+IconIndex=-329
+CountryProvider=55
+HomeNetworkNumber=72432
+Network=GPRS
+; GPRS
+GPRS=CTBC
+APN=ctbc.br
+Username=ctbc
+Password=1212
+
+[CTI Movil]
+; ARGENTINA
+CountryProvider=54
+HomeNetworkNumber=722310
+Network=GPRS
+; GPRS
+GPRS=CTI GPRS
+APN=internet.ctimovil.com.ar
+Username=ctigprs
+Password=ctigprs999
+
+[CTM]
+; MACAU
+IconFile=ctm macau.ico
+IconIndex=-330
+CountryProvider=853
+HomeNetworkNumber=45501
+WAP Proxy=192.168.99.2:9201
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=CTM
+APN=ctm-mobile
+; WAP GRPS
+WAPGPRS=CTM WAP GPRS
+WAPGPRS APN=ctm-mobile
+
+[Cyta - Avacom]
+; CYPRUS
+IconIndex=-138
+CountryProvider=357
+HomeNetworkNumber=28001
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=Cyta GPRS Avacom
+APN=avacom.net
+GPRSUsernameNeeded=1
+GPRSPasswordNeeded=1
+; WAP GRPS
+WAPGPRS=Cyta WAP GPRS
+WAPGPRS APN=wap.cybee.cyta.com.cy
+WAPGPRSUsernameNeeded=1
+WAPGPRSPasswordNeeded=1
+WAPGPRS IP=213.169.128.70
+
+[Cyta - Cytanet]
+; CYPRUS
+IconIndex=-138
+CountryProvider=357
+HomeNetworkNumber=28001
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Cyta GPRS Cytanet
+APN=cytanet.net
+Username=web
+Password=web
+GPRSUsernameNeeded=1
+GPRSPasswordNeeded=1
+DNS1=195.14.130.186
+; WAP GRPS
+WAPGPRS=Cyta WAP GPRS
+WAPGPRS APN=wap.cybee.cyta.com.cy
+WAPGPRSUsernameNeeded=1
+WAPGPRSPasswordNeeded=1
+WAPGPRS IP=195.14.130.186
+; WAP CSD
+WAPCSD Phonenumber=+357992626
+WAPCSD Username=cytanetforall
+WAPCSD IP=195.14.130.186
+
+[Cyta - Spydernet]
+; CYPRUS
+IconIndex=-138
+CountryProvider=357
+HomeNetworkNumber=28001
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=Cyta GPRS Spydernet
+APN=spydernet.net
+GPRSUsernameNeeded=1
+GPRSPasswordNeeded=1
+; WAP GRPS
+WAPGPRS=Cyta WAP GPRS
+WAPGPRS APN=wap.cybee.cyta.com.cy
+WAPGPRSUsernameNeeded=1
+WAPGPRSPasswordNeeded=1
+WAPGPRS IP=194.154.128.55
+
+[Cyta - Thunderworx]
+; CYPRUS
+IconIndex=-138
+CountryProvider=357
+HomeNetworkNumber=28001
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=Cyta GPRS Thunderworx
+APN=thunderworx.net
+GPRSUsernameNeeded=1
+GPRSPasswordNeeded=1
+; WAP GRPS
+WAPGPRS=Cyta WAP GPRS
+WAPGPRS APN=wap.cybee.cyta.com.cy
+WAPGPRSUsernameNeeded=1
+WAPGPRSPasswordNeeded=1
+WAPGPRS IP=217.27.32.206
+
+[Dialog - Postpaid]
+; SRI LANKA
+IconIndex=-318
+CountryProvider=94
+HomeNetworkNumber=41302
+WAP Proxy=192.168.122.2:8080
+Network=WAPGPRS
+; WAP GRPS
+WAPGPRS=Dialog WAP GPRS
+WAPGPRS APN=www.dialogsl.com
+WAPGPRS IP=192.168.122.2
+
+[Dialog - Prepaid]
+; SRI LANKA
+IconIndex=-318
+CountryProvider=94
+HomeNetworkNumber=41302
+WAP Proxy=192.168.122.2:8080
+Network=WAPGPRS
+; WAP GRPS
+WAPGPRS=Dialog WAP GPRS
+WAPGPRS APN=ppwap
+WAPGPRS IP=192.168.122.2
+
+[DiGi]
+; MALAYSIA
+IconIndex=-139
+CountryProvider=60
+HomeNetworkNumber=50216
+Network=GPRS,UMTS
+; GPRS
+GPRS=DiGi GPRS
+APN=diginet
+Username=digi
+Password=digi
+; UMTS
+UMTS=Digi 3G
+UMTS APN=diginet
+UMTS Username=digi
+UMTS Password=digi
+
+[Digitel]
+; VENEZUELA
+CountryProvider=58
+HomeNetworkNumber=73402
+Network=GPRS
+; GPRS
+GPRS=Digitel TIM 2.0
+APN=gprsweb.digitel.ve
+
+[Djezzy]
+; ALGERIA
+IconIndex=-234
+CountryProvider=213
+HomeNetworkNumber=60302
+Network=GPRS,CSD
+; GPRS
+GPRS=Djezzy GPRS
+APN=djezzy.internet
+; CSD
+CSD=Djezzy CSD
+CSD PhoneNumber=+21370850850
+
+[DNA]
+; FINLAND
+IconIndex=-303
+CountryProvider=358
+HomeNetworkNumber=24409
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=DNA GPRS
+APN=internet
+DNS1=217.78.192.78
+DNS2=217.78.192.22
+; WAP GRPS
+WAPGPRS=DNA WAP GPRS
+WAPGPRS APN=wap
+WAPGPRS Username=dna
+WAPGPRS Password=wap
+; WAP CSD
+WAPCSD=DNA WAP
+WAPCSD Phonenumber=+35844104410
+WAPCSD Username=dna
+WAPCSD Password=wap
+WAPCSD IP=10.1.1.1
+
+[drei.at]
+; AUSTRIA
+IconIndex=-229
+CountryProvider=43
+HomeNetworkNumber=23210
+Network=UMTS
+; UMTS
+UMTS=drei.at
+UMTS APN=drei.at
+UMTS SplCmd=1
+
+[DST]
+; BRUNEI DARUSSALAM
+IconIndex=-250
+CountryProvider=673
+HomeNetworkNumber=52811
+Network=WAPGPRS
+; WAP GRPS
+WAPGPRS=DST WAPGPRS
+WAPGPRS APN=dst.wap
+WAPGPRS Username=wap
+WAPGPRS Password=wap
+WAPGPRS IP=10.100.6.105
+
+[DTAC]
+; THAILAND
+IconIndex=-140
+CountryProvider=66
+HomeNetworkNumber=52018
+WAP Proxy=203.155.200.133:8080
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Djuice GPRS
+APN=www.dtac.co.th
+DNS1=203.155.33.1
+DNS2=202.44.144.33
+; WAP GRPS
+WAPGPRS=Djuice WAP GPRS
+WAPGPRS APN=wap.djuice.co.th
+WAPGPRS IP=203.155.200.133
+; WAP CSD
+WAPCSD=Djuice WAP
+WAPCSD Phonenumber=+6616120012
+WAPCSD IP=203.155.200.133
+
+[Elisa EE]
+; ESTONIA
+IconIndex=-251
+CountryProvider=372
+HomeNetworkNumber=24802
+SMTP=smtp.elisa.ee
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=Elisa GPRS
+APN=internet
+; WAP GRPS
+WAPGPRS=Elisa WAP
+WAPGPRS APN=wap
+WAPGPRS IP=194.204.2.6
+
+[Elisa FI]
+; FINLAND
+IconIndex=-251
+CountryProvider=358
+HomeNetworkNumber=24405
+Network=GPRS,UMTS
+; GPRS
+GPRS=Elisa GPRS
+APN=internet
+Username=rinet
+Password=internet
+; UMTS
+UMTS=Elisa UMTS
+UMTS APN=internet
+UMTS Username=rinet
+UMTS Password=internet
+UMTS SplCmd=1
+
+[EMT]
+; ESTONIA
+IconIndex=-142
+CountryProvider=372
+HomeNetworkNumber=24801
+SMTP=mail.eunet.ee
+Network=GPRS,CSD,WAPCSD
+; GPRS
+GPRS=EMT GPRS
+APN=internet.emt.ee
+Username=internet.emt.ee
+DNS1=217.71.33.200
+DNS2=217.71.32.34
+; CSD
+CSD=EMT GSM
+CSD PhoneNumber=1444
+CSDUsernameNeeded=1
+CSDPasswordNeeded=1
+; WAP CSD
+WAPCSD=EMT WAP
+WAPCSD Phonenumber=+3725096096
+WAPCSD Password=wap
+WAPCSDUsernameNeeded=1
+WAPCSD IP=217.71.32.236
+
+[Entel PCS]
+; CHILE
+IconFile=PCS chili.ico
+IconIndex=-340
+CountryProvider=56
+HomeNetworkNumber=73010
+Network=GPRS,CSD
+; GPRS
+GPRS=GPRS
+APN=imovil.entelpcs.cl
+Username=entelpcs
+Password=entelpcs
+; CSD
+CSD=Entel PCS
+CSD PhoneNumber=+5698286730
+CSD Username=Entel PCS
+CSD Password=Entel PCS
+CSD DNS1=10.99.0.10
+
+[E-Plus]
+; GERMANY
+IconIndex=-143
+CountryProvider=49
+HomeNetworkNumber=26203
+SMTP=mail.eplus-online.de
+Network=GPRS,CSD,UMTS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=E-Plus GPRS
+APN=internet.eplus.de
+Username=eplus
+Password=gprs
+DNS1=212.23.97.2
+DNS2=212.23.97.3
+; CSD
+CSD=E-Plus GSM
+CSD PhoneNumber=+49177123100
+CSD Username=eplus
+; UMTS
+UMTS=E-Plus UMTS
+UMTS APN=internet.eplus.de
+UMTS Username=eplus
+UMTS Password=gprs
+UMTS DNS1=212.23.97.2
+UMTS DNS2=212.23.97.3
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=E-Plus WAP GPRS
+WAPGPRS APN=wap.eplus.de
+WAPGPRS Username=eplus
+WAPGPRS Password=wap
+WAPGPRS IP=212.23.97.9:8080
+WAPGPRS DNS1=212.23.97.2
+WAPGPRS DNS2=212.23.97.3
+; WAP CSD
+WAPCSD=E-Plus WAP
+WAPCSD Phonenumber=+49177123999
+WAPCSD Username=eplus
+WAPCSD Password=wap
+WAPCSD IP=212.23.97.9
+
+[ERA]
+; POLAND
+IconIndex=-145
+CountryProvider=48
+HomeNetworkNumber=26002
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=ERA GPRS
+APN=erainternet
+Username=erainternet
+Password=erainternet
+; WAP GRPS
+WAPGPRS=EraWAP GPRS
+WAPGPRS APN=erawap
+WAPGPRS Username=erawap
+WAPGPRS Password=erawap
+WAPGPRS IP=213.158.194.194
+; WAP CSD
+WAPCSD=EraWAP CSD
+WAPCSD Phonenumber=+48604020202
+WAPCSD Username=erawap
+WAPCSD Password=erawap
+WAPCSD IP=213.158.194.194
+
+[Etisalat]
+; UNITED ARAB EMIRATES
+IconIndex=-146
+CountryProvider=971
+HomeNetworkNumber=42402
+Network=GPRS,CSD,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Etisalat GPRS
+APN=mnet
+; CSD
+CSD=Etisalat GSM
+CSD PhoneNumber=+9714004466
+CSDUsernameNeeded=1
+CSDPasswordNeeded=1
+; WAP GRPS
+WAPGPRS=Etisalat WAP GPRS
+WAPGPRS APN=ewap
+WAPGPRS Username=ewap
+WAPGPRS Password=ewap
+WAPGPRS IP=10.12.0.32
+; WAP CSD
+WAPCSD=Etisalat WAP GSM
+WAPCSD Phonenumber=+9714004466
+WAPCSD Username=ewap
+WAPCSD Password=ewap
+WAPCSD IP=10.12.0.32
+
+[Eurotel CZ]
+; CZEC REPUBLIC
+IconIndex=-147
+CountryProvider=420
+HomeNetworkNumber=23002
+SMTP=smtp.eurotel.cz
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Eurotel GPRS
+APN=internet
+Username=internet
+Password=internet
+DNS1=160.218.10.200
+DNS2=160.218.43.200
+; WAP GRPS
+WAPGPRS=Eurotel WAP GPRS
+WAPGPRS APN=wap
+WAPGPRS Username=eurotel
+WAPGPRS Password=wap
+WAPGPRS IP=160.218.160.218
+; WAP CSD
+WAPCSD=Eurotel WAP CSD
+WAPCSD Phonenumber=+420602900927
+WAPCSD Username=eurotel
+WAPCSD Password=wap
+WAPCSD IP=160.218.160.218
+
+[Eurotel CZ Go]
+; CZEC REPUBLIC
+IconIndex=-147
+CountryProvider=420
+HomeNetworkNumber=23002
+SMTP=smtp.etmail.cz
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Eurotel Go GPRS
+APN=gointernet
+Username=internet
+Password=internet
+DNS1=160.218.10.200
+DNS2=160.218.43.200
+; WAP GRPS
+WAPGPRS=Eurotel Go WAP GPRS
+WAPGPRS APN=gowap
+WAPGPRS Username=eurotel
+WAPGPRS Password=wap
+WAPGPRS IP=160.218.160.218
+; WAP CSD
+WAPCSD=Eurotel Go WAP CSD
+WAPCSD Phonenumber=+420602900927
+WAPCSD Username=eurotel
+WAPCSD Password=wap
+WAPCSD IP=160.218.160.218
+
+[F SFR]
+; FRANCE
+IconIndex=-112
+CountryProvider=33
+HomeNetworkNumber=20810
+SMTP=mail.sfr.net
+Network=GPRS,CSD,UMTS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=SFR GPRS
+APN=websfr
+; CSD
+CSD=SFR GSM Data
+CSD PhoneNumber=6161
+; UMTS
+UMTS=SFR UMTS
+UMTS APN=websfr
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=SFR WAP GPRS
+WAPGPRS APN=wapsfr
+WAPGPRS IP=195.115.25.129:9201
+; WAP CSD
+WAPCSD=SFR WAP
+WAPCSD Phonenumber=+33613000010
+WAPCSD IP=195.115.25.129:9201
+
+[FarEasTone]
+; TAIWAN
+IconIndex=-149
+CountryProvider=886
+HomeNetworkNumber=46601
+WAP Proxy=210.241.199.199:9201
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=FarEasTone GPRS
+APN=internet
+; WAP GRPS
+WAPGPRS=FarEastone WAP
+WAPGPRS APN=Fetnet01
+; WAP CSD
+WAPCSD=FarEastone WAP
+WAPCSD Phonenumber=+886936010010
+WAPCSD Username=SGPST
+WAPCSD Password=SGPST
+WAPCSD IP=210.241.201.80
+
+[Fastlink]
+; JORDAN
+IconIndex=-150
+CountryProvider=962
+HomeNetworkNumber=41601
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=Fastlink GPRS
+APN=internet
+; WAP GRPS
+WAPGPRS=Fastlink WAP GPRS
+WAPGPRS APN=wap
+WAPGPRS Username=wap
+WAPGPRS Password=wap
+WAPGPRS IP=192.168.55.10
+; WAP CSD
+WAPCSD=Fastlink WAP
+WAPCSD Phonenumber=+96279020444
+WAPCSD Username=wap
+WAPCSD Password=wap
+WAPCSD IP=192.168.55.10
+
+[FIDO]
+; CANADA
+IconFile=fido canada.ico
+IconIndex=-332
+CountryProvider=107
+HomeNetworkNumber=30237
+SMTP Domain=fido.ca
+Network=GPRS
+; GPRS
+APN=internet.fido.ca
+Username=fido
+Password=fido
+
+[Former AT&T Wireless Acct]
+; UNITED STATES
+IconIndex=-123
+CountryProvider=1
+HomeNetworkNumber=31038
+SMTP Domain=mmode.com
+Network=GPRS,CSD
+; GPRS
+GPRS=AT&T GPRS
+APN=proxy
+; CSD
+
+[Globe]
+; PHILIPPINES
+IconIndex=-151
+CountryProvider=63
+HomeNetworkNumber=51502
+WAP Proxy=203.177.42.214:9201
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=myGlobe Internet
+APN=internet.globe.com.ph
+DNS1=203.127.225.10
+DNS2=203.127.225.11
+; WAP GRPS
+WAPGPRS=myGlobe GPRS
+WAPGPRS APN=www.globe.com.ph
+WAPGPRS IP=203.177.42.214
+; WAP CSD
+WAPCSD=mtGlobe CSD
+WAPCSD Phonenumber=+639172399
+WAPCSD Username=globe
+WAPCSD Password=globe
+WAPCSD IP=192.9.163.34
+
+[Globul]
+; BULGARIA
+IconIndex=-254
+CountryProvider=359
+HomeNetworkNumber=28405
+Network=GPRS,CSD,WAPGPRS
+; GPRS
+GPRS=Globul GPRS
+APN=internet.globul.bg
+Username=globul
+; CSD
+CSD PhoneNumber=+359891000
+CSD Username=globul
+CSD DNS1=192.168.88.11
+; WAP GRPS
+WAPGPRS APN=internet.globul.bg
+WAPGPRS Username=globul
+WAPGPRS IP=192.168.88.11
+
+[Gloworld]
+; NIGERIA
+IconIndex=-316
+CountryProvider=234
+HomeNetworkNumber=62150
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=GloDirect GPRS
+APN=glosecure
+Username=gprs
+Password=gprs
+; WAP GRPS
+WAPGPRS=Glo WAP GPRS
+WAPGPRS APN=glogwap
+WAPGPRS Username=wap
+WAPGPRS Password=wap
+WAPGPRS IP=10.100.98.22
+
+[Go Mobile - Go]
+; MALTA
+IconIndex=-255
+CountryProvider=356
+HomeNetworkNumber=27821
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Go GPRS
+APN=gosurfing
+DNS1=194.158.48.17
+DNS2=194.158.48.18
+; WAP GRPS
+WAPGPRS=Go WAP GPRS
+WAPGPRS APN=gowap
+WAPGPRS IP=10.20.20.129
+; WAP CSD
+WAPCSD=Go WAP
+WAPCSD Phonenumber=+35679807080
+WAPCSD Username=wapuser
+WAPCSD Password=wap
+WAPCSD IP=10.20.20.129
+
+[Go Mobile - Readytogo]
+; MALTA
+IconIndex=-255
+CountryProvider=356
+HomeNetworkNumber=27821
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Readytogo GPRS
+APN=rtgsurfing
+DNS1=194.158.48.17
+DNS2=194.158.48.18
+; WAP GRPS
+WAPGPRS=Readytogo WAP GPRS
+WAPGPRS APN=readytogowap
+WAPGPRS IP=10.20.20.129
+; WAP CSD
+WAPCSD=Readytogo WAP
+WAPCSD Phonenumber=+35679807080
+WAPCSD Username=wapuser
+WAPCSD Password=wap
+WAPCSD IP=10.20.20.129
+
+[Go Mobile FI]
+; FINLAND
+IconIndex=-304
+CountryProvider=358
+HomeNetworkNumber=24409
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=GoMobile GPRS
+APN=internet.gomobile.fi
+DNS1=217.78.199.192
+DNS2=217.78.199.132
+; WAP GRPS
+WAPGPRS=GoMobile WAP
+WAPGPRS APN=wap.gomobile.fi
+WAPGPRS IP=10.1.1.10
+
+[Golden Telecom]
+; UKRAINE
+CountryProvider=380
+HomeNetworkNumber=38039
+Network=CSD
+; CSD
+CSD=Golden Telecom CSD
+CSD PhoneNumber=323
+CSD Username=gt
+CSD Password=gsm
+
+[Hello]
+; CAMBODIA
+IconIndex=-256
+CountryProvider=855
+HomeNetworkNumber=45602
+Network=GPRS
+; GPRS
+GPRS=Hello WWW
+APN=hellowww
+
+[HT Macau]
+; MACAU
+CountryProvider=853
+HomeNetworkNumber=45503
+Network=GPRS
+; GPRS
+GPRS=Hutchison GPRS
+Username=hutchison
+Password=1234
+
+[Hutch]
+; INDIA
+IconFile=Hutch india.ico
+IconIndex=-334
+CountryProvider=91
+HomeNetworkNumber=40405,40411,40430,40413,40486,40484,40401,40415,40460,40488,40566,40567,40420,40427,40443,40446
+WAP Proxy=10.10.1.100:9201
+WAP Secure Proxy=10.10.1.100:9203
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=Hutch GPRS
+APN=www
+; WAP GRPS
+WAPGPRS=Hutch WAP
+WAPGPRS APN=portalnmms
+
+[IAM]
+; MOROCCO
+IconIndex=-257
+CountryProvider=212
+HomeNetworkNumber=60401
+Network=GPRS
+; GPRS
+GPRS=IAM GPRS
+APN=iamgprs1.ma
+DNS1=212.217.54.133
+
+[IDEA]
+; POLAND
+IconIndex=-156
+CountryProvider=48
+HomeNetworkNumber=26003
+SMTP=mail.idea.net.pl
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Internet Idea GPRS
+APN=www.idea.pl
+Username=ppp
+Password=ppp
+DNS1=194.9.223.79
+DNS2=194.204.159.1
+; WAP GRPS
+WAPGPRS=WAP Idea GPRS
+WAPGPRS APN=wap.idea.pl
+WAPGPRS Username=idea
+WAPGPRS Password=idea
+WAPGPRS IP=192.168.6.102
+; WAP CSD
+WAPCSD=WAP Idea CSD
+WAPCSD Phonenumber=+48501800800
+WAPCSD Username=idea
+WAPCSD Password=idea
+WAPCSD IP=192.168.6.102
+
+[IDEA]
+; INDIA
+IconFile=idea india.ico
+IconIndex=-335
+CountryProvider=91
+HomeNetworkNumber=40404,40407,40412,40419,40422,40424,40456,40478
+Network=GPRS
+; GPRS
+GPRS=IDEA GPRS
+APN=imis
+DNS1=10.4.42.15:9201
+
+[IM-3]
+; INDONESIA
+IconIndex=-308
+CountryProvider=62
+HomeNetworkNumber=51021
+Network=GPRS
+; GPRS
+GPRS=IM-3 GPRS
+APN=www.indosat-m3.net
+Username=gprs
+Password=im3
+
+[Islandssimi]
+; ICELAND
+IconIndex=-158
+CountryProvider=354
+HomeNetworkNumber=27403
+Network=GPRS,CSD,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Islandssimi GPRS
+APN=gprs.islandssimi.is
+; CSD
+CSD=Isdlandssimi GSM Data
+CSD PhoneNumber=+3548200200
+; WAP GRPS
+WAPGPRS=Islandssimi WAPGPRS
+WAPGPRS APN=gprs.islandssimi.is
+WAPGPRS Username=wap
+WAPGPRS Password=wap
+WAPGPRS IP=10.20.30.40
+; WAP CSD
+WAPCSD=Islandssimi WAPCSD
+WAPCSD Phonenumber=+3548200200
+WAPCSD Username=wap
+WAPCSD Password=wap
+WAPCSD IP=10.20.30.40
+
+[IUSACELL]
+; MEXICO
+CountryProvider=52
+Network=1xRTT
+; 1XRTT
+1xRTT=Iusacell 1X
+1xRTT PhoneNumber=#777
+1xRTT Username=MDN@iusacell3g.com
+1xRTT Password=BJMPW504
+
+[Jersey Telecom]
+; UNITED KINGDOM
+IconIndex=-159
+CountryProvider=44
+HomeNetworkNumber=23450
+Network=GPRS
+; GPRS
+GPRS=Pepper GPRS
+APN=pepper
+
+[Jersey Telecom]
+; SCOTLAND
+IconIndex=-159
+CountryProvider=44
+HomeNetworkNumber=23450
+Network=GPRS
+; GPRS
+GPRS=Pepper GPRS
+APN=pepper
+
+[K’Cell]
+; KAZAKHSTAN
+IconIndex=-259
+CountryProvider=705
+HomeNetworkNumber=40102
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=K’Cell GPRS
+APN=internet
+; WAP GRPS
+WAPGPRS APN=wap
+WAPGPRS IP=195.47.255.7
+
+[K’Mobile]
+; KAZAKHSTAN
+IconIndex=-260
+CountryProvider=705
+HomeNetworkNumber=40101
+Network=GPRS
+; GPRS
+GPRS=K’Mobile GPRS
+APN=k-mobile
+
+[KG Telcom]
+; TAIWAN
+IconIndex=-160
+CountryProvider=886
+HomeNetworkNumber=46688
+Network=GPRS
+; GPRS
+GPRS=KGT-Online GPRS
+APN=internet
+
+[KPN Mobile]
+; NETHERLANDS
+IconIndex=-161
+CountryProvider=31
+HomeNetworkNumber=20408
+WAP Proxy=10.96.1.14:8080
+WAP Secure Proxy=10.96.1.14:9203
+Network=GPRS,CSD,WAPGPRS,WAPCSD
+; GPRS
+GPRS=KPN Internet Everywhere (GPRS)
+APN=internet
+DNS1=62.133.126.28
+DNS2=62.133.126.29
+; CSD
+CSD=KPN DirectInternet
+CSD PhoneNumber=+31676012321
+CSD Username=kpn
+; WAP GRPS
+WAPGPRS=M-info (WAP GPRS)
+WAPGPRS APN=m-info
+WAPGPRS Username=minfo
+WAPGPRS Password=minfo
+WAPGPRSUsernameNeeded=1
+WAPGPRSPasswordNeeded=1
+WAPGPRS IP=10.96.1.14
+; WAP CSD
+WAPCSD=M-info (WAP)
+WAPCSD Phonenumber=+31653111111
+WAPCSD Username=minfo
+WAPCSD Password=minfo
+WAPCSD IP=10.96.1.14
+; MMS
+MMS WapGw=10.96.1.14
+MMS HTTPGw=wsp://m-info
+
+[KPN Mobile i-mode]
+; NETHERLANDS
+IconIndex=-161
+CountryProvider=31
+HomeNetworkNumber=20408
+WAP Proxy=10.10.100.10
+SMTP=smtp.imode.nl
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=Internet Everywhere
+APN=internet
+; WAP GRPS
+WAPGPRS=i-mode WAP GPRS
+WAPGPRS APN=portalmmm.nl
+WAPGPRS Username=minfo
+WAPGPRS Password=minfo
+WAPGPRS IP=10.10.100.10
+
+[Kyivstar]
+; UKRAINE
+IconIndex=-306
+CountryProvider=380
+HomeNetworkNumber=65503,38067,38096,38097
+Network=GPRS,CSD,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Kyivstar GPRS
+APN=www.kyivstar.net
+Username=igprs
+Password=internet
+; CSD
+CSD=Kyivstar CSD
+CSD PhoneNumber=+380672222901
+CSD Username=internet
+CSD Password=kyivstar
+; WAP GRPS
+WAPGPRS=Kyivstar WAPGPRS
+WAPGPRS APN=wap.kyivstar.net
+WAPGPRS IP=10.10.10.10
+; WAP CSD
+WAPCSD=Kyivstar WAPCSD
+WAPCSD Phonenumber=+380672222900
+WAPCSD IP=10.10.10.10
+
+[Landssiminn]
+; ICELAND
+IconIndex=-162
+CountryProvider=354
+HomeNetworkNumber=27401
+SMTP=postur.simnet.is
+Network=GPRS,CSD,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Siminn GPRS
+APN=gprs.simi.is
+; CSD
+CSD=Siminn GSM Data
+CSD PhoneNumber=+3549099010
+; WAP GRPS
+WAPGPRS=Siminn WAP GPRS
+WAPGPRS APN=wap.simi.is
+WAPGPRS IP=157.157.182.80
+; WAP CSD
+WAPCSD=Siminn WAP GSM
+WAPCSD Phonenumber=+3548900900
+WAPCSD Username=wap
+WAPCSD Password=wap
+WAPCSD IP=157.157.182.80
+
+[Life]
+; UKRAINE
+IconIndex=-307
+CountryProvider=380
+HomeNetworkNumber=65505
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=life Internet
+APN=internet
+; WAP GRPS
+WAPGPRS APN=wap
+WAPGPRS IP=212.58.162.230
+
+[LMT]
+; LATVIA
+IconIndex=-164
+CountryProvider=371
+HomeNetworkNumber=24701
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=LMT GPRS
+APN=Internet
+; WAP GRPS
+WAPGPRS=LMT WAP GPRS
+WAPGPRS APN=internet.lmt.lv
+WAPGPRS IP=212.93.96.65
+; WAP CSD
+WAPCSD=LMT WAP
+WAPCSD Phonenumber=+3719310000
+WAPCSD IP=212.93.96.65
+
+[LUXGSM]
+; LUXEMBOURG
+CountryProvider=352
+HomeNetworkNumber=27001
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Lux GPRS
+APN=web.pt.lu
+DNS1=194.154.192.101
+DNS2=194.154.192.102
+; WAP GRPS
+WAPGPRS=LuxGPRS Wap
+WAPGPRS APN=wap.pt.lu
+WAPGPRS Username=wap
+WAPGPRS Password=wap
+WAPGPRS IP=194.154.192.98
+; WAP CSD
+WAPCSD=LuxGSM Wap
+WAPCSD Phonenumber=+352021100927
+WAPCSD Username=wap
+WAPCSD Password=wap
+WAPCSD IP=194.154.192.98
+
+[M3 Wireless]
+; BERMUDA
+CountryProvider=105
+HomeNetworkNumber=35002
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=M3 Wireless GPRS
+APN=net.bm
+; WAP GRPS
+WAPGPRS=M3 Wireless WAP
+WAPGPRS APN=wap.bm
+WAPGPRS IP=209.4.229.39:9201
+
+[Magti]
+; GEORGIA
+IconIndex=-265
+CountryProvider=995
+HomeNetworkNumber=28202
+Network=GPRS
+; GPRS
+GPRS=Magti GPRS
+APN=gprs.ge
+
+[Maxis]
+; MALAYSIA
+IconIndex=-166
+CountryProvider=60
+HomeNetworkNumber=50212
+Network=GPRS,UMTS
+; GPRS
+GPRS=Maxis GPRS
+APN=net
+Username=maxis
+Password=wap
+GPRS SplCmd=1
+; UMTS
+UMTS=Maxis 3G
+UMTS APN=unet
+UMTS Username=maxis
+UMTS Password=wap
+UMTS SplCmd=1
+
+[Megafon]
+; RUSSIA
+IconFile=megafon russia.ico
+IconIndex=-337
+CountryProvider=7
+HomeNetworkNumber=25002
+Network=GPRS
+; GPRS
+GPRS=Megafon GPRS
+APN=internet.nw
+GPRS SplCmd=1
+
+[Miworld]
+; SINGAPORE
+IconIndex=-263
+CountryProvider=65
+HomeNetworkNumber=52503
+WAP Proxy=172.16.1.23:9201
+WAP Secure Proxy=172.16.1.23:9203
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Miworld GPRS
+APN=sunsurf
+Username=65MSISDN
+Password=user123
+GPRSUsernameNeeded=1
+DNS1=202.79.127.166
+DNS2=202.79.64.26
+; WAP GRPS
+WAPGPRS=Miworld WAP GPRS
+WAPGPRS APN=miworld
+WAPGPRS Username=65MSISDN
+WAPGPRS Password=user123
+WAPGPRSUsernameNeeded=1
+WAPGPRS IP=172.16.1.23
+; WAP CSD
+WAPCSD=Miworld WAP CSD
+WAPCSD Phonenumber=+6596845888
+WAPCSD Password=user123
+WAPCSDUsernameNeeded=1
+WAPCSD IP=172.16.1.23
+
+[Mobi’s]
+; BOSNIA AND HERZEGOWINA
+IconIndex=-309
+CountryProvider=387
+HomeNetworkNumber=45602,21805
+Network=GPRS
+; GPRS
+GPRS=Mobi’s GPRS
+APN=mobisgprs1,mobisgprs2,mobisgprs3,mobisgprs4,mobisfun
+DNS1=81.93.67.2
+DNS2=81.93.67.3
+
+[MobileCom JO]
+; JORDAN
+IconIndex=-168
+CountryProvider=962
+HomeNetworkNumber=41677
+SMTP=smtp.bareed.jo
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=MobileCom GPRS
+APN=net.mobilecom.jo
+Username=internet
+Password=internet
+; WAP GRPS
+WAPGPRS=Yalla WAP GPRS
+WAPGPRS APN=wap.mobilecom.jo
+WAPGPRS Username=yalla
+WAPGPRS Password=yalla
+WAPGPRS IP=172.16.1.2
+; WAP CSD
+WAPCSD=Yalla WAP
+WAPCSD Phonenumber=+96277700160
+WAPCSD Username=yalla
+WAPCSD Password=yalla
+WAPCSD IP=172.16.1.2
+
+[Mobilelife]
+; THAILAND
+IconIndex=-310
+CountryProvider=66
+HomeNetworkNumber=52001
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=Mobilelife GPRS
+APN=internet
+DNS1=202.183.255.20
+DNS2=202.183.255.21
+; WAP GRPS
+WAPGPRS=Mobilelife WAP
+WAPGPRS APN=wap
+WAPGPRS IP=203.170.229.34
+
+[Mobilink GSM]
+; PAKISTAN
+CountryProvider=92
+HomeNetworkNumber=41001
+WAP Proxy=172.24.97.29:9201
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=Mobilink
+APN=connect.mobilinkworld.com
+; WAP GRPS
+WAPGPRS=Mobilink WAP
+WAPGPRS APN=wap.mobilinkworld.com
+
+[Mobilink GSM Prepaid]
+; PAKISTAN
+CountryProvider=92
+WAP Proxy=172.24.97.29
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=Mobilink Prepaid
+APN=jazzconnect.mobilinkworld.com
+; WAP GRPS
+WAPGPRS=Mobilink Prepaid WAP
+WAPGPRS APN=azzwap.mobilinkworld.com
+WAPGPRS Password=172.24.97.29
+
+[Mobilkom FL1]
+; LIECHTENSTEIN
+IconIndex=-148
+CountryProvider=423
+HomeNetworkNumber=29505
+Network=GPRS,UMTS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Mobilkom GPRS
+APN=mobilekom.li
+Username=gprs@A1plus.at
+Password=mobilkom
+; UMTS
+UMTS=Mobilkom 3G
+UMTS APN=mobilekom.li
+UMTS Username=gprs@A1plus.at
+UMTS Password=mobilkom
+; WAP GRPS
+WAPGPRS=Mobilkom WAPGPRS
+WAPGPRS APN=mobilkom.li
+WAPGPRS Username=A1plus.at
+WAPGPRS IP=194.48.124.71
+; WAP CSD
+WAPCSD=Mobilkom WAP
+WAPCSD Phonenumber=+43664684000
+WAPCSD Username=A1Plus.at
+WAPCSD IP=194.48.124.71
+
+[Mobiltel]
+; BULGARIA
+IconIndex=-230
+CountryProvider=359
+HomeNetworkNumber=28401
+SMTP=mail2.mtel.net
+Network=GPRS,CSD,WAPGPRS
+; GPRS
+GPRS=M-Tel GPRS
+APN=inet-gprs.mtel.bg
+; CSD
+CSD=M-Tel CSD
+CSD PhoneNumber=+359 88 1000
+; WAP GRPS
+WAPGPRS=M-Tel WAP GPRS
+WAPGPRS APN=wap-gprs.mtel.bg
+WAPGPRS IP=213.226.6.66
+; WAP CSD
+WAPCSD=M-Tel WAP CSD
+WAPCSD Phonenumber=+359881000
+WAPCSD IP=213.226.6.66
+
+[MobiNil]
+; EGYPT
+IconIndex=-270
+CountryProvider=20
+HomeNetworkNumber=60201
+Network=GPRS,CSD,WAPGPRS,WAPCSD
+; GPRS
+GPRS=MobiNil GPRS
+APN=Mobinilweb
+; CSD
+CSD=MobiNil GSM
+CSD PhoneNumber=3030
+; WAP GRPS
+WAPGPRS=MobiNil WAP GPRS
+WAPGPRS APN=mobinilwap
+WAPGPRS IP=10.7.13.21
+; WAP CSD
+WAPCSD=MibiNil WAP
+WAPCSD Phonenumber=3030
+WAPCSD IP=10.1.1.3
+
+[Mobistar Friends - Optimum]
+; BELGIUM
+IconIndex=-173
+CountryProvider=32
+HomeNetworkNumber=20610
+Network=GPRS,WAPCSD
+; GPRS
+GPRS=Mobistar GPRS Friends
+APN=internet.be
+DNS1=212.65.63.10
+DNS2=212.65.63.145
+; WAP GRPS
+WAPGPRS=Mobistar WAP GPRS
+WAPGPRS APN=mworld.be
+WAPGPRS Username=mobistar
+WAPGPRS Password=mobistar
+WAPGPRS IP=212.65.63.143
+; WAP CSD
+WAPCSD=Mobistar WAP GSM
+WAPCSD Phonenumber=+495953333
+WAPCSD Username=mobistar
+WAPCSD Password=mobistar
+WAPCSD IP=212.65.63.143
+
+[Mobistar Tempo]
+; BELGIUM
+IconIndex=-173
+CountryProvider=32
+HomeNetworkNumber=20610
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Mobistar GPRS Tempo
+APN=internet.be
+DNS1=212.65.63.10
+DNS2=212.65.63.145
+; WAP GRPS
+WAPGPRS=Mobistar WAP GPRS
+WAPGPRS APN=tempomworld.be
+WAPGPRS Username=mobistar
+WAPGPRS Password=mobistar
+WAPGPRS IP=212.65.63.143
+; WAP CSD
+WAPCSD=Mobistar WAP GSM
+WAPCSD Phonenumber=+495953333
+WAPCSD Username=mobistar
+WAPCSD Password=mobistar
+WAPCSD IP=212.65.63.143
+
+[MoBiTai]
+; TAIWAN
+IconIndex=-224
+CountryProvider=886
+HomeNetworkNumber=46693
+Network=GPRS
+; GPRS
+GPRS=MobiTai GPRS
+APN=gprs2
+Username=gprs
+Password=gprs
+
+[Mobtel]
+; YUGOSLAVIA
+IconIndex=-273
+CountryProvider=381
+HomeNetworkNumber=22001
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+APN=internet
+DNS1=194.154.230.66
+DNS2=194.154.230.74
+; WAP GRPS
+WAPGPRS APN=internet
+WAPGPRS Username=mobtel
+WAPGPRS Password=gprs
+WAPGPRS IP=217.65.192.33
+; WAP CSD
+WAPCSD Phonenumber=063910
+WAPCSD IP=217.65.192.33
+
+[Moldcell]
+; MOLDOVA
+IconIndex=-274
+CountryProvider=373
+HomeNetworkNumber=25902
+Network=WAPCSD
+; WAP CSD
+WAPCSD=Moldcell WAP
+WAPCSD Phonenumber=9497
+WAPCSD Username=wap
+WAPCSD Password=wap
+WAPCSD IP=212.0.194.60
+
+[Monacell]
+; MONACO
+IconIndex=-317
+CountryProvider=377
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Monacell Web
+APN=orange.fr
+; WAP GRPS
+WAPGPRS=Monacell WAP GPRS
+WAPGPRS APN=orange
+WAPGPRS Username=orange
+WAPGPRS Password=orange
+WAPGPRS IP=192.168.1.1
+; WAP CSD
+WAPCSD=Monacell WAP
+WAPCSD Phonenumber=+33674501100
+WAPCSD Username=orange
+WAPCSD Password=orange
+WAPCSD IP=192.168.1.1
+
+[Monet]
+; YUGOSLAVIA
+IconIndex=-275
+CountryProvider=381
+HomeNetworkNumber=22004
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=Mobtel MMS
+; WAP GRPS
+WAPGPRS=Mobtel WAP
+WAPGPRS APN=gprs.monetcg.com
+WAPGPRS IP=10.0.5.19
+
+[Movicom Argentina]
+; ARGENTINA
+CountryProvider=54
+Network=1xRTT,CDMA
+; 1XRTT
+1xRTT=Movicom(PD)
+1xRTT PhoneNumber=#777
+1xRTT Password=0x9F2A5EC3
+1xRTTUsernameNeeded=1
+; CDMA
+CDMA=Movicom (CSD)
+CDMA PhoneNumber=*777
+CDMA Username=movicom
+CDMA Password=bellsouth
+
+[Movicom Uruguay]
+; URUGUAY
+CountryProvider=598
+Network=1xRTT,CDMA
+; 1XRTT
+1xRTT=Movicom(PD)
+1xRTT PhoneNumber=#777
+1xRTT Password=bellsouth1
+1xRTTUsernameNeeded=1
+; CDMA
+CDMA=Movicom (CSD)
+
+[Movilnet]
+; VENEZUELA
+CountryProvider=58
+Network=1xRTT
+; 1XRTT
+1xRTT=Movilnet
+1xRTT PhoneNumber=#777
+1xRTT DNS1=200.44.32.12:80
+1xRTT DNS2=200.44.32.13:80
+
+[Movistar]
+; ARGENTINA
+IconFile=movistar.ico
+IconIndex=-221
+CountryProvider=54
+HomeNetworkNumber=72207
+Network=GPRS
+; GPRS
+GPRS=Movistar GPRS
+APN=internet.gprs.unifon.com.ar
+Username=wap
+Password=wap
+
+[Movistar]
+; MEXICO
+IconFile=movistar.ico
+IconIndex=-221
+CountryProvider=52
+HomeNetworkNumber=33403
+Network=GPRS,CSD
+; GPRS
+GPRS=Internet GPRS
+APN=internet.movistar.mx
+Username=movistar
+Password=movistar
+; CSD
+
+[Movistar Chile]
+; CHILE
+IconFile=movistar.ico
+IconIndex=-221
+CountryProvider=56
+HomeNetworkNumber=73002
+Network=GPRS,CSD,WAPGPRS
+; GPRS
+GPRS=Internet GPRS
+APN=web.tmovil.cl
+Username=web
+Password=web
+; CSD
+CSD=Internet CSD
+CSD PhoneNumber=+5691610932
+CSD Username=web
+CSD Password=web
+; WAP GRPS
+WAPGPRS=WAP GPRS
+WAPGPRS APN=wap.tmovil.cl
+WAPGPRS Username=wap
+WAPGPRS Password=wap
+WAPGPRS IP=172.17.8.11
+
+[Movistar Uruguay]
+; URUGUAY
+IconFile=movistar.ico
+IconIndex=-221
+CountryProvider=598
+HomeNetworkNumber=74807
+Network=GPRS
+; GPRS
+GPRS=Movistar GPRS
+APN=webapn.movistar.com.uy
+Username=wapuy
+Password=wapuy
+
+[Movistar Venezuela]
+; VENEZUELA
+IconFile=movistar.ico
+IconIndex=-221
+CountryProvider=58
+Network=1xRTT,CDMA
+; 1XRTT
+1xRTT=Movistar
+1xRTT PhoneNumber=#777
+1xRTT Username=ESN@ve.bs-i.net
+1xRTT Password=telcel
+; CDMA
+CDMA=Connect to your own ISP (AOL,MSN.....)
+
+[MTC Touch]
+; LEBANON
+IconIndex=-276
+CountryProvider=961
+HomeNetworkNumber=24702
+Network=CSD,WAPGPRS,WAPCSD
+; GPRS
+GPRS=MTC GPRS
+APN=web.mtctouch.com.lb
+; CSD
+CSD=MTC CSD
+; WAP GRPS
+WAPGPRS=MTC WAP
+WAPGPRS APN=wap.mtctouch.com.lb
+WAPGPRS IP=192.168.4.11
+; WAP CSD
+WAPCSD=MTC WAP CSD
+WAPCSD Phonenumber=+9613909500
+WAPCSD IP=212.98.141.40
+
+[MTN]
+; SOUTH AFRICA
+IconIndex=-175
+CountryProvider=27
+HomeNetworkNumber=65510
+Network=GPRS,CSD,WAPGPRS
+; GPRS
+GPRS=MTNdataLIVE (GPRS)
+APN=internet
+; CSD
+CSD=MTNdataLINK (CSD)
+CSD PhoneNumber=+27831239270
+CSD Password=123
+CSDUsernameNeeded=1
+; WAP GRPS
+WAPGPRS=MTN WAP GPRS
+WAPGPRS APN=myMTN
+WAPGPRS Username=mtnwap
+WAPGPRS Password=mtnwap
+WAPGPRS IP=196.11.240.251
+; WAP CSD
+WAPCSD Phonenumber=+27831237873
+
+[MTN Ng]
+; NIGERIA
+IconIndex=-175
+CountryProvider=234
+HomeNetworkNumber=62130
+WAP Proxy=192.168.77.153
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Mtech GPRS
+APN=web.gprs.mtnnigeria.net
+Username=web
+Password=web
+; CSD
+CSD=Mtech CSD
+; WAP GRPS
+WAPGPRS=Mtech WAP GPRS
+WAPGPRS APN=web.gprs.mtnnigeria.net
+WAPGPRS Username=web
+WAPGPRS Password=web
+WAPGPRS IP=10.199.212.2
+; WAP CSD
+WAPCSD Phonenumber=+2348039002000
+WAPCSD Username=mlife
+WAPCSD Password=mtech
+WAPCSD IP=10.100.98.22
+
+[MTS]
+; RUSSIA
+IconIndex=-176
+CountryProvider=7
+HomeNetworkNumber=25001
+Network=GPRS,WAPCSD
+; GPRS
+GPRS=MTS GPRS
+APN=internet.mts.ru
+DNS1=213.87.0.1
+DNS2=213.87.1.1
+; WAP CSD
+WAPCSD=MTS WAP GSM
+WAPCSD Phonenumber=0885
+WAPCSD Username=mts
+WAPCSDPasswordNeeded=1
+WAPCSD IP=212.44.140.13
+
+[MTS Mobility]
+; CANADA
+CountryProvider=107
+HomeNetworkNumber=16428
+Network=1xRTT
+; 1XRTT
+1xRTT=(High Speed Packet Data)
+1xRTT PhoneNumber=#777
+1xRTT Username=%MIN%@1x.mts.net
+
+[Nawras]
+; OMAN
+IconIndex=-278
+CountryProvider=968
+HomeNetworkNumber=42203
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=Nawras GPRS
+APN=isp.nawras.com.om
+Username=test
+Password=test
+; WAP GRPS
+WAPGPRS=Nawras WAP GPRS
+WAPGPRS APN=wap.nawras.com.om
+WAPGPRS Username=test
+WAPGPRS Password=test
+WAPGPRS IP=10.128.240.19
+
+[Nedjma]
+; ALGERIA
+IconIndex=-235
+CountryProvider=213
+HomeNetworkNumber=60303
+Network=GPRS
+; GPRS
+GPRS=Nedjma GPRS
+APN=internet
+Username=nedjma
+Password=nedjma
+
+[NetCom]
+; NORWAY
+IconIndex=-177
+CountryProvider=47
+HomeNetworkNumber=24202
+SMTP=smtp.netcom.no
+Network=GPRS,CSD,WAPGPRS,WAPCSD
+; GPRS
+GPRS=NetCom GPRS
+APN=internet.netcom.no
+DNS1=212.45.188.43
+DNS2=212.45.188.44
+; CSD
+CSD=NetCom GSM
+CSD PhoneNumber=+4792000666
+CSD Username=netcom
+CSD Password=netcom
+; WAP GRPS
+WAPGPRS=NetCom WAP GPRS
+WAPGPRS APN=wap.netcom.no
+WAPGPRS Username=wap
+WAPGPRS Password=netcom
+WAPGPRS IP=10.254.254.10
+; WAP CSD
+WAPCSD=NetCom WAP
+WAPCSD Phonenumber=+4792000800
+WAPCSD Username=netcom
+WAPCSD Password=netcom
+WAPCSD IP=10.254.254.10
+
+[NetCom]
+; BOUVET ISLAND
+IconIndex=-177
+CountryProvider=47
+HomeNetworkNumber=24202
+SMTP=smtp.netcom.no
+Network=GPRS,CSD,WAPGPRS,WAPCSD
+; GPRS
+GPRS=NetCom GPRS
+APN=internet.netcom.no
+DNS1=212.45.188.43
+DNS2=212.45.188.44
+; CSD
+CSD=NetCom GSM
+CSD PhoneNumber=+4792000666
+CSD Username=netcom
+CSD Password=netcom
+; WAP GRPS
+WAPGPRS=NetCom WAP GPRS
+WAPGPRS APN=wap.netcom.no
+WAPGPRS Username=wap
+WAPGPRS Password=netcom
+WAPGPRS IP=10.254.254.10
+; WAP CSD
+WAPCSD=NetCom WAP
+WAPCSD Phonenumber=+4792000800
+WAPCSD Username=netcom
+WAPCSD Password=netcom
+WAPCSD IP=10.254.254.10
+
+[New World Internet]
+; HONG KONG
+IconIndex=-178
+CountryProvider=852
+HomeNetworkNumber=45410
+WAP Proxy=192.168.111.1:9201
+Network=GPRS,CSD,WAPGPRS,WAPCSD
+; GPRS
+GPRS=NW GPRS
+APN=internet
+DNS1=192.168.111.2
+DNS2=192.168.111.3
+; CSD
+CSD=NW CSD
+CSD PhoneNumber=178078
+; WAP GRPS
+WAPGPRS=NW WAP GPRS
+WAPGPRS APN=wap
+WAPGPRS IP=192.168.111.1
+; WAP CSD
+WAPCSD=NW WAP CSD
+WAPCSD Phonenumber=178078
+
+[Nitel]
+; NIGERIA
+CountryProvider=234
+HomeNetworkNumber=62140
+; GPRS
+GPRS=Nitel SAT3 GPRS
+APN=APN1.mtel.ng
+
+[O2 DE - Genion]
+; GERMANY
+IconIndex=-118
+CountryProvider=49
+HomeNetworkNumber=26207
+SMTP=mail.genion.de
+Network=GPRS,UMTS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=02 Genion GPRS
+APN=internet
+DNS1=195.182.96.28
+DNS2=195.182.96.61
+QOSMinimum=3,4,5,1,1
+GPRS SplCmd=1
+; UMTS
+UMTS=02 UMTS
+UMTS APN=surfo2
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=O2 WAP GPRS
+WAPGPRS APN=wap.viaginterkom.de
+WAPGPRS IP=195.182.114.52
+; WAP CSD
+WAPCSD=O2 WAP GSM
+WAPCSD Phonenumber=+4917946927
+WAPCSD Username=go@wap.de
+WAPCSD Password=02
+WAPCSD IP=193.96.115.33
+
+[O2 DE - Loop]
+; GERMANY
+IconIndex=-118
+CountryProvider=49
+HomeNetworkNumber=26207
+SMTP=mail.loop.de
+Network=GPRS,UMTS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=O2 LOOP GPRS
+APN=pinternet.interkom.de
+DNS1=195.182.96.28
+DNS2=195.182.96.61
+QOSMinimum=3,4,5,1,1
+GPRS SplCmd=1
+; UMTS
+UMTS=O2 UMTS
+UMTS APN=surfo2
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=O2 WAP GPRS
+WAPGPRS APN=pwap.interkom.de
+WAPGPRS IP=195.182.114.114
+; WAP CSD
+WAPCSD=O2 WAP GSM
+WAPCSD Phonenumber=+4917946927
+WAPCSD Username=go@wap.de
+WAPCSD Password=interkom
+WAPCSD IP=193.96.115.33
+
+[O2 IE]
+; IRELAND
+IconIndex=-118
+CountryProvider=353
+HomeNetworkNumber=27202
+SMTP=smtp.dol.ie
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=DOL GPRS
+APN=internet
+DNS1=62.40.32.33
+DNS2=62.40.32.34
+GPRS SplCmd=1
+; WAP GRPS
+WAPGPRS=DOL WAP GPRS
+WAPGPRS APN=wap.dol.ie
+WAPGPRS Username=user
+WAPGPRS Password=user123
+WAPGPRS IP=192.168.90.74
+
+[O2 UK]
+; UNITED KINGDOM
+IconIndex=-118
+CountryProvider=44
+HomeNetworkNumber=23410
+SMTP=smtp.O2.co.uk
+Network=GPRS,CSD,WAPGPRS
+; GPRS
+GPRS=O2 Mobile Web GPRS
+APN=mobile.o2.co.uk
+Username=Web
+Password=Password
+DNS1=193.113.200.200
+DNS2=193.113.200.201
+GPRS SplCmd=1
+; CSD
+CSD=O2 Mobile Web GSM Data
+CSD PhoneNumber=+447712932932
+CSD Username=Web
+CSD Password=Password
+; WAP GRPS
+WAPGPRS=02 WAP GPRS
+WAPGPRS APN=wap.O2.co.uk
+WAPGPRS Username=02wap
+WAPGPRS Password=password
+WAPGPRS IP=193.113.200.195
+
+[O2 UK]
+; SCOTLAND
+IconIndex=-118
+CountryProvider=44
+HomeNetworkNumber=23410
+SMTP=smtp.O2.co.uk
+Network=GPRS,CSD,WAPGPRS
+; GPRS
+GPRS=O2 Mobile Web GPRS
+APN=mobile.o2.co.uk
+Username=Web
+Password=Password
+DNS1=193.113.200.200
+DNS2=193.113.200.201
+GPRS SplCmd=1
+; CSD
+CSD=O2 Mobile Web GSM Data
+CSD PhoneNumber=+447712932932
+CSD Username=Web
+CSD Password=Password
+; WAP GRPS
+WAPGPRS=02 WAP GPRS
+WAPGPRS APN=wap.O2.co.uk
+WAPGPRS Username=02wap
+WAPGPRS Password=password
+WAPGPRS IP=193.113.200.195
+
+[Og Vodafone]
+; ICELAND
+IconIndex=-117
+CountryProvider=354
+HomeNetworkNumber=27402
+Network=GPRS
+; GPRS
+GPRS=Og Vodafone GPRS
+APN=gprs.is
+DNS1=193.4.194.2
+DNS2=193.4.194.5
+
+[Og Vodafone (TAL)]
+; ICELAND
+IconIndex=-202
+CountryProvider=354
+HomeNetworkNumber=27402
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Tal GPRS
+APN=dialin.tal
+; WAP GRPS
+WAPGPRS=Tal WAP GPRS
+WAPGPRS APN=dialin.tal
+WAPGPRS IP=10.30.0.250
+; WAP CSD
+WAPCSD=TAL WAP GSM Data
+WAPCSD Phonenumber=+3546919000
+WAPCSD Username=wap
+WAPCSD Password=wap
+WAPCSD IP=194.144.136.241
+
+[Oi]
+; BRAZIL
+IconIndex=-179
+CountryProvider=55
+HomeNetworkNumber=72431
+Network=GPRS
+; GPRS
+GPRS=Oi GPRS
+APN=gprs.oi.com.br
+
+[Oman Mobile]
+; OMAN
+IconIndex=-279
+CountryProvider=968
+HomeNetworkNumber=42202
+WAP Proxy=192.168.203.34
+Network=GPRS
+; GPRS
+GPRS=Oman Mobile GPRS
+APN=wap,internet
+Username=wap
+Password=wap
+
+[Omnitel LT]
+; LITHUANIA
+IconIndex=-180
+CountryProvider=370
+HomeNetworkNumber=24601
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Omnitel GPRS
+APN=gprs.omnitel.net
+DNS1=194.176.32.129
+DNS2=195.22.175.1
+; WAP GRPS
+WAPGPRS=Omnitel WAP GPRS
+WAPGPRS APN=gprs.startas.lt
+WAPGPRS Username=omni
+WAPGPRS Password=omni
+WAPGPRS IP=194.176.32.151
+; WAP CSD
+WAPCSD=Omnitel WAP
+WAPCSD Phonenumber=+37069860040
+WAPCSD Username=omni
+WAPCSD Password=omni
+WAPCSD IP=194.176.32.151
+
+[One]
+; AUSTRIA
+IconIndex=-281
+CountryProvider=43
+HomeNetworkNumber=23205
+SMTP=mail.i-one.at
+Network=GPRS,CSD,WAPGPRS,WAPCSD
+; GPRS
+GPRS=One GPRS
+APN=web.one.at
+Username=one
+Password=internet
+DNS1=194.24.128.100
+DNS2=194.24.128.102
+QOSRequested=0,0,3,0,0
+; CSD
+CSD=One GSM Data
+CSD PhoneNumber=+4369977500
+CSDUsernameNeeded=1
+CSDPasswordNeeded=1
+; WAP GRPS
+WAPGPRS=One WAP GPRS
+WAPGPRS APN=wap.one.at
+WAPGPRSUsernameNeeded=1
+WAPGPRSPasswordNeeded=1
+WAPGPRS IP=194.24.128.118
+; WAP CSD
+WAPCSD=One WAP
+WAPCSD Phonenumber=+4369977500
+WAPCSDUsernameNeeded=1
+WAPCSDPasswordNeeded=1
+WAPCSD IP=194.24.128.118
+
+[Orange CH]
+; SWITZERLAND
+IconIndex=-111
+CountryProvider=41
+HomeNetworkNumber=22803
+Network=GPRS,UMTS,WAPCSD
+; GPRS
+GPRS=Orange GPRS
+APN=internet
+DNS1=213.55.128.1
+DNS2=213.55.128.2
+; CSD
+CSD PhoneNumber=+41840780111
+CSD Username=orange
+CSD Password=internet
+; UMTS
+UMTS=Orange 3G
+UMTS APN=internet
+UMTS DNS1=213.55.128.1
+UMTS DNS2=213.55.128.2
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=Orange WAP GPRS
+WAPGPRS APN=wap
+WAPGPRS IP=192.168.10.2
+; WAP CSD
+WAPCSD=Orange WAP
+WAPCSD Phonenumber=+41787779999
+WAPCSD Username=orange
+WAPCSD Password=wap
+WAPCSD IP=164.128.70.115
+
+[Orange DO]
+; UNITED STATES
+IconIndex=-111
+CountryProvider=1
+HomeNetworkNumber=37001
+Network=GPRS
+; GPRS
+GPRS=Orange Net GPRS
+APN=orangenet.com.do
+
+[Orange F]
+; FRANCE
+IconIndex=-111
+CountryProvider=33
+HomeNetworkNumber=20801
+SMTP=smtp.orange.fr
+Network=GPRS,CSD,UMTS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Orange GPRS
+APN=orange, orange.fr
+Username=orange
+Password=orange
+DNS1=194.51.3.56
+DNS2=194.51.3.76
+GPRS SplCmd=1
+; CSD
+CSD=Orange GSM
+CSD PhoneNumber=+33674501200
+CSD Username=orange
+CSD Password=orange
+CSD ExtraDialString=+CBST=71,0,1
+; UMTS
+UMTS=Orange 3G
+UMTS APN=orange, orange.fr
+UMTS Username=orange
+UMTS Password=orange
+UMTS DNS1=194.51.3.56
+UMTS DNS2=194.51.3.76
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS APN=orange, orange.fr
+WAPGPRS Username=orange
+WAPGPRS Password=orange
+WAPGPRS IP=192.168.10.100:9201
+; WAP CSD
+WAPCSD Phonenumber=+33674501100
+WAPCSD Username=orange
+WAPCSD Password=orange
+WAPCSD IP=192.168.10.100:9201
+
+[Orange F PRO]
+; FRANCE
+IconIndex=-111
+CountryProvider=33
+HomeNetworkNumber=20801
+Network=GPRS,CSD,UMTS
+; GPRS
+GPRS=Orange Pro GPRS
+APN=orange-mib
+Username=mportail
+Password=mib
+GPRS SplCmd=1
+; CSD
+CSD=Orange Pro GSM
+CSD PhoneNumber=+33674501200
+CSD Username=orange
+CSD Password=orange
+CSD ExtraDialString=+CBST=71,0,1
+; UMTS
+UMTS=Orange Pro 3G
+UMTS APN=orange-mib
+UMTS SplCmd=1
+
+[Orange IL]
+; ISRAEL
+IconIndex=-111
+CountryProvider=972
+HomeNetworkNumber=42501
+Network=GPRS,UMTS
+; GPRS
+GPRS=Internet 3G
+APN=wap.orange.co.il
+GPRS SplCmd=1
+; UMTS
+UMTS=Internet 3G
+UMTS APN=uinternet
+UMTS Username=orange
+UMTS Password=mobile54
+UMTS SplCmd=1
+
+[Orange NL]
+; NETHERLANDS
+CountryProvider=31
+HomeNetworkNumber=20420
+WAP Proxy=10.250.255.188
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=Orange World internet
+APN=internet
+; WAP GRPS
+WAPGPRS=Orange World wap
+WAPGPRS APN=wap
+; MMS
+MMS WapGw=10.250.255.188
+MMS HTTPGw=wsp://wap.orange.nl/colour/
+
+[Orange PL]
+; ZAMBIA
+IconIndex=-111
+CountryProvider=260
+HomeNetworkNumber=2603
+Network=GPRS,UMTS
+; GPRS
+GPRS=Orange Internet
+APN=internet
+Username=internet
+Password=internet
+; UMTS
+UMTS=Orange Internet
+
+[Orange RO - Internet]
+; ROMANIA
+IconIndex=-111
+CountryProvider=40
+HomeNetworkNumber=22610
+Network=GPRS,CSD,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Orange GPRS
+APN=internet
+DNS1=172.22.7.20
+GPRS SplCmd=1
+; CSD
+CSD=Orange GSM Data
+CSD PhoneNumber=545
+CSD Username=internet
+CSD Password=orange
+; WAP GRPS
+WAPGPRS=Orange WAP GPRS
+WAPGPRS APN=wap
+WAPGPRSUsernameNeeded=1
+WAPGPRSPasswordNeeded=1
+WAPGPRS IP=62.217.247.2
+; WAP CSD
+WAPCSD=Orange WAP
+WAPCSD Phonenumber=+4094945440
+WAPCSDUsernameNeeded=1
+WAPCSDPasswordNeeded=1
+WAPCSD IP=62.217.247.252
+
+[Orange RO - Speed]
+; ROMANIA
+IconIndex=-111
+CountryProvider=40
+HomeNetworkNumber=22610
+Network=GPRS,CSD,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Orange GPRS
+APN=speed
+DNS1=172.22.7.20
+GPRS SplCmd=1
+; CSD
+CSD=Orange GSM Data
+CSD PhoneNumber=545
+CSD Username=internet
+CSD Password=orange
+; WAP GRPS
+WAPGPRS=Orange WAP GPRS
+WAPGPRS APN=wap
+WAPGPRSUsernameNeeded=1
+WAPGPRSPasswordNeeded=1
+WAPGPRS IP=63.327.247.252
+; WAP CSD
+WAPCSD=Orange WAP
+WAPCSD Phonenumber=+40744945440
+WAPCSDUsernameNeeded=1
+WAPCSDPasswordNeeded=1
+WAPCSD IP=193.231.167.252
+
+[Orange SK]
+; SLOVAKIA
+IconIndex=-111
+CountryProvider=421
+HomeNetworkNumber=23101
+Network=GPRS,CSD,WAPGPRS
+; GPRS
+GPRS=Orange GPRS
+APN=internet
+DNS1=213.151.200.3
+DNS2=195.12.140.130
+; CSD
+CSD=Orange CSD
+; WAP GRPS
+WAPGPRS=Orange World
+WAPGPRS APN=orangewap
+WAPGPRS Username=wap
+WAPGPRS Password=wap
+WAPGPRS IP=213.151.208.156
+; WAP CSD
+WAPCSD=Orange World GSM
+WAPCSD Phonenumber=+421905390390
+WAPCSDUsernameNeeded=1
+WAPCSDPasswordNeeded=1
+WAPCSD IP=192.168.1.1
+
+[Orange TH]
+; THAILAND
+IconIndex=-111
+CountryProvider=66
+HomeNetworkNumber=52099
+WAP Proxy=10.4.4.4:9201
+Network=GPRS,CSD,WAPGPRS
+; GPRS
+GPRS=Orange Internet
+APN=internet
+Username=orange
+Password=orange
+GPRS SplCmd=1
+; CSD
+CSD=Orange GSM Data
+CSD PhoneNumber=+6691009500
+CSD Username=orange
+CSD Password=orange
+; WAP GRPS
+WAPGPRS=Orange TH WAP
+WAPGPRS APN=wap
+WAPGPRS Username=orange
+WAPGPRS Password=orange
+
+[Orange UK]
+; UNITED KINGDOM
+IconIndex=-111
+CountryProvider=44
+HomeNetworkNumber=23433
+Network=GPRS,UMTS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Orange GPRS
+APN=orangeinternet
+DNS1=193.35.131.194
+GPRS SplCmd=1
+; UMTS
+UMTS=Orange 3G
+UMTS APN=orangeinternet
+UMTS DNS1=193.35.131.194
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=Orange WAP GPRS
+WAPGPRS APN=orangewap
+WAPGPRS IP=192.168.71.35
+; WAP CSD
+WAPCSD=Orange WAP
+WAPCSD Phonenumber=+447973100500
+WAPCSD Username=Orange
+WAPCSD Password=Multimedia
+WAPCSD IP=192.168.71.35
+
+[Orange UK]
+; SCOTLAND
+IconIndex=-111
+CountryProvider=44
+HomeNetworkNumber=23433
+Network=GPRS,UMTS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Orange GPRS
+APN=orangeinternet
+DNS1=193.35.131.194
+GPRS SplCmd=1
+; UMTS
+UMTS=Orange 3G
+UMTS APN=orangeinternet
+UMTS DNS1=193.35.131.194
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=Orange WAP GPRS
+WAPGPRS APN=orangewap
+WAPGPRS IP=192.168.71.35
+; WAP CSD
+WAPCSD=Orange WAP
+WAPCSD Phonenumber=+447973100500
+WAPCSD Username=Orange
+WAPCSD Password=Multimedia
+WAPCSD IP=192.168.71.35
+
+[Oskar Internet]
+; CZEC REPUBLIC
+IconIndex=-183
+CountryProvider=420
+HomeNetworkNumber=23003
+SMTP=smtp.mujoskar.cz
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Oskar GPRS
+APN=internet
+Username=internet
+Password=internet
+DNS1=217.77.161.131
+; WAP GRPS
+WAPGPRS=Oskar WAP GPRS
+WAPGPRS APN=wap
+WAPGPRS Username=wap
+WAPGPRS Password=wap
+WAPGPRS IP=10.11.10.11
+; WAP CSD
+WAPCSD=Oskar WAP
+WAPCSD Phonenumber=+420608989896
+WAPCSD Username=wap
+WAPCSD Password=wap
+WAPCSD IP=10.11.10.11
+
+[Oskar Ointernet]
+; CZEC REPUBLIC
+IconIndex=-183
+CountryProvider=420
+HomeNetworkNumber=23003
+SMTP=smtp.mujoskar.cz
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Oskar GPRS
+APN=ointernet
+Username=internet
+Password=internet
+DNS1=217.77.161.131
+; WAP GRPS
+WAPGPRS=Oskar WAP GPRS
+WAPGPRS APN=owap
+WAPGPRS Username=wap
+WAPGPRS Password=wap
+WAPGPRS IP=10.11.10.11
+; WAP CSD
+WAPCSD=Oskar WAP
+WAPCSD Phonenumber=+420608989896
+WAPCSD Username=wap
+WAPCSD Password=wap
+WAPCSD IP=10.11.10.11
+
+[P Optimus]
+; PORTUGAL
+IconIndex=-182
+CountryProvider=351
+HomeNetworkNumber=26803
+Network=GPRS,UMTS,WAPCSD
+; GPRS
+GPRS=Optimus GPRS
+APN=internet
+GPRS SplCmd=1
+; UMTS
+UMTS=Optimus UMTS
+UMTS APN=umts
+UMTS SplCmd=1
+; WAP CSD
+WAPCSD=Optimus WAP
+WAPCSD Phonenumber=+351931280000
+WAPCSD Username=optimus
+WAPCSD Password=wwwap
+WAPCSD IP=194.79.76.21
+
+[Pannon]
+; HUNGARY
+IconIndex=-184
+CountryProvider=36
+HomeNetworkNumber=21601
+SMTP=smtp.pannongsm.hu
+Network=GPRS,CSD,WAPGPRS
+; GPRS
+GPRS=Pannon Internet
+APN=Net
+DNS1=193.225.155.254
+DNS2=194.149.0.157
+; CSD
+CSD=Pannon Data
+CSD PhoneNumber=+36209000340
+; WAP GRPS
+WAPGPRS=Pannon GPRS WAP
+WAPGPRS APN=Wap
+
+[Peoples]
+; HONG KONG
+IconIndex=-185
+CountryProvider=852
+HomeNetworkNumber=45412
+WAP Proxy=172.31.31.36:9201
+WAP Secure Proxy=172.31.31.36:9203
+Network=GPRS,CSD,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Peoples GPRS
+APN=peoples.net
+QOSRequested=3,4,3,0,0
+; CSD
+CSD=Peoples CSD
+CSD PhoneNumber=170170
+CSD Username=ptc
+CSD Password=ptc
+; WAP GRPS
+WAPGPRS=Peoples WAP GPRS
+WAPGPRS APN=peoples.net
+; WAP CSD
+WAPCSD=Peoples WAP CSD
+WAPCSD Phonenumber=170170
+WAPCSD Username=ptc
+WAPCSD Password=ptc
+
+[Personal]
+; ARGENTINA
+IconFile=Personal argentina.ico
+IconIndex=-341
+CountryProvider=54
+HomeNetworkNumber=72234
+Network=GPRS
+; GPRS
+GPRS=Personal GPRS
+APN=gprs.personal.com
+Username=gprs
+Password=adgj
+
+[PGFree]
+; FINLAND
+IconIndex=-311
+CountryProvider=358
+HomeNetworkNumber=24409
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=PGFree GPRS
+APN=internet.pgfree.com
+DNS1=217.78.199.192
+DNS2=217.78.199.132
+; WAP GRPS
+WAPGPRS=PGFree WAP GPRS
+WAPGPRS APN=wap.pgfree.fi
+WAPGPRS IP=10.1.1.1
+; WAP CSD
+WAPCSD=PGFree WAP
+WAPCSD Phonenumber=+3584576099990
+WAPCSD IP=10.1.10.1
+
+[Plus]
+; POLAND
+IconIndex=-186
+CountryProvider=48
+HomeNetworkNumber=26001
+SMTP=mail.plusnet.pl
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Plus GPRS
+APN=www.plusgsm.pl
+; WAP GRPS
+WAPGPRS=Plus WAP GPRS
+WAPGPRS APN=wap.plusgsm.pl
+WAPGPRS IP=212.2.96.16
+; WAP CSD
+WAPCSD=Plus WAP GSM
+WAPCSD Phonenumber=+48601100234
+WAPCSD Username=plusgsm
+WAPCSD Password=plusgsm
+WAPCSD IP=212.2.96.16
+
+[Porthable]
+; PARAGUAY
+CountryProvider=595
+HomeNetworkNumber=74402
+Network=CSD
+; GPRS
+Username=mms
+Password=mms
+; CSD
+CSD=PORTHABLE
+CSD PhoneNumber=*667
+
+[Promonte]
+; YUGOSLAVIA
+IconIndex=-282
+CountryProvider=381
+HomeNetworkNumber=22002
+Network=WAPCSD
+; WAP CSD
+WAPCSD Phonenumber=+38169800801
+WAPCSD Username=pmi
+WAPCSD Password=pmipmi
+WAPCSD IP=192.168.2.11
+
+[Proximus]
+; BELGIUM
+IconIndex=-187
+CountryProvider=32
+HomeNetworkNumber=20601
+WAP Proxy=10.253.7.7:9201
+SMTP=relay.proximus.be
+Network=GPRS,UMTS,WAPGPRS
+; GPRS
+GPRS=Proximus GPRS
+APN=internet.proximus.be
+DNS1=195.238.2.21
+DNS2=195.238.2.22
+GPRS SplCmd=1
+; UMTS
+UMTS=Proximus 3G
+UMTS APN=internet.proximus.be
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=Proximus Wap
+WAPGPRS APN=wap.proximus.be
+WAPGPRS Username=wap
+WAPGPRS Password=wap
+
+[proXL]
+; INDONESIA
+CountryProvider=62
+HomeNetworkNumber=51011
+Network=GPRS
+; GPRS
+GPRS=proXL
+APN=www.xlgprs.net
+Username=xlgprs
+Password=proxl
+
+[Qtel]
+; QATAR
+IconFile=qtel qatar.ico
+IconIndex=-343
+CountryProvider=974
+HomeNetworkNumber=42701
+Network=GPRS
+; GPRS
+GPRS=Qtel
+APN=gprs.qtel
+Username=gprs
+Password=gprs
+
+[Qwest]
+; UNITED STATES
+CountryProvider=1
+HomeNetworkNumber=5461,6227,6037,5963,5351,4994,4928,4828
+SMTP Domain=qwestmp.com
+Network=CDMA
+; CDMA
+CDMA=Connect to your own ISP (AOL,MSN.....)
+
+[Reliance]
+; INDIA
+IconFile=reliance india.ico
+IconIndex=-344
+CountryProvider=91
+HomeNetworkNumber=14655
+Network=1xRTT
+; 1XRTT
+1xRTT=Reliance
+1xRTT PhoneNumber=#777
+
+[Rogers Wireless]
+; CANADA
+IconFile=rogerswireless canada.ico
+IconIndex=-345
+CountryProvider=107
+HomeNetworkNumber=30272
+SMTP Domain=pcs.rogers.com
+Network=GPRS
+; GPRS
+APN=internet.com
+Username=wapuser1
+Password=wap
+
+[Sabafon]
+; YEMEN
+IconIndex=-286
+CountryProvider=967
+HomeNetworkNumber=42101
+WAP Proxy=192.168.6.193:3128
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=Sabafon GPRS
+APN=internet
+Username=internet
+Password=internet
+; WAP GRPS
+WAPGPRS=Sabafon WAP
+WAPGPRS APN=wap
+WAPGPRS Username=wap
+WAPGPRS Password=wap
+WAPGPRS IP=192.168.30.174
+
+[Safaricom]
+; KENYA
+IconFile=safaricom kenya.ico
+IconIndex=-321
+CountryProvider=254
+HomeNetworkNumber=63902
+Network=GPRS,CSD
+; GPRS
+GPRS=Safaricom
+APN=safaricom
+Username=web@web.safaricom.com
+Password=web
+; CSD
+CSD=Safaricom CSD
+CSD PhoneNumber=951
+
+[SaskTel]
+; CANADA
+IconFile=sasktel canada.ico
+IconIndex=-346
+CountryProvider=107
+HomeNetworkNumber=16410, 16412
+Network=1xRTT
+; 1XRTT
+1xRTT=(High Speed Packet Data)
+1xRTT PhoneNumber=#777
+1xRTT Username=%MIN%@1x.stm.sk.ca
+
+[Sat-C]
+; INDONESIA
+IconIndex=-258
+CountryProvider=62
+HomeNetworkNumber=51001
+Network=GPRS
+; GPRS
+GPRS=Sat-C
+APN=satelindogprs.com
+
+[Saudi Telecom Company]
+; SAUDI ARABIA
+IconIndex=-190
+CountryProvider=966
+HomeNetworkNumber=42001
+Network=WAPCSD
+; WAP CSD
+WAPCSD=STC WAP
+WAPCSD Phonenumber=+99654005000
+WAPCSD Username=test
+WAPCSD Password=test
+WAPCSD IP=10.224.3.247
+
+[Scancom Areeba]
+; GHANA
+CountryProvider=233
+HomeNetworkNumber=62001
+Network=GPRS
+; GPRS
+GPRS=Areeba Internet
+APN=Internet.areeba.com.gh
+
+[Si.mobil - Internet Unlimited]
+; SLOVENIA
+IconIndex=-191
+CountryProvider=386
+HomeNetworkNumber=29340
+SMTP=smtp.simobil.net
+Network=GPRS
+; GPRS
+GPRS=Si.mobil GPRS
+APN=gprsunlim.simobil.si
+DNS1=80.95.225.230
+DNS2=80.95.225.231
+
+[SingTel]
+; SINGAPORE
+IconIndex=-192
+CountryProvider=65
+HomeNetworkNumber=52501,52502
+WAP Proxy=165.21.42.84:9201
+WAP Secure Proxy=165.21.42.84:9203
+Network=GPRS,CSD,WAPGPRS,WAPCSD
+; GPRS
+GPRS=SingTel GPRS
+APN=internet
+Username=65IDEAS
+Password=IDEAS
+DNS1=165.21.83.88
+DNS2=165.21.100.88
+; CSD
+CSD=SingTel GSM Data
+CSD PhoneNumber=+6596763338
+CSD Username=64IDEAS
+CSD Password=IDEAS
+; WAP GRPS
+WAPGPRS=IDEAS WAP GPRS
+WAPGPRS APN=e-ideas
+WAPGPRS Username=65IDEAS
+WAPGPRS Password=IDEAS
+; WAP CSD
+WAPCSD=e-ideas WAP CSD
+WAPCSD Phonenumber=+6596763330
+WAPCSD Username=65IDEAS
+WAPCSD Password=IDEAS
+
+[Smart]
+; PHILIPPINES
+IconIndex=-193
+CountryProvider=63
+HomeNetworkNumber=51503
+WAP Proxy=10.102.61.46:9201
+WAP Secure Proxy=10.102.61.46:9203
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Smart Internet
+APN=internet
+DNS1=202.57.96.3
+DNS2=202.57.96.4
+; WAP GRPS
+WAPGPRS=Smart WAP
+WAPGPRS APN=smart1
+WAPGPRS IP=10.102.61.46
+; WAP CSD
+WAPCSD=Smart WAP
+WAPCSD Phonenumber=+639198961000
+WAPCSD Username=smartwap
+WAPCSD Password=smartwap
+WAPCSD IP=10.102.61.46
+
+[SmarTone]
+; HONG KONG
+IconIndex=-194
+CountryProvider=852
+HomeNetworkNumber=45406
+WAP Proxy=10.9.9.9:9201
+Network=GPRS,CSD,WAPGPRS,WAPCSD
+; GPRS
+GPRS=SmarTone GPRS
+APN=SmarTone-Vodafone
+DNS1=202.140.96.51
+DNS2=202.140.96.52
+QOSRequested=3,4,3,0,0
+GPRS SplCmd=1
+; CSD
+CSD=SmarTone CSD
+CSD PhoneNumber=+85290100011
+; WAP GRPS
+WAPGPRS=SmarTone-Vodafone WAP
+WAPGPRS APN=SmarTone-Vodafone
+WAPGPRS DNS1=202.140.96.51
+WAPGPRS DNS2=202.140.96.52
+; WAP CSD
+WAPCSD=Smartone WAP
+WAPCSD Phonenumber=+85290100011
+WAPCSD IP=10.9.9.9
+
+[Smarts]
+; RUSSIA
+IconIndex=-312
+CountryProvider=7
+HomeNetworkNumber=25007
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=Smarts GPRS
+APN=internet.smarts.ru
+; WAP GRPS
+WAPGPRS=Smarts WAP GPRS
+WAPGPRS APN=wap.smarts.ru
+WAPGPRS Username=wap
+WAPGPRS Password=wap
+WAPGPRS IP=172.24.128.5
+; WAP CSD
+WAPCSD=Smarts WAP
+WAPCSD Phonenumber=+79023708090
+WAPCSD Username=wap
+WAPCSD IP=128.1.17.2
+
+[Sonera - internet]
+; FINLAND
+IconIndex=-195
+CountryProvider=358
+HomeNetworkNumber=24491
+Network=GPRS
+; GPRS
+GPRS=Sonera GPRS
+APN=internet
+DNS1=192.89.123.230
+DNS2=192.89.123.231
+; UMTS
+UMTS=Sonera 3G
+UMTS APN=internet
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=Sonera WAP GPRS
+WAPGPRS APN=wap.sonera.net
+WAPGPRS IP=195.156.25.4
+; WAP CSD
+WAPCSD Phonenumber=+3589424343
+WAPCSD Username=sunpoint
+WAPCSD Password=wap
+WAPCSD IP=195.218.69.86
+
+[Sonera - Prointernet]
+; FINLAND
+IconIndex=-195
+CountryProvider=358
+HomeNetworkNumber=24491
+Network=GPRS,UMTS
+; GPRS
+GPRS=Sonera GPRS
+APN=prointernet
+; UMTS
+UMTS=Sonera 3G
+UMTS APN=prointernet
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=Sonera WAP GPRS
+WAPGPRS APN=wap.sonera.net
+WAPGPRS IP=195.156.25.4
+; WAP CSD
+WAPCSD Phonenumber=+3589424343
+WAPCSD Username=sunpoint
+WAPCSD Password=wap
+WAPCSD IP=195.218.69.86
+
+[Sonofon]
+; DENMARK
+IconIndex=-196
+CountryProvider=45
+HomeNetworkNumber=23802
+SMTP=mail.sonofon.dk
+Network=GPRS,UMTS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Sonofon GPRS
+APN=internet
+Username=sonofon
+Password=sonofon
+DNS1=212.88.64.14
+DNS2=212.88.64.15
+; UMTS
+UMTS=Sonofon UMTS
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=Sonofon WAP GPRS
+WAPGPRS APN=internet
+WAPGPRS IP=212.88.64.8
+; WAP CSD
+WAPCSD=Sonofon WAP
+WAPCSD Phonenumber=+4540900089
+WAPCSD IP=212.88.64.8
+
+[Sprint]
+; UNITED STATES
+CountryProvider=1
+HomeNetworkNumber=4103,4106,4107,4120,4121,4124,4126,4132,4135,4139,4144,4145,4148,4151,4153,4155,4157,4159,4162,4164,4166,4168,4170,4171,4174,4180,4181,4183,4184,4186,4188,4190,4194,4195,4274,4376,4379,4384,4390,4396,4418,4622,4654,4694,4812,4982,5116,5142
+SMTP Domain=messaging.sprintpcs.com,gcd
+Network=1xRTT,CDMA
+; 1XRTT
+1xRTT=High speed (High Speed Packet Data)
+1xRTT PhoneNumber=#777
+1xRTT Warning=1
+; CDMA
+CDMA=Standard Internet connection (QNC)
+CDMA PhoneNumber=#777
+CDMA Password=qnc
+
+[StarHub]
+; SINGAPORE
+IconIndex=-197
+CountryProvider=65
+HomeNetworkNumber=52505
+WAP Proxy=10.12.1.80:9201
+SMTP=smtp.starhub.net.sg
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=StarHub GPRS
+APN=shwap
+DNS1=203.116.1.78
+DNS2=203.116.254.150
+GPRS SplCmd=1
+; WAP GRPS
+WAPGPRS=StarHub WAP GPRS
+WAPGPRS APN=shwap
+WAPGPRS IP=10.12.1.2
+; WAP CSD
+WAPCSD=StarHub WAP
+WAPCSD Phonenumber=+6598540070
+WAPCSD Username=star
+WAPCSD Password=hub
+WAPCSD IP=10.12.1.2
+
+[SUN]
+; PHILIPPINES
+IconFile=sun philippines.ico
+IconIndex=-347
+CountryProvider=63
+HomeNetworkNumber=51505
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=SUN Internet
+APN=minternet
+DNS1=202.138.128.28
+DNS2=202.138.128.2
+; WAP GRPS
+WAPGPRS=SUN WAP GPRS
+WAPGPRS APN=wap
+WAPGPRS IP=202.138.159.78
+; WAP CSD
+WAPCSD=SUN WAP CSD
+WAPCSD Phonenumber=+63922250
+WAPCSD Username=wap
+WAPCSD Password=wap
+WAPCSD IP=202.138.159.78
+
+[Sunday]
+; HONG KONG
+IconFile=sunday hong kong.ico
+IconIndex=-198
+CountryProvider=852
+HomeNetworkNumber=45416
+WAP Proxy=10.131.2.1:9201
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=Sunday GPRS
+APN=sgprs
+QOSRequested=3,4,3,0,0
+GPRS SplCmd=1
+; WAP GRPS
+WAPGPRS=Sunday WAP GPRS
+WAPGPRS APN=SGPRS
+WAPGPRS IP=10.131.2.1
+
+[Sunrise]
+; SWITZERLAND
+IconIndex=-199
+CountryProvider=41
+HomeNetworkNumber=22802
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Sunrise Internet
+APN=internet
+DNS1=212.35.35.35
+DNS2=212.35.35.5
+GPRS SplCmd=1
+; WAP GRPS
+WAPGPRS=Sunrise WAP GPRS
+WAPGPRS APN=wap.sunrise.ch
+WAPGPRS IP=212.35.34.70
+; WAP CSD
+WAPCSD=Sunrise WAP
+WAPCSD Phonenumber=+41763331111
+WAPCSD Username=wap
+WAPCSD Password=wap
+WAPCSD IP=212.35.34.70
+
+[Swisscom]
+; SWITZERLAND
+IconIndex=-201
+CountryProvider=41
+HomeNetworkNumber=22801
+WAP Proxy=192.168.210.1:9201
+Network=GPRS,UMTS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Swisscom GPRS
+APN=gprs.swisscom.ch
+DNS1=164.128.36.34
+DNS2=164.128.76.39
+; UMTS
+UMTS=Swisscom UMTS
+UMTS APN=gprs.swisscom.ch
+UMTS DNS1=164.128.36.34
+UMTS DNS2=164.128.76.39
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=Swisscom WAP GPRS
+WAPGPRS APN=gprs.swisscom.ch
+WAPGPRS IP=192.168.210.1
+; WAP CSD
+WAPCSD=Swisscom WAP GSM
+WAPCSD Phonenumber=+41794997039
+WAPCSD Username=wap
+WAPCSD Password=wap
+WAPCSD IP=192.168.210.1
+
+[Tango]
+; LUXEMBOURG
+IconIndex=-203
+CountryProvider=352
+HomeNetworkNumber=27077
+Network=GPRS,CSD,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Tango Internet
+APN=Internet
+Username=tango
+Password=tango
+; CSD
+CSD=Tango Internet GSM
+CSD PhoneNumber=+35227772777
+CSD Username=tango
+CSD Password=tango
+; WAP GRPS
+WAPGPRS=Tango WAP GPRS
+WAPGPRS APN=internet
+WAPGPRS Username=tango
+WAPGPRS Password=tango
+WAPGPRS IP=130.244.196.90
+; WAP CSD
+WAPCSD=Tango WAP
+WAPCSD Phonenumber=+352091927927
+WAPCSD Username=tango
+WAPCSD Password=tango
+WAPCSD IP=130.244.196.90
+
+[TATA]
+; INDIA
+CountryProvider=91
+HomeNetworkNumber=14844
+Network=1xRTT
+; 1XRTT
+1xRTT=TATA
+1xRTT PhoneNumber=#777
+1xRTT Username=internet
+1xRTT Password=internet
+
+[Telcel GSM]
+; MEXICO
+IconFile=telcel mexico.ico
+IconIndex=-348
+CountryProvider=52
+HomeNetworkNumber=33402
+Network=GPRS,CSD
+; GPRS
+GPRS=Telcel GPRS
+APN=internet.itelcel.com
+Username=webgprs
+Password=webgprs2002
+; CSD
+CSD PhoneNumber=*273
+CSD Username=iescsd
+CSD Password=iescsd2002
+
+[Tele Denmark]
+; DENMARK
+IconIndex=-204
+CountryProvider=45
+HomeNetworkNumber=23801
+Network=GPRS,UMTS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=TDC GPRS
+APN=internet
+; UMTS
+UMTS=TDC UMTS
+UMTS APN=internet
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=TDC WAP GPRS
+WAPGPRS APN=wap
+WAPGPRS IP=194.182.251.15
+; WAP CSD
+WAPCSD=TDC WAP
+WAPCSD Phonenumber=+4540390909
+WAPCSD Username=tdk
+WAPCSD Password=waptdk
+WAPCSD IP=194.182.251.15
+
+[Tele.Ring]
+; AUSTRIA
+IconIndex=-293
+CountryProvider=43
+HomeNetworkNumber=23207
+SMTP=smtp.telering.at
+Network=GPRS,CSD,WAPCSD
+; GPRS
+GPRS=Tele.ring GPRS
+APN=web
+Username=web@telering.at
+Password=web
+DNS1=212.95.31.11
+DNS2=212.95.31.35
+; CSD
+CSD=Tele.ring web 0650
+CSD PhoneNumber=+436507873638
+CSD Username=telering
+CSD Password=1012
+; WAP CSD
+WAPCSD=Tele.ring WAP
+WAPCSD Phonenumber=+4365009100000
+WAPCSD Username=wap@telering.at
+WAPCSD Password=wap
+WAPCSD IP=212.95.31.50
+
+[Tele2 Comviq]
+; SWEDEN
+IconIndex=-291
+CountryProvider=46
+HomeNetworkNumber=24007
+Network=GPRS,WAPGPRS
+; GPRS
+APN=isplnk1.swip.net
+Username=gprs
+Password=internet
+; WAP GRPS
+WAPGPRS APN=isplnk1.swip.net
+WAPGPRS Username=user
+WAPGPRS Password=user
+WAPGPRS IP=130.244.196.90
+
+[Tele2 EE]
+; ESTONIA
+IconIndex=-291
+CountryProvider=372
+HomeNetworkNumber=24802
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Tele2 GPRS
+APN=internet.tele2.ee
+; WAP GRPS
+WAPGPRS=Tele2 WAP GPRS
+WAPGPRS APN=internet.tele2.ee
+WAPGPRS IP=130.244.196.90
+; WAP CSD
+WAPCSD=Tele2 WAP GSM
+WAPCSD Phonenumber=+3725550007
+WAPCSD IP=130.244.196.90
+
+[Tele2 LT]
+; LITHUANIA
+IconIndex=-291
+CountryProvider=370
+HomeNetworkNumber=24603
+Network=GPRS
+; GPRS
+GPRS=Tele2 GPRS
+APN=internet.tele2.lt
+
+[Tele2 LV]
+; LATVIA
+IconIndex=-291
+CountryProvider=371
+HomeNetworkNumber=24702
+Network=GPRS,CSD,WAPCSD
+; GPRS
+GPRS=Tele2 GPRS
+APN=internet
+; CSD
+CSD=Tele2 GSM Data
+CSD PhoneNumber=+3719606660
+CSD Username=gsm
+CSD Password=gsm
+; WAP CSD
+WAPCSD=Tele2 WAP GSM
+WAPCSD Phonenumber=+3719606660
+WAPCSD Username=gsm
+WAPCSD Password=gsm
+WAPCSD IP=195.62.137.36
+
+[Telefonica Movistar]
+; SPAIN
+IconIndex=-221
+CountryProvider=34
+HomeNetworkNumber=21407
+SMTP=smtp.movistar.com
+Network=GPRS,CSD,UMTS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Movistar GPRS
+APN=movistar.es
+Username=MOVISTAR
+Password=MOVISTAR
+DNS1=194.179.1.100
+DNS2=194.179.1.101
+; CSD
+CSD=Movistar GSM
+CSD PhoneNumber=+34629000552
+; UMTS
+UMTS=Movistar UMTS
+UMTS APN=movistar.es
+UMTS Username=MOVISTAR
+UMTS Password=MOVISTAR
+UMTS DNS1=194.179.1.100
+UMTS DNS2=194.179.1.101
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=e-mocion WAP GPRS
+WAPGPRS APN=wap.movistar.es
+WAPGPRS Username=WAPTM
+WAPGPRS Password=WAPTM
+WAPGPRS IP=192.168.80.21
+; WAP CSD
+WAPCSD=e-mocion WAP
+WAPCSD Phonenumber=+34629000556
+WAPCSD Username=WAPTM
+WAPCSD Password=WAPTM
+WAPCSD IP=192.168.80.21
+
+[Telefonica Nicaragua]
+; NICARAGUA
+CountryProvider=505
+Network=1xRTT,CDMA
+; 1XRTT
+1xRTT=Movistar
+1xRTT PhoneNumber=#777a
+1xRTT Username=ESN@movistar.com.ni
+1xRTT Password=temn1212
+; CDMA
+CDMA=Connect to your own ISP (AOL,MSN.....)
+
+[Telekom Srbija]
+; YUGOSLAVIA
+CountryProvider=381
+HomeNetworkNumber=22003
+Network=WAPGPRS,WAPCSD
+; WAP GRPS
+WAPGPRS=Telekom Srbija WAP GPRS
+WAPGPRS APN=gprswap
+WAPGPRS Username=mts
+WAPGPRS Password=064
+WAPGPRS IP=217.17.85.131
+; WAP CSD
+WAPCSD=Telekom Srbija WAP
+WAPCSD Phonenumber=+38164770
+WAPCSD Username=mts
+WAPCSD Password=064
+WAPCSD IP=172.17.88.198
+
+[Telenor Mobil]
+; NORWAY
+IconIndex=-205
+CountryProvider=47
+HomeNetworkNumber=24201
+SMTP=smtp.mobilpost.com
+Network=GPRS,UMTS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Telenor GPRS/EDGE
+APN=internet
+DNS1=212.17.131.3
+; CSD
+CSD=Telenor GSM
+CSD PhoneNumber=+4791500920
+CSDUsernameNeeded=1
+CSDPasswordNeeded=1
+; UMTS
+UMTS=Telenor 3G
+UMTS APN=internet
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=Telenor WAP GPRS
+WAPGPRS APN=wap
+WAPGPRSUsernameNeeded=1
+WAPGPRSPasswordNeeded=1
+WAPGPRS IP=10.10.10.10:8080
+; WAP CSD
+WAPCSD=Telenor WAP
+WAPCSD Phonenumber=+4790002280
+WAPCSDUsernameNeeded=1
+WAPCSDPasswordNeeded=1
+WAPCSD IP=10.10.10.10
+
+[Telenor Mobil]
+; BOUVET ISLAND
+IconIndex=-205
+CountryProvider=47
+HomeNetworkNumber=24201
+SMTP=smtp.mobilpost.com
+Network=GPRS,UMTS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Telenor GPRS/EDGE
+APN=internet
+DNS1=212.17.131.3
+; CSD
+CSD=Telenor GSM
+CSD PhoneNumber=+4791500920
+CSDUsernameNeeded=1
+CSDPasswordNeeded=1
+; UMTS
+UMTS=Telenor 3G
+UMTS APN=internet
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=Telenor WAP GPRS
+WAPGPRS APN=wap
+WAPGPRSUsernameNeeded=1
+WAPGPRSPasswordNeeded=1
+WAPGPRS IP=10.10.10.10:8080
+; WAP CSD
+WAPCSD=Telenor WAP
+WAPCSD Phonenumber=+4790002280
+WAPCSDUsernameNeeded=1
+WAPCSDPasswordNeeded=1
+WAPCSD IP=10.10.10.10
+
+[Telenor PK]
+; PAKISTAN
+IconIndex=-292
+CountryProvider=92
+HomeNetworkNumber=41006
+WAP Proxy=172.18.19.11
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=Telenor
+APN=Internet
+Username=Telenor
+Password=Telenor
+; WAP GRPS
+WAPGPRS=Ufone WAP GPRS
+WAPGPRS APN=wap
+WAPGPRS Username=Telenor
+WAPGPRS Password=Telenor
+
+[Telfort]
+; NETHERLANDS
+IconIndex=-319
+CountryProvider=31
+HomeNetworkNumber=20412
+WAP Proxy=193.113.200.195
+SMTP=smtp.telfortmail.nl
+Network=GPRS,CSD,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Telfort Mobiel Internet
+APN=internet
+Username=telfortnl
+Password=password
+; CSD
+CSD=Telfort GSM
+CSD PhoneNumber=+31626000222
+CSD Username=telfort
+; WAP GRPS
+WAPGPRS=Telfort WAP GPRS
+WAPGPRS APN=internet
+; WAP CSD
+WAPCSD=Telfort WAP GSM
+WAPCSD Phonenumber=+31626000222
+WAPCSD Username=telfort
+
+[Telia DK]
+; DENMARK
+IconIndex=-208
+CountryProvider=45
+HomeNetworkNumber=23820,23830
+SMTP=mail.telia.com
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Telia Internet
+APN=www.internet.mtelia.dk
+Username=telia
+Password=1010
+; WAP GRPS
+WAPGPRS=Telia WAP GPRS
+WAPGPRS APN=wap.telia.dk
+WAPGPRS Username=telia
+WAPGPRS Password=1010
+WAPGPRS IP=62.44.158.29
+; WAP CSD
+WAPCSD=Telia WAP
+WAPCSD Phonenumber=+4528454927
+WAPCSD Username=telia
+WAPCSD Password=1010
+WAPCSD IP=62.44.158.29
+
+[Telia FI]
+; FINLAND
+IconIndex=-208
+CountryProvider=358
+HomeNetworkNumber=24403
+Network=GPRS,WAPCSD
+; GPRS
+GPRS=Telia GPRS
+APN=web.telia.fi
+DNS1=194.211.242.70
+; UMTS
+UMTS=Telia UMTS
+UMTS APN=web.telia.fi
+UMTS SplCmd=1
+; WAP CSD
+WAPCSD=Telia wAP
+WAPCSD Phonenumber=+35860041927
+WAPCSD Username=wap
+WAPCSD Password=wap
+WAPCSD IP=195.10.130.8
+
+[Telia Sweden]
+; SWEDEN
+IconIndex=-208
+CountryProvider=46
+HomeNetworkNumber=24001
+WAP Home URL=http://wap.telia.se
+Network=GPRS,UMTS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Telia GPRS
+APN=online.telia.se
+; UMTS
+UMTS=Telia 3G
+UMTS APN=online.telia.se
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS APN=online.telia.se
+WAPGPRS IP=10.254.254.154
+; WAP CSD
+WAPCSD Phonenumber=+46705960020
+WAPCSD IP=010.254.254.154
+
+[Telkomsel]
+; INDONESIA
+IconFile=telkomsel indonesia.ico
+IconIndex=-350
+CountryProvider=62
+HomeNetworkNumber=51010
+Network=GPRS
+; GPRS
+GPRS=Telkomsel GPRS
+APN=internet
+Username=wap
+Password=wap123
+
+[Telsim]
+; TURKEY
+IconIndex=-209
+CountryProvider=90
+HomeNetworkNumber=28602
+Network=GPRS,CSD,WAPCSD
+; GPRS
+GPRS=CEPGPRS
+APN=telsim
+; CSD
+CSD=CEPDATA CSD
+CSD PhoneNumber=+905427545000
+CSD Username=telsim
+CSD Password=telsim
+; WAP GRPS
+WAPGPRS=CEPWAP GPRS
+WAPGPRS APN=telsim
+WAPGPRS Username=telsim
+WAPGPRS Password=telsim
+WAPGPRS IP=212.65.136.226
+; WAP CSD
+WAPCSD=CEPWAP CSD
+WAPCSD Phonenumber=+905427545000
+WAPCSD Username=telsim
+WAPCSD Password=telsim
+WAPCSD IP=212.65.136.226
+
+[Telstra]
+; AUSTRALIA
+IconIndex=-210
+CountryProvider=61
+HomeNetworkNumber=50501
+HTTP Proxy=10.1.1.181:80
+Socks Proxy=10.1.1.181:1080
+WAP Proxy=10.1.1.181:80
+WAP Secure Proxy=10.1.1.181:80
+SMTP=mail.bigpond.com
+Network=GPRS,CSD,WAPCSD
+; GPRS
+GPRS=Telstra GPRS
+APN=telstra.wap
+; CSD
+CSD PhoneNumber=+61418707649
+; WAP CSD
+WAPCSD=Telstra WAP
+WAPCSD Phonenumber=+61418707649
+
+[Telstra CDMA]
+; AUSTRALIA
+IconIndex=-210
+CountryProvider=61
+HomeNetworkNumber=50501
+Network=CDMA
+; CDMA
+CDMA PhoneNumber=+61418707638
+CDMA Username=qncuser
+CDMA Password=ssqnc
+
+[Telus]
+; CANADA
+IconFile=Telus canada.ico
+IconIndex=-351
+CountryProvider=107
+HomeNetworkNumber=16422, 17500, 16438, 16458, 16436, 16434, 16384
+FourelleVenturi=1
+FourelleVenturiUIControl=1xRTT
+SMTP Domain=msg.telus.com
+Network=1xRTT,CDMA
+; 1XRTT
+1xRTT=(High Speed Packet Data)
+1xRTT PhoneNumber=#777
+1xRTT Username=%MIN%@1x.telusmobility.com
+; CDMA
+CDMA=Standard Wireless Internet Connection (CSD)
+CDMA PhoneNumber=#888
+CDMA Username=qnc
+CDMA Password=qnc
+
+[TIM]
+; ITALY
+IconIndex=-115
+CountryProvider=39
+HomeNetworkNumber=22201
+SMTP=mail.posta.tim.it
+Network=GPRS,CSD,UMTS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=TIM GPRS
+APN=ibox.tim.it
+; CSD
+CSD=TIM GSM
+CSD PhoneNumber=+393359009000
+; UMTS
+UMTS=TIM UMTS
+UMTS APN=ibox.tim.it
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=TIM WAP GPRS
+WAPGPRS APN=wap.tim.it
+WAPGPRS Username=waptim
+WAPGPRS Password=waptim
+WAPGPRS IP=213.26.205.1
+; WAP CSD
+WAPCSD=TIM WAP GSM
+WAPCSD Phonenumber=+393359009002
+WAPCSD Username=waptim
+WAPCSD Password=waptim
+WAPCSD IP=213.26.205.1
+
+[TIM Brasil]
+; BRAZIL
+IconIndex=-115
+CountryProvider=55
+HomeNetworkNumber=72403,72402,72404
+Network=GPRS
+; GPRS
+GPRS=TIM Connect Fast
+APN=tim.br
+Username=tim
+Password=tim
+
+[TIM GR]
+; GREECE
+IconIndex=-115
+CountryProvider=30
+HomeNetworkNumber=20210
+SMTP=mail.b-online.gr
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=TIM GPRS
+APN=gint.b-online.gr
+; WAP GRPS
+WAPGPRS=TIM WAP GPRS
+WAPGPRS APN=gwap.b-online.gr
+WAPGPRS Username=wap
+WAPGPRS Password=wap
+WAPGPRS IP=192.168.200.10
+; WAP CSD
+WAPCSD=TIM WAP GSM
+WAPCSD Phonenumber=+30935601271
+WAPCSD Username=wap
+WAPCSD Password=wap
+WAPCSD IP=192.168.200.10
+
+[TIME]
+; MALAYSIA
+IconIndex=-211
+CountryProvider=60
+HomeNetworkNumber=50217
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=TIMECel GPRS
+APN=timenett.com.my
+DNS1=203.121.16.85
+DNS2=203.121.16.120
+; WAP GRPS
+WAPGPRS=TIMEWAP GPRS
+WAPGPRS APN=timecel.com.my
+WAPGPRS IP=192.168.2.125
+; WAP CSD
+WAPCSD=TIMEWAP GSM
+WAPCSD Phonenumber=+60173870000
+WAPCSD Username=0173650000
+WAPCSD Password=123456
+WAPCSD IP=192.168.2.125
+
+[TKC]
+; IRAN
+IconIndex=-296
+CountryProvider=98
+HomeNetworkNumber=432
+Network=CSD
+; CSD
+CSD=TKC GSM Data
+CSD PhoneNumber=+987644423100
+
+[TMN]
+; PORTUGAL
+IconIndex=-212
+CountryProvider=351
+HomeNetworkNumber=26806
+Network=GPRS,UMTS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=TMN GPRS
+APN=internet
+; UMTS
+UMTS=TMN UMTS
+UMTS APN=internet
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=TMN WAP GPRS
+WAPGPRS APN=wap.tmn.pt
+WAPGPRS Username=tmn
+WAPGPRS Password=tmnnet
+WAPGPRS IP=172.30.2.2
+; WAP CSD
+WAPCSD=TMN WAP
+WAPCSD Phonenumber=+351962171000
+WAPCSD Username=tmn
+WAPCSD Password=tmnnet
+WAPCSD IP=172.30.2.2
+
+[T-Mobile A - Business GPRS]
+; AUSTRIA
+IconIndex=-119
+CountryProvider=43
+HomeNetworkNumber=23203
+SMTP=smtp.t-email.at
+Network=GPRS,CSD,UMTS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=T-Mobile Business GPRS
+APN=business.gprsinternet
+DNS1=213.162.64.1
+DNS2=213.162.64.2
+; CSD
+CSD=T-Mobile Business GSM
+CSD PhoneNumber=+43676235650
+CSDUsernameNeeded=1
+CSDPasswordNeeded=1
+; UMTS
+UMTS=T-Mobile Business UMTS
+UMTS APN=business.gprsinternet
+UMTS DNS1=213.162.64.1
+UMTS DNS2=213.162.64.2
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS APN=business.gprswap
+WAPGPRS IP=10.12.0.2
+; WAP CSD
+WAPCSD=T-mobile Business WAP GPRS
+WAPCSD Phonenumber=+4367623927
+WAPCSD IP=10.12.0.2
+
+[T-Mobile A - GPRS]
+; AUSTRIA
+IconIndex=-119
+CountryProvider=43
+HomeNetworkNumber=23203
+SMTP=smtp.t-email.at
+Network=GPRS,CSD,UMTS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=T-Mobile GPRS
+APN=gprsinternet
+DNS1=213.162.64.1
+DNS2=213.162.64.2
+; CSD
+CSD=T-Mobile GSM
+CSD PhoneNumber=+43676235650
+CSDUsernameNeeded=1
+CSDPasswordNeeded=1
+; UMTS
+UMTS=T-Mobile UMTS
+UMTS APN=gprsinternet
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=T-mobile WAP GPRS
+WAPGPRS APN=gprswap
+WAPGPRS IP=10.12.0.2
+; WAP CSD
+WAPCSD=T-mobile WAP
+WAPCSD Phonenumber=+4367623927
+WAPCSD IP=10.12.0.2
+
+[T-Mobile CZ]
+; CZEC REPUBLIC
+IconIndex=-119
+CountryProvider=420
+HomeNetworkNumber=23001
+WAP Proxy=10.0.0.10:9201
+SMTP=smtp.t-email.cz
+Network=GPRS,CSD,UMTS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=T-mobile GPRS
+APN=internet.t-mobile.cz
+DNS1=62.141.0.1
+DNS2=62.141.0.2
+; CSD
+CSD=T-mobile GSM
+CSD PhoneNumber=+420603124620
+; UMTS
+UMTS=T-mobile UMTS
+UMTS APN=internet.t-mobile.cz
+UMTS DNS1=62.141.0.1
+UMTS DNS2=62.141.0.2
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=t-zones WAP GPRS
+WAPGPRS APN=wap.t-mobile.cz
+WAPGPRS Username=wap
+WAPGPRS Password=wap
+WAPGPRS IP=10.0.0.10
+; WAP CSD
+WAPCSD=t-zones WAP GSM
+WAPCSD Phonenumber=+420603124927
+WAPCSD Username=wap
+WAPCSD Password=wap
+
+[T-Mobile D]
+; GERMANY
+IconIndex=-119
+CountryProvider=49
+HomeNetworkNumber=26201
+SMTP=smtp.t-email.de
+Network=GPRS,UMTS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=T-D1 GPRS
+APN=internet.t-d1.de
+Username=t-mobile
+Password=tm
+DNS1=193.254.160.1
+DNS2=193.254.160.130
+QOSRequested=0,0,3,0,0
+QOSMinimum=0,0,3,0,0
+; UMTS
+UMTS=T-D1 UMTS
+UMTS APN=internet.t-d1.de
+UMTS Username=t-mobile
+UMTS Password=tm
+UMTS DNS1=193.254.160.1
+UMTS DNS2=193.254.160.130
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=T-D1 W@P GPRS
+WAPGPRS APN=wap.t-d1.de
+WAPGPRS Username=t-mobile
+WAPGPRS Password=tm
+WAPGPRS IP=193.254.160.2
+; WAP CSD
+WAPCSD=T-D1 W@P
+WAPCSD Phonenumber=+491712524120
+WAPCSD Username=t-mobile
+WAPCSD Password=tm
+WAPCSD IP=193.254.160.2
+
+[T-Mobile H]
+; HUNGARY
+IconIndex=-119
+CountryProvider=36
+HomeNetworkNumber=21630
+SMTP=mail.westel900.net
+Network=GPRS,CSD,WAPGPRS
+; GPRS
+GPRS=T-Mobile GPRS
+APN=internet
+GPRSUsernameNeeded=1
+GPRSPasswordNeeded=1
+DNS1=194.176.224.1
+; CSD
+CSD=T-Mobile GSM
+CSD PhoneNumber=+36309301307
+CSDUsernameNeeded=1
+CSDPasswordNeeded=1
+; WAP GRPS
+WAPGPRS=T-Mobile WAP
+WAPGPRS APN=internet
+WAPGPRSUsernameNeeded=1
+WAPGPRSPasswordNeeded=1
+WAPGPRS IP=212.51.126.2
+
+[T-Mobile HR]
+; CROATIA
+IconIndex=-119
+CountryProvider=385
+HomeNetworkNumber=21901
+SMTP=mail.t-com.hr
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=T-Mobile GPRS
+APN=web.htgprs
+DNS1=10.12.0.1
+; WAP GRPS
+WAPGPRS=T-Mobile WAP GPRS
+WAPGPRS APN=www.htgprs.hr
+WAPGPRS IP=10.12.0.3
+; WAP CSD
+WAPCSD=T-Mobile WAP
+WAPCSD Phonenumber=+385981598000
+WAPCSD IP=10.12.0.3
+
+[T-Mobile NL]
+; NETHERLANDS
+IconIndex=-119
+CountryProvider=31
+HomeNetworkNumber=20416
+WAP Proxy=10.10.10.10
+SMTP=mail.t-mobile.nl
+Network=GPRS,UMTS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=T-Mobile GPRS
+APN=internet
+; UMTS
+UMTS=T-Mobile UMTS
+UMTS APN=internet
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=t-zones GPRS Wap
+WAPGPRS APN=wap
+WAPGPRS Username=tmobile
+WAPGPRS Password=tmobile
+; WAP CSD
+WAPCSD=t-zones GSM Wap
+WAPCSD Phonenumber=+31624000927
+WAPCSD Username=tmobile
+WAPCSD Password=tmobile
+WAPCSD IP=10.10.10.10
+
+[T-Mobile SK]
+; SLOVAKIA
+IconIndex=-119
+CountryProvider=421
+HomeNetworkNumber=23102
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=T-Mobile Internet
+APN=internet
+; WAP GRPS
+WAPGPRS=T-Mobile WAP GPRS
+WAPGPRS APN=wap
+WAPGPRS Username=wap
+WAPGPRS Password=wap
+WAPGPRS IP=192.168.1.1
+; WAP CSD
+WAPCSD=T-Mobile WAP GSM
+WAPCSD Phonenumber=+421903499099
+WAPCSD Username=wap
+WAPCSD Password=wap
+WAPCSD IP=192.168.1.1
+
+[T-Mobile UK]
+; UNITED KINGDOM
+IconIndex=-119
+CountryProvider=44
+HomeNetworkNumber=23430
+WAP Proxy=149.254.1.10:9201
+SMTP=smtp.t-email.co.uk
+Network=GPRS,CSD,WAPGPRS,WAPCSD
+; GPRS
+GPRS=T-Mobile GPRS
+APN=general.t-mobile.uk
+Username=user
+Password=one2one
+; CSD
+CSD=T-Mobile CSD
+CSD PhoneNumber=+447953968999
+CSD Username=user
+CSD Password=wap
+; WAP GRPS
+WAPGPRS=t-zones GPRS
+WAPGPRS APN=general.t-mobile.uk
+WAPGPRS Username=user
+WAPGPRS Password=one2one
+; WAP CSD
+WAPCSD=T-Mobile WAP
+WAPCSD Phonenumber=+447953968999
+WAPCSD Username=user
+WAPCSD Password=wap
+WAPCSD IP=149.254.1.10
+
+[T-Mobile UK]
+; SCOTLAND
+IconIndex=-119
+CountryProvider=44
+HomeNetworkNumber=23430
+WAP Proxy=149.254.1.10:9201
+SMTP=smtp.t-email.co.uk
+Network=GPRS,CSD,WAPGPRS,WAPCSD
+; GPRS
+GPRS=T-Mobile GPRS
+APN=general.t-mobile.uk
+Username=user
+Password=one2one
+; CSD
+CSD=T-Mobile CSD
+CSD PhoneNumber=+447953968999
+CSD Username=user
+CSD Password=wap
+; WAP GRPS
+WAPGPRS=t-zones GPRS
+WAPGPRS APN=general.t-mobile.uk
+WAPGPRS Username=user
+WAPGPRS Password=one2one
+; WAP CSD
+WAPCSD=T-Mobile WAP
+WAPCSD Phonenumber=+447953968999
+WAPCSD Username=user
+WAPCSD Password=wap
+WAPCSD IP=149.254.1.10
+
+[T-Mobile US]
+; UNITED STATES
+IconIndex=-119
+CountryProvider=1
+HomeNetworkNumber=31016,31020,31021,31022,31023,31024,31025,31026,31027,31031,31058,31066,31080
+SMTP Domain=tmomail.net
+Network=GPRS,CSD
+; GPRS
+GPRS=T-Mobile
+APN=internet3.voicestream.com,internet2.voicestream.com
+; CSD
+CSD=Connect to your own ISP (AOL,MSN....)
+
+[TMTouch]
+; MALAYSIA
+IconIndex=-213
+CountryProvider=60
+HomeNetworkNumber=50213
+Network=GPRS,WAPCSD
+; GPRS
+GPRS=TMTouch GPRS
+APN=internet
+DNS1=202.188.0.133
+; WAP CSD
+WAPCSD=TMTouch WAP
+WAPCSD Phonenumber=1338
+WAPCSD Username=tmwap
+WAPCSD Password=wap013
+WAPCSD IP=202.188.30.143
+
+[TransAsia]
+; TAIWAN
+IconIndex=-226
+CountryProvider=886
+HomeNetworkNumber=46699
+Network=GPRS
+; GPRS
+GPRS=TransAsia GPRS
+APN=internet
+
+[TSTT Trinidad & Tobago]
+; ARMENIA
+CountryProvider=374
+HomeNetworkNumber=37412
+Network=GPRS,CSD
+; GPRS
+GPRS=Internet Session
+APN=internet
+; CSD
+
+[Turkcell]
+; TURKEY
+IconIndex=-215
+CountryProvider=90
+HomeNetworkNumber=28601
+Network=GPRS,CSD,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Turkcell GPRS/EDGE
+APN=internet
+; CSD
+CSD=Turkcell GSM Data
+CSD PhoneNumber=+905327575222
+CSD Username=turkcell
+CSD Password=wap
+; WAP GRPS
+WAPGPRS=Turkcell WAP GPRS
+WAPGPRS APN=wap
+WAPGPRS Username=gprs
+WAPGPRS Password=gprs
+WAPGPRS IP=212.252.234.168
+; WAP CSD
+WAPCSD=Turkcell WAP CSD
+WAPCSD Phonenumber=+905327577111
+WAPCSD Username=turkcell
+WAPCSD Password=wap
+WAPCSD IP=212.252.234.168
+
+[TWN GSM]
+; TAIWAN
+IconIndex=-225
+CountryProvider=886
+HomeNetworkNumber=46697
+HTTP Proxy=10.1.1.1:8080
+WAP Proxy=10.1.1.1:9201
+Network=GPRS
+; GPRS
+GPRS=TWNGSM GPRS
+APN=internet
+
+[Ufone]
+; PAKISTAN
+IconIndex=-297
+CountryProvider=92
+HomeNetworkNumber=41003
+WAP Proxy=172.16.13.26
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=Ufone
+APN=ufone.internet
+; WAP GRPS
+WAPGPRS=Ufone WAP GPRS
+WAPGPRS APN=ufone.wap
+
+[UMC]
+; UKRAINE
+IconIndex=-314
+CountryProvider=380
+HomeNetworkNumber=65501,38050,38095,38066
+WAP Proxy=192.168.10.10:8080
+SMTP=smtp.umc.ua
+Network=GPRS,CSD,WAPGPRS,WAPCSD
+; GPRS
+GPRS=UMC NET GPRS
+APN=www.umc.ua
+; CSD
+CSD=UMC NET CSD
+CSD PhoneNumber=955
+; WAP GRPS
+WAPGPRS=UMC WAP GPRS
+WAPGPRS APN=wap.umc.ua
+WAPGPRS IP=192.168.10.10
+; WAP CSD
+WAPCSD=UMC WAP CSD
+WAPCSD Phonenumber=950
+WAPCSD IP=192.168.10.10
+
+[UNEFON]
+; MEXICO
+IconFile=unefon mexico.ico
+IconIndex=-352
+CountryProvider=52
+Network=1xRTT
+; 1XRTT
+1xRTT=UNEFON
+1xRTT PhoneNumber=#777
+1xRTT Username=MDN@sip.unefondata.com
+1xRTT Password=sip"MDN"
+1xRTT DNS1=10.9.60.129
+1xRTT DNS2=10.9.60.130
+
+[Unifon]
+; ARGENTINA
+CountryProvider=54
+HomeNetworkNumber=72207
+Network=GPRS
+; GPRS
+GPRS=Unifon GPRS
+APN=internet.gprs.unifon.com.ar
+Username=wap
+Password=wap
+
+[Unitel]
+; UZBEKISTAN
+IconFile=unitel uzbekistan.ico
+IconIndex=-353
+CountryProvider=998
+HomeNetworkNumber=43404
+Network=WAPCSD
+; WAP CSD
+WAPCSD=Unitel WAP
+WAPCSD Phonenumber=*927
+WAPCSD IP=10.10.0.10
+
+[US Cellular US]
+; UNITED STATES
+CountryProvider=1
+HomeNetworkNumber=193,217,221,246,309,331,393,413,445,599,1061,1075,1173,1175,1213,1219,1223,1228,1229,1272,1399,1403,1406,1419,1425,1427,1484,1541,1574,1595,1607,1610,1643,1729,1779,1784,1794,1802,1819,1821,1881,1914,1983,2141,4112,5911,1784,1794,1802,1819,1821,1881,1914,1983,2141,4112,5911
+SMTP Domain=email.uscc.net
+Network=1xRTT,CDMA
+; 1XRTT
+1xRTT=High Speed Wireless Internet (High Speed Packet Data)
+1xRTT PhoneNumber=#777
+1xRTT Username=%MIN%@uscc.net
+; CDMA
+CDMA=Connect to your own ISP (AOL,MSN.....)
+
+[USI]
+; RUSSIA
+IconIndex=-315
+CountryProvider=7
+HomeNetworkNumber=25039
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=USI GPRS
+APN=internet.usi.ri
+; WAP GRPS
+WAPGPRS=USI GPRS Wap
+WAPGPRS APN=wap.usi.ru
+WAPGPRS IP=192.168.168.192
+
+[Velcom GPRS]
+; BELARUS
+IconIndex=-277
+CountryProvider=375
+HomeNetworkNumber=25701
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=Velcom GPRS Web
+APN=web.velcom.by
+Username=web
+Password=web
+; WAP GRPS
+WAPGPRS=Velcom GPRS Wap
+WAPGPRS APN=wap.velcom.by
+WAPGPRS Username=wap
+WAPGPRS Password=wap
+WAPGPRS IP=212.98.161.170
+
+[Velcom GPRS Plus]
+; BELARUS
+IconIndex=-277
+CountryProvider=375
+HomeNetworkNumber=25701
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=Velcom GPRS Web Plus
+APN=plus.velcom.by
+Username=plus
+Password=plus
+; WAP GRPS
+WAPGPRS=Velcom GPRS Wap
+WAPGPRS APN=wap.velcom.by
+WAPGPRS Username=wap
+WAPGPRS Password=wap
+WAPGPRS IP=212.98.161.170
+
+[Verizon]
+; UNITED STATES
+IconIndex=-223
+CountryProvider=1
+HomeNetworkNumber=2,4,5,6,8,12,15,17,18,20,21,22,26,28,30,32,33,37,40,41,48,51,56,58,59,60,64,65,69,73,75,78,80,86,92,93,94,95,96,104,107,110,204,205,208,212,214,216,218,220,222,224,226,228,240,241,244,249,250,251,254,256,260,262,266,271,272,276,281,284,286,294,298,299,300,303,312,313,316,318,319,323,324,325,328,329,330,340,342,344,348,349,364,370,371,374,376,377,384,386,389,392,396,404,417,425,428,436,443,447,451,462,463,465,482,484,486,490,498,502,506,528,529,530,532,534,539,559,574,579,580,589,595,601,1005,1015,1024,1026,1028,1030,1034,1059,1064,1080,1083,1086,1088,1094,1101,1129,1139,1145,1151,1153,1155,1164,1174,1178,1180,1189,1200,1211,1214,1215,1216,1220,1227,1232,1235,1237,1280,1290,1299,1313,1314,1315,1317,1318,1320,1333,1337,1350,1367,1370,1373,1379,1383,1385,1394,1400,1403,1406,1419,1466,1473,1474,1484,1499,1500,1504,1506,1508,1510,1516,1522,1525,1528,1530,1532,1534,1536,1538,1540,1541,1542,1544,1545,1546,1548,1559,1563,1567,1574,1580,1582,1595,1607,1610,1620,1661,1696,1703,1707,1709,1711,1729,1740,1741,1742,1749,1760,1776,1784,1787,1794,1802,1824,1826,1827,1828,1830,1868,1876,1904,1914,1932,1973,1976,2004,2042,2058,2072,2094,2115,2119,2141,3006,3086,3102,4097,4119,4138,4152,4154,4160,4182,4192,4198,4500,5034,6047,8863,16474,17500,24577,24587,24589,24591,24593,24615,24647,24649,24651,24677,24679,24681,24685,24749,24799,24801,26883,30996
+FourelleVenturi=1
+FourelleVenturiUIControl=1xRTT
+SMTP Domain=vzwpix.com,att
+Network=CSD,1xRTT,CDMA
+; CSD
+CSD=Connect to your own ISP (AOL,MSN.....)
+; 1XRTT
+1xRTT=Express Network (High Speed Packet Data)
+1xRTT PhoneNumber=#777
+1xRTT Username=%MIN%@vzw3g.com
+1xRTT Password=vzw
+1xRTT Warning=1
+; CDMA
+CDMA=Quick 2 Net (QNC)
+CDMA PhoneNumber=#762
+CDMA Username=qnc
+CDMA Password=qnc
+CDMA Warning=2
+
+[Vibo (3G)]
+; TAIWAN
+IconIndex=-149
+CountryProvider=886
+HomeNetworkNumber=46689
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Vibo GPRS
+APN=fetnet01
+; WAP GRPS
+WAPGPRS=Vibo WAP
+WAPGPRS APN=internet
+; WAP CSD
+WAPCSD=FarEastone WAP
+WAPCSD Phonenumber=+886936010010
+WAPCSD Username=SGPST
+WAPCSD Password=SGPST
+WAPCSD IP=210.241.201.80
+
+[VIPnet - GPRS 0]
+; CROATIA
+IconIndex=-217
+CountryProvider=385
+HomeNetworkNumber=21910
+SMTP=mail.vip.hr
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=VIP GPRS 0
+APN=gprs0.vipnet.hr
+Username=38591
+Password=38591
+DNS1=212.91.97.3
+DNS2=212.91.97.4
+; WAP GRPS
+WAPGPRS=VIP.WAP GPRS 0
+WAPGPRS APN=gprs0.vipnet.hr
+WAPGPRS Username=38591
+WAPGPRS Password=38591
+WAPGPRS IP=212.91.99.91
+; WAP CSD
+WAPCSD=VIP.WAP
+WAPCSD Phonenumber=+385917122222
+WAPCSD Username=38591
+WAPCSD Password=38591
+WAPCSD IP=212.91.99.91
+
+[VIPnet - GPRS 10]
+; CROATIA
+IconIndex=-217
+CountryProvider=385
+HomeNetworkNumber=21910
+SMTP=mail.vip.hr
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=VIP GPRS 10
+APN=gprs10.vipnet.hr
+Username=38591
+Password=38591
+DNS1=212.91.97.3
+DNS2=212.91.97.4
+; WAP GRPS
+WAPGPRS=VIP.WAP GPRS 10
+WAPGPRS APN=gprs10.vipnet.hr
+WAPGPRS Username=38591
+WAPGPRS Password=38591
+WAPGPRS IP=212.91.99.91
+; WAP CSD
+WAPCSD=VIP.WAP
+WAPCSD Phonenumber=+385917122222
+WAPCSD Username=38591
+WAPCSD Password=38591
+WAPCSD IP=212.91.99.91
+
+[VIPnet - GPRS 5]
+; CROATIA
+IconIndex=-217
+CountryProvider=385
+HomeNetworkNumber=21910
+SMTP=mail.vip.hr
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=VIP GPRS 5
+APN=gprs5.vipnet.hr
+Username=38591
+Password=38591
+DNS1=212.91.97.3
+DNS2=212.91.97.4
+; WAP GRPS
+WAPGPRS=VIP.WAP GPRS 5
+WAPGPRS APN=gprs5.vipnet.hr
+WAPGPRS Username=38591
+WAPGPRS Password=38591
+WAPGPRS IP=212.91.99.91
+; WAP CSD
+WAPCSD=VIP.WAP
+WAPCSD Phonenumber=+385917122222
+WAPCSD Username=38591
+WAPCSD Password=38591
+WAPCSD IP=212.91.99.91
+
+[Vivacell]
+; ARMENIA
+CountryProvider=374
+HomeNetworkNumber=28304
+; GPRS
+GPRS=Vivacell GPRS
+APN=inet.vivacell.am
+
+[Vivatel]
+; BULGARIA
+CountryProvider=359
+HomeNetworkNumber=28403
+Network=GPRS,CSD
+; GPRS
+GPRS=Vivatel GPRS
+APN=internet.vivatel.bg
+; CSD
+CSD=Vivatel CSD
+CSD PhoneNumber=+359871000
+
+[Vivatel MMS]
+; BULGARIA
+CountryProvider=359
+HomeNetworkNumber=28403
+Network=GPRS
+; GPRS
+GPRS=Vivatel MMS GPRS
+APN=mms.vivatel.bg
+Username=mms
+Password=mms
+; MMS
+MMS Center=http://mmsc.vivatel.bg
+MMS WapGw=192.168.123.123
+
+[Vivo CDMA]
+; BRAZIL
+IconIndex=-128
+CountryProvider=55
+Network=1xRTT
+; 1XRTT
+1xRTT=High Speed Wireless Internet (High Speed Packet Data)
+1xRTT PhoneNumber=#777
+1xRTTUsernameNeeded=1
+1xRTTPasswordNeeded=1
+
+[Vmobile]
+; NIGERIA
+IconIndex=-320
+CountryProvider=234
+HomeNetworkNumber=62120
+Network=WAPCSD
+; CSD
+CSD=Vactive WAP CSD
+; WAP CSD
+WAPCSD Phonenumber=+2348022981000
+WAPCSD Username=wap
+WAPCSD Password=wap
+WAPCSD IP=172.18.254.5
+
+[Vodacom]
+; SOUTH AFRICA
+IconIndex=-232
+CountryProvider=27
+HomeNetworkNumber=65501
+Network=GPRS,CSD
+; GPRS
+GPRS=Vodacom4me GPRS
+APN=internet
+; CSD
+CSD=Vodacom4me CSD
+CSD PhoneNumber=+27822491000
+CSD Username=vodacom
+CSD Password=vodacom
+; WAP GRPS
+WAPGPRS APN=internet
+WAPGPRS IP=196.41.143.33
+; WAP CSD
+WAPCSD Phonenumber=+27822491000
+WAPCSD IP=196.41.143.33
+
+[Vodacom Congo]
+; CONGO, THE DEMOCRATIC REPUBLIC
+IconIndex=-232
+CountryProvider=243
+HomeNetworkNumber=63001
+Network=GPRS
+; GPRS
+GPRS=Vodanet
+APN=vodanet
+
+[Vodafone - GPRS Plus]
+; SLOVENIA
+IconIndex=-191
+CountryProvider=386
+HomeNetworkNumber=29340
+SMTP=smtp.simobil.net
+Network=GPRS
+; GPRS
+GPRS=Si.mobil GPRS
+APN=gprsplus.simobil.si
+DNS1=80.95.225.230
+DNS2=80.95.225.231
+
+[Vodafone Albania]
+; ALBANIA
+IconIndex=-117
+CountryProvider=355
+HomeNetworkNumber=27602
+Network=GPRS
+; GPRS
+GPRS=Vodafone Albania
+APN=vfalgprs
+
+[Vodafone AU]
+; AUSTRALIA
+IconIndex=-117
+CountryProvider=61
+HomeNetworkNumber=50503
+WAP Proxy=10.202.2.60:9201
+Network=GPRS,CSD,UMTS,WAPGPRS
+; GPRS
+GPRS=Vodafone GPRS
+APN=vfinternet.au
+; CSD
+CSD=Vodafone CSD
+CSD PhoneNumber=+61414131313
+CSD Username=myvfuser
+; UMTS
+UMTS=Vodafone 3G
+UMTS APN=vfinternet.au
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=Vodafone WAP
+WAPGPRS APN=live.vodafone.com
+
+[Vodafone DE]
+; GERMANY
+IconIndex=-117
+CountryProvider=49
+HomeNetworkNumber=26202
+WAP Proxy=139.7.29.1
+SMTP=smtp.D2mail.de
+Network=GPRS,CSD,UMTS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Vodafone DE GPRS
+APN=web.vodafone.de
+DNS1=139.7.30.125
+DNS2=139.7.30.126
+; CSD
+CSD=Vodafone DE GSM
+CSD PhoneNumber=+49172229000
+CSD DNS1=139.7.30.125
+CSD DNS2=139.7.30.126
+; UMTS
+UMTS=Vodafone 3G
+UMTS APN=web.vodafone.de
+UMTS DNS1=139.7.30.125
+UMTS DNS2=139.7.30.126
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=Vodafone Live! GPRS
+WAPGPRS APN=wap.vodafone.de
+WAPGPRS Username=d2
+WAPGPRS Password=wap
+WAPGPRS IP=139.7.29.1
+; WAP CSD
+WAPCSD=Vodafone Live! CSD
+WAPCSD Phonenumber=+491722290100
+WAPCSD IP=139.7.29.1
+
+[Vodafone EG]
+; EGYPT
+IconIndex=-117
+CountryProvider=20
+HomeNetworkNumber=60202
+Network=GPRS
+; GPRS
+GPRS=Vodafone GPRS
+APN=internet.vodafone.net
+Username=internet
+Password=internet
+
+[Vodafone ES]
+; SPAIN
+IconIndex=-117
+CountryProvider=34
+HomeNetworkNumber=21401
+Network=GPRS,UMTS,WAPGPRS
+; GPRS
+GPRS=Vodafone GPRS
+APN=airtelnet.es
+Username=vodafone
+Password=vodafone
+DNS1=212.73.32.3
+DNS2=212.73.32.67
+; UMTS
+UMTS=Vodafone 3G
+UMTS APN=airtelnet.es
+UMTS Username=vodafone
+UMTS Password=vodafone
+UMTS DNS1=212.73.32.3
+UMTS DNS2=212.73.32.67
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=Vodafone WAP GPRS
+WAPGPRS APN=wap.airtelvodafone.com
+WAPGPRS Username=wap
+WAPGPRS Password=wap125
+WAPGPRS IP=212.73.32.10
+; WAP CSD
+WAPCSD=Vodafone WAP
+WAPCSD Phonenumber=+34607100300
+WAPCSD Username=wap
+WAPCSD Password=wap125
+WAPCSD IP=212.73.32.10
+
+[Vodafone GR]
+; GREECE
+IconIndex=-117
+CountryProvider=30
+HomeNetworkNumber=20205
+Network=GPRS
+; GPRS
+GPRS=Vodafone GPRS
+APN=internet.vodafone.gr
+DNS1=213.249.17.10
+DNS2=213.249.17.11
+; UMTS
+UMTS=Vodafone 3G
+
+[Vodafone HU]
+; HUNGARY
+IconIndex=-117
+CountryProvider=36
+HomeNetworkNumber=21670
+Network=GPRS
+; GPRS
+GPRS=Vodafone GPRS
+APN=internet.vodafone.net
+
+[Vodafone IE]
+; IRELAND
+IconIndex=-113
+CountryProvider=353
+HomeNetworkNumber=27201
+SMTP=mail.vodafone.ie
+Network=GPRS,UMTS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Vodafone GPRS
+APN=isp.vodafone.ie
+GPRSUsernameNeeded=1
+GPRSPasswordNeeded=1
+DNS1=213.233.128.1
+DNS2=213.233.128.19
+; CSD
+CSD=Voda ISP CSD
+CSD PhoneNumber=+35387620222
+CSD Username=dublin
+CSD Password=dublin
+; UMTS
+UMTS=Vodafone 3G
+UMTS APN=isp.vodafone.ie
+UMTS DNS1=213.233.128.1
+UMTS DNS2=213.233.128.19
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=Vodafone WAP
+WAPGPRS APN=Wap.vodafone.ie
+WAPGPRS IP=10.24.59.100:8080
+; WAP CSD
+WAPCSD=Vodafone Home
+WAPCSD Phonenumber=+353872292222
+WAPCSD Username=dublin
+WAPCSD Password=dublin
+WAPCSD IP=10.24.59.100:8080
+
+[Vodafone IT]
+; ITALY
+IconIndex=-117
+CountryProvider=39
+HomeNetworkNumber=22210
+SMTP=smtpmail.vodafone.it
+Network=GPRS,CSD,UMTS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Vodafone GPRS
+APN=web.omnitel.it
+QOSRequested=2,4,3,6,31
+; CSD
+CSD=Vodafone GSM
+CSD PhoneNumber=+393492002800
+CSDUsernameNeeded=1
+CSDPasswordNeeded=1
+; UMTS
+UMTS=Vodafone 3G
+UMTS APN=web.omnitel.it
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=WAP VO GPRS
+WAPGPRS APN=wap.omnitel.it
+WAPGPRS IP=10.128.201.76
+; WAP CSD
+WAPCSD=WAP VO GSM
+WAPCSD Phonenumber=+393492002821
+WAPCSD IP=10.128.201.76
+
+[Vodafone J]
+; JAPAN
+IconIndex=-117
+CountryProvider=81
+HomeNetworkNumber=44020
+Network=GPRS,UMTS,WAPGPRS
+; GPRS
+GPRS=Vodafone GPRS
+APN=vodafone
+Username=ai@vodafone
+Password=vodafone
+; UMTS
+UMTS=Vodafone 3G
+UMTS APN=vodafone
+UMTS Username=ai@vodafone
+UMTS Password=vodafone
+; WAP GPRS
+
+[Vodafone ML]
+; MALTA
+IconIndex=-117
+CountryProvider=356
+HomeNetworkNumber=27801
+Network=GPRS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Vodafone Office
+APN=internet
+Username=internet
+Password=internet
+DNS1=80.85.96.131
+DNS2=80.85.97.70
+; WAP GRPS
+WAPGPRS=Vodafone WAP GPRS
+WAPGPRS APN=wap.vodafone.com.mt
+WAPGPRS IP=10.12.0.2
+; WAP CSD
+WAPCSD=VOdafone WAP
+WAPCSD Phonenumber=+35699830927
+WAPCSD IP=10.12.0.2
+
+[Vodafone MMS IE]
+; IRELAND
+IconIndex=-113
+CountryProvider=353
+HomeNetworkNumber=27201
+Network=GPRS
+; GPRS
+APN=mms.vodafone.net
+Username=dublin
+Password=dublin
+GPRS SplCmd=1
+; MMS
+MMS Center=http://www.vodafone.ie/mms
+MMS WapGw=10.24.59.200
+
+[Vodafone MMS P]
+; PORTUGAL
+IconIndex=-117
+CountryProvider=351
+HomeNetworkNumber=26801
+SMTP=mms.vodafone.pt
+Network=GPRS
+; GPRS
+GPRS=Vodafone P MMS
+APN=vas.vodafone.pt
+Username=vas
+Password=vas
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mms/servlets/mms
+MMS WapGw=213.30.27.63
+
+[Vodafone NL]
+; NETHERLANDS
+IconIndex=-117
+CountryProvider=31
+HomeNetworkNumber=20404
+WAP Proxy=192.168.251.150
+Network=GPRS,UMTS,WAPGPRS
+; GPRS
+GPRS=Vodafone GPRS
+APN=live.vodafone.com
+Username=vodafone
+Password=vodafone
+; UMTS
+UMTS=Vodafone 3G
+UMTS APN=office.vodafone.nl
+UMTS Username=vodafone
+UMTS Password=vodafone
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=Vodafone Live!
+WAPGPRS APN=live.vodafone.com
+WAPGPRS Username=vodafone
+WAPGPRS Password=vodafone
+
+[Vodafone NZ]
+; NEW ZEALAND
+IconIndex=-117
+CountryProvider=64
+HomeNetworkNumber=53001
+WAP Proxy=172.30.38.3:9201
+SMTP=smtp.vodafone.net.nz
+Network=GPRS,UMTS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Vodafone GPRS
+APN=www.vodafone.net.nz
+DNS1=202.20.93.10
+DNS2=203.97.191.189
+; CSD
+CSD=Vodafone GSM Data
+CSD PhoneNumber=+6421700747
+CSD Username=voda
+CSD Password=fone
+; UMTS
+UMTS=Vodafone 3G
+UMTS APN=www.vodafone.net.nz
+UMTS DNS1=202.20.93.10
+UMTS DNS2=203.97.191.189
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=Vodafone WAP GPRS
+WAPGPRS APN=live.vodafone.com
+WAPGPRS IP=172.30.38.3
+; WAP CSD
+WAPCSD=Vodafone WAP
+WAPCSD Phonenumber=+6421700747
+WAPCSD Username=voda
+WAPCSD Password=fone
+WAPCSD IP=172.30.38.3
+
+[Vodafone P]
+; PORTUGAL
+IconIndex=-117
+CountryProvider=351
+HomeNetworkNumber=26801
+Network=GPRS,UMTS,WAPGPRS
+; GPRS
+GPRS=Vodafone GPRS
+APN=internet.vodafone.pt
+Username=vodafone
+Password=vodafone
+; CSD
+CSD=Vodafone GSM Data
+; UMTS
+UMTS=Vodafone 3G
+UMTS APN=internet.vodafone.pt
+UMTS Username=vodafone
+UMTS Password=vodafone
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=Vodafone WAP GPRS
+WAPGPRS APN=wapgprs
+WAPGPRS IP=172.16.19.50
+; WAP CSD
+WAPCSD=Vodafone WAP
+WAPCSD Phonenumber=+351911460000
+WAPCSD Username=wap
+WAPCSD Password=wap
+WAPCSD IP=172.16.19.50
+
+[Vodafone SE]
+; SWEDEN
+IconIndex=-117
+CountryProvider=46
+HomeNetworkNumber=24008
+WAP Proxy=172.30.253.241:8799
+SMTP=smtp.euromail.se
+Network=GPRS,UMTS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Vodafone GPRS
+APN=internet.vodafone.net
+DNS1=217.174.65.61
+DNS2=217.174.65.62
+; UMTS
+UMTS=Vodafone 3G
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=Vodafone live!
+WAPGPRS APN=services.vodafone.net
+WAPGPRS IP=172.30.253.241
+; WAP CSD
+WAPCSD Phonenumber=+46708222927
+WAPCSD Username=0708222927
+WAPCSD Password=eurowap
+
+[Vodafone UK]
+; UNITED KINGDOM
+IconIndex=-117
+CountryProvider=44
+HomeNetworkNumber=23415
+Network=GPRS,CSD,UMTS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Vodafone GPRS
+APN=internet
+Username=web
+Password=web
+; CSD
+CSD PhoneNumber=+447836900808
+CSD Username=vodafone@vodafone.net
+CSD Password=Vodafone
+; UMTS
+UMTS=Vodafone 3G
+UMTS APN=internet
+UMTS Username=web
+UMTS Password=web
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=Vodafone Live GPRS
+WAPGPRS APN=wap.vodafone.co.uk
+WAPGPRS Username=wap
+WAPGPRS Password=wap
+WAPGPRS IP=212.183.137.12
+; WAP CSD
+WAPCSD=Vodafone Live
+WAPCSD Phonenumber=+447836900808
+WAPCSD Username=wap
+WAPCSD Password=wap
+WAPCSD IP=212.183.137.12
+
+[Vodafone UK]
+; SCOTLAND
+IconIndex=-117
+CountryProvider=44
+HomeNetworkNumber=23415
+Network=GPRS,CSD,UMTS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Vodafone GPRS
+APN=internet
+Username=web
+Password=web
+; CSD
+CSD PhoneNumber=+447836900808
+CSD Username=vodafone@vodafone.net
+CSD Password=Vodafone
+; UMTS
+UMTS=Vodafone 3G
+UMTS APN=internet
+UMTS Username=web
+UMTS Password=web
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=Vodafone Live GPRS
+WAPGPRS APN=wap.vodafone.co.uk
+WAPGPRS Username=wap
+WAPGPRS Password=wap
+WAPGPRS IP=212.183.137.12
+; WAP CSD
+WAPCSD=Vodafone Live
+WAPCSD Phonenumber=+447836900808
+WAPCSD Username=wap
+WAPCSD Password=wap
+WAPCSD IP=212.183.137.12
+
+[VOX LU]
+; LUXEMBOURG
+CountryProvider=352
+HomeNetworkNumber=35206
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=VOX Internet
+APN=vox.lu
+DNS1=212.88.139.11
+DNS2=212.88.139.12
+; WAP GRPS
+WAPGPRS APN=vox.lu
+WAPGPRS IP=212.88.139.44
+
+[VOX PY]
+; PARAGUAY
+IconFile=vox paraquay.ico
+IconIndex=-356
+CountryProvider=595
+HomeNetworkNumber=74401
+Network=GPRS
+; GPRS
+GPRS=VOX GPRS
+APN=vox.wap
+
+[Voxtell]
+; MOLDOVA
+IconIndex=-248
+CountryProvider=373
+HomeNetworkNumber=25901
+Network=WAPCSD
+; WAP CSD
+WAPCSD=Moldcell WAP
+WAPCSD Phonenumber=+37369197779
+WAPCSD Username=internet
+WAPCSD Password=voxtel
+WAPCSD IP=192.168.127.127
+
+[Warid Telecom]
+; PAKISTAN
+CountryProvider=92
+HomeNetworkNumber=41007
+WAP Proxy=10.4.2.1:9201
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=Waird Telecom
+APN=Internet.warid
+; WAP GRPS
+WAPGPRS=GPRSWAP Warid Telecom
+WAPGPRS APN=wap.warid
+
+[WIND]
+; ITALY
+IconIndex=-219
+CountryProvider=39
+HomeNetworkNumber=22288
+SMTP=mail.inwind.it
+Network=GPRS,CSD,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Wind GPRS/EDGE
+APN=internet.wind
+; CSD
+CSD=Wind GSM
+CSD PhoneNumber=+393492004488
+; WAP GRPS
+WAPGPRS=Wind WAP GPRS
+WAPGPRS APN=wap.wind
+WAPGPRS Username=wind
+WAPGPRS Password=wind
+WAPGPRS IP=212.245.244.100
+; WAP CSD
+WAPCSD=Wind WAP GSM
+WAPCSD Phonenumber=+393285258500
+WAPCSD IP=212.245.244.11
+
+[WMobile]
+; MALDIVES
+IconIndex=-247
+CountryProvider=960
+HomeNetworkNumber=472
+Network=WAPCSD
+; WAP CSD
+WAPCSD=WMobile WAP
+WAPCSD Phonenumber=6300310
+WAPCSD Username=Wataniya
+WAPCSD Password=Wataniya
+WAPCSD IP=194.126.53.46
+
+[Yes Optus]
+; AUSTRALIA
+IconIndex=-220
+CountryProvider=61
+HomeNetworkNumber=50502
+WAP Proxy=202.139.83.152:9201
+Network=GPRS,CSD,UMTS,WAPGPRS,WAPCSD
+; GPRS
+GPRS=Yes GPRS
+APN=internet
+DNS1=202.139.83.3
+DNS2=192.65.91.129
+; CSD
+CSD=Yes CSD
+CSD PhoneNumber=638
+; UMTS
+UMTS=Yes UMTS
+UMTS APN=internet
+UMTS SplCmd=1
+; WAP GRPS
+WAPGPRS=Yes WAP
+WAPGPRS APN=wap.optus.net.au
+WAPGPRS Username=MSISDN
+; WAP CSD
+WAPCSD=Yes WAP CSD
+WAPCSD Phonenumber=638
+WAPCSD Username=MSISDN
+
+[3 MMS AU]
+; AUSTRIA
+IconIndex=-229
+CountryProvider=43
+HomeNetworkNumber=23210
+Network=GPRS
+; GPRS
+GPRS=3 MMS
+APN=drei.at
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mmsc
+MMS HTTPGw=http://213.94.78.133:8799/mmsc
+MMSOnly=1
+
+[3 MMS AUS]
+; AUSTRALIA
+IconIndex=-229
+CountryProvider=61
+HomeNetworkNumber=50506
+Network=GPRS
+; GPRS
+GPRS=3 MMS
+APN=3services
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mmsc.three.net.au:10021/mmsc
+MMS HTTPGw=10.176.57.25:8799
+MMSOnly=1
+
+[3 MMS DK]
+; DENMARK
+IconIndex=-229
+CountryProvider=45
+HomeNetworkNumber=23806
+Network=GPRS
+; GPRS
+GPRS=3 MMS
+APN=data.tre.dk
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mms.3.dk
+MMS WapGw=172.16.1.25
+MMSOnly=1
+
+[3 MMS HK]
+; HONG KONG
+IconIndex=-229
+CountryProvider=852
+HomeNetworkNumber=45403
+Network=UMTS
+; UMTS
+UMTS=3 (MMS)
+UMTS APN=mobile.three.com.hk
+UMTS SplCmd=1
+; MMS
+MMS Center=http://mms.um.three.com.hk:10021/mmsc
+MMS WapGw=172.20.97.116
+MMS HTTPGw=172.20.97.116:8799
+MMSOnly=1
+
+[3 MMS ITA]
+; ITALY
+IconIndex=-229
+CountryProvider=39
+HomeNetworkNumber=22299
+Network=GPRS
+; GPRS
+GPRS=3 Internet
+APN=tre.it
+Username=tre
+Password=tre
+GPRS SplCmd=1
+; MMS
+MMS Center=http://10.216.59.249:10021/mmsc
+MMS WapGw=62.13.171.3:8799
+MMS HTTPGw=62.13.171.3:8799
+MMSOnly=1
+
+[3 MMS SE]
+; SWEDEN
+IconIndex=-229
+CountryProvider=46
+HomeNetworkNumber=24002
+Network=GPRS
+; GPRS
+GPRS=3 MMS
+APN=data.tre.se
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mms.tre.se
+MMS WapGw=172.16.1.25
+MMSOnly=1
+
+[3 MMS UK]
+; UNITED KINGDOM
+IconIndex=-229
+CountryProvider=44
+HomeNetworkNumber=23420
+Network=GPRS
+; GPRS
+GPRS=3 MMS
+APN=three.co.uk,internet.three
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mms.um.three.co.uk:10021/mmsc
+MMS WapGw=172.31.65.25
+MMS HTTPGw=217.171.129.2:8799
+MMSOnly=1
+
+[3 MMS UK]
+; SCOTLAND
+IconIndex=-229
+CountryProvider=44
+HomeNetworkNumber=23420
+Network=GPRS
+; GPRS
+GPRS=3 MMS
+APN=three.co.uk,internet.three
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mms.um.three.co.uk:10021/mmsc
+MMS WapGw=172.31.65.25
+MMS HTTPGw=217.171.129.2:8799
+MMSOnly=1
+
+[3-DUALBAND-MMS]
+; HONG KONG
+IconIndex=-229
+CountryProvider=852
+HomeNetworkNumber=45404
+Network=GPRS
+; GPRS
+GPRS=3-DB-MMS
+APN=mms-g.three.com.hk
+Username=3
+Password=1234
+GPRS SplCmd=1
+; MMS
+MMS Center=http://10.30.15.51:10021/mmsc
+MMS WapGw=10.30.15.53
+MMSOnly=1
+
+[A1 Mobilkom MMS]
+; AUSTRIA
+IconIndex=-170
+CountryProvider=43
+HomeNetworkNumber=23201
+Network=GPRS
+; GPRS
+GPRS=Mobilkom A1 Internet
+APN=A1.net
+Username=ppp@A1plus.at
+DNS1=194.48.124.200
+DNS2=194.48.139.254
+; CSD
+CSD=Mobilkom A1 GSM Data
+; MMS
+MMS Center=http://mmsc.A1.net
+MMS WapGw=194.48.124.71
+MMSOnly=1
+
+[AirTel MMS]
+; INDIA
+IconIndex=-322
+CountryProvider=91
+HomeNetworkNumber=40403,40490,40492,40494,40495,40496,40402,40445,40449,40497,40498,40493,40410,40431,40402,40445,40440
+Network=GPRS
+; GPRS
+GPRS=Airtel MMS
+APN=airtelmms.com
+; MMS
+MMS Center=http://100.1.201.171:10021/mmsc
+MMS WapGw=100.1.201.172
+MMSOnly=1
+
+[Aktel MMS]
+; BANGLADESH
+IconIndex=-236
+CountryProvider=880
+HomeNetworkNumber=47002
+Network=GPRS
+; GPRS
+GPRS=Aktel MMS
+APN=WAP
+; MMS
+MMS Center=http://192.168.23.4/wap
+MMS WapGw=192.168.23.7
+MMSOnly=1
+
+[Alands MMS]
+; FINLAND
+IconIndex=-120
+CountryProvider=358
+HomeNetworkNumber=24414
+Network=GPRS
+; GPRS
+GPRS=Aland MMS
+APN=mms.amt.aland.fi
+; MMS
+MMS Center=http://mms.amt.aland.fi
+MMS WapGw=194.110.177.70
+MMSOnly=1
+
+[Alfa MMS]
+; LEBANON
+IconIndex=-237
+CountryProvider=961
+HomeNetworkNumber=96101
+Network=GPRS
+; GPRS
+GPRS=Alfa MMS
+APN=internet.mic1.com.lb
+Username=mic1
+Password=mic1
+; MMS
+MMS Center=http://mms.mic1.com.lb
+MMS HTTPGw=192.168.23.51
+MMSOnly=1
+
+[AMC MMS]
+; ALBANIA
+IconIndex=-238
+CountryProvider=355
+HomeNetworkNumber=27601
+Network=GPRS
+; GPRS
+GPRS=AMC MMS
+APN=mms
+; MMS
+MMS Center=http://195.167.65.220:8002
+MMS WapGw=10.10.10.20
+MMSOnly=1
+
+[Amena MMS]
+; SPAIN
+IconIndex=-222
+CountryProvider=34
+HomeNetworkNumber=21403
+SMTP=smtp.amenamail.com
+Network=GPRS
+; GPRS
+GPRS=Amena MMS
+APN=amenamms
+Username=CLIENTE
+Password=AMENA
+; MMS
+MMS Center=http://mms.amena.com
+MMS WapGw=172.22.188.25
+MMSOnly=1
+
+[Ancel MMS]
+; URUGUAY
+IconIndex=-324
+CountryProvider=598
+HomeNetworkNumber=74801
+Network=GPRS
+; GPRS
+GPRS=mmsAncel
+APN=mms
+; MMS
+MMS Center=http://mmsc.mms.ancuelutil.com.uy
+MMS WapGw=200.40.246.2
+MMSOnly=1
+
+[Areeba MMS]
+; CYPRUS
+IconIndex=-299
+CountryProvider=357
+HomeNetworkNumber=28
+Network=GPRS
+; GPRS
+GPRS=Areeba MMS
+APN=gprs.areeba.com.cy
+Username=mms
+Password=mms
+; MMS
+MMS Center=http://mms.Areeba.com.cy/mmsc
+MMS WapGw=172.24.97.1
+MMSOnly=1
+
+[Avea MMS]
+; TURKEY
+IconIndex=-300
+CountryProvider=90
+HomeNetworkNumber=28604,28603
+Network=GPRS
+; GPRS
+GPRS=Avea MMS
+APN=mms
+Username=mms
+Password=mms
+; MMS
+MMS Center=http://mms.avea.com.tr/servlets/mms
+MMS WapGw=213.161.151.201
+MMSOnly=1
+
+[Azercell MMS]
+; AZERBAIJAN
+IconIndex=-240
+CountryProvider=994
+HomeNetworkNumber=40001
+Network=GPRS
+; GPRS
+GPRS=Azercell MMS
+APN=mms
+; MMS
+MMS Center=http://mms.azercell.com/cMMSC/post
+MMS WapGw=10.0.154.101
+MMSOnly=1
+
+[Bakcell MMS]
+; AZERBAIJAN
+IconIndex=-241
+CountryProvider=994
+HomeNetworkNumber=40002
+Network=GPRS
+; GPRS
+GPRS=Bakcell MMS
+APN=mms
+; MMS
+MMS Center=http://mms.bakcell.com/mms/wapenc
+MMS WapGw=213.172.91.46
+MMSOnly=1
+
+[Base MMS]
+; BELGIUM
+IconIndex=-301
+CountryProvider=32
+HomeNetworkNumber=20620
+Network=GPRS
+; GPRS
+GPRS=BASE MMS
+; MMS
+MMS Center=http://mms.vox.lu
+MMS WapGw=212.88.139.44
+MMSOnly=1
+
+[Batelco MMS]
+; BAHRAIN
+IconIndex=-243
+CountryProvider=973
+HomeNetworkNumber=42601
+Network=GPRS
+; GPRS
+GPRS=Batelco MMS
+APN=mms.batelco.com
+; MMS
+MMS Center=http://192.168.36.10/servlets/mms
+MMS WapGw=192.168.1.2
+MMSOnly=1
+
+[BeeLine MMS]
+; RUSSIA
+IconIndex=-125
+CountryProvider=7
+HomeNetworkNumber=25099
+Network=GPRS
+; GPRS
+GPRS=Beeline MMS
+APN=mms.beeline.ru
+Username=beeline
+Password=beeline
+; MMS
+MMS Center=http://mms/
+MMS WapGw=192.168.94.23:9201
+MMSOnly=1
+
+[BouygTel MMS]
+; FRANCE
+IconIndex=-113
+CountryProvider=33
+HomeNetworkNumber=20820
+Network=GPRS
+; GPRS
+GPRS=MMS Bougues
+APN=mmsbouygtel.com
+; MMS
+MMS Center=http://mms.bouyguestelecom.fr/mms/wapenc
+MMS WapGw=62.201.137.17
+MMSOnly=1
+
+[BPL MMS]
+; INDIA
+IconIndex=-127
+CountryProvider=91
+HomeNetworkNumber=40421
+Network=GPRS
+; GPRS
+GPRS=BPL MMS
+APN=mizone
+; MMS
+MMS Center=http://mms.bplmobile.com:8080
+MMS WapGw=10.0.0.10
+MMSOnly=1
+
+[Brasil Telecom MMS]
+; BRAZIL
+CountryProvider=55
+HomeNetworkNumber=72416
+Network=GPRS
+; GPRS
+GPRS=BrT MMS
+APN=mms.brt.br
+Username=brt
+Password=brt
+; MMS
+MMS Center=http://mms.brasiltelecom.com.br/
+MMS WapGw=200.96.8.29
+MMSOnly=1
+
+[C&W Anguilla MMS]
+; ANGUILLA
+IconIndex=-325
+CountryProvider=101
+HomeNetworkNumber=365840
+Network=GPRS
+; GPRS
+GPRS=Internet Session
+APN=internet	
+; MMS
+MMS Center=http://mmsc
+MMS WapGw=10.20.5.34
+MMSOnly=1
+
+[C&W Jamaica MMS]
+; JAMAICA
+IconFile=cable & wireless.ico
+IconIndex=-325
+CountryProvider=112
+HomeNetworkNumber=365840
+Network=GPRS
+; GPRS
+GPRS=Internet Session
+APN=internet	
+; MMS
+MMS Center=http://mmsc
+MMS WapGw=10.20.5.34
+MMSOnly=1
+
+[C&W MMS Antigua]
+; ANTIGUA
+IconIndex=-325
+CountryProvider=102
+HomeNetworkNumber=344920
+Network=GPRS
+; GPRS
+GPRS=internet
+APN=internet	
+; MMS
+MMS Center=http://mmsc
+MMS WapGw=10.20.5.34
+MMSOnly=1
+
+[C&W MMS Barbados]
+; BARBADOS
+IconIndex=-325
+CountryProvider=104
+HomeNetworkNumber=342600
+Network=GPRS
+; GPRS
+GPRS=Internet Session
+APN=internet	
+; MMS
+MMS Center=http://mmsc
+MMS WapGw=10.20.5.34
+MMSOnly=1
+
+[C&W MMS Cayman]
+; CAYMAN ISLANDS
+IconIndex=-325
+CountryProvider=108
+HomeNetworkNumber=342600
+Network=GPRS
+; GPRS
+GPRS=Internet Session
+APN=internet	
+; MMS
+MMS Center=http://mmsc
+MMS WapGw=10.20.5.34
+MMSOnly=1
+
+[C&W MMS Dominica]
+; DOMINICA
+IconFile=cable & wireless.ico
+IconIndex=-325
+CountryProvider=109
+HomeNetworkNumber=366110
+Network=GPRS
+; GPRS
+GPRS=Internet Session
+APN=internet	
+; MMS
+MMS Center=http://mmsc
+MMS WapGw=10.20.5.34
+MMSOnly=1
+
+[C&W MMS Grenada]
+; GRANADA
+IconFile=cable & wireless.ico
+IconIndex=-325
+CountryProvider=111
+HomeNetworkNumber=352110
+Network=GPRS
+; GPRS
+GPRS=Internet Session
+APN=internet	
+; MMS
+MMS Center=http://mmsc
+MMS WapGw=10.20.5.34
+MMSOnly=1
+
+[C&W MMS Monserrat]
+; MONTSERRAT
+IconFile=cable & wireless.ico
+IconIndex=-325
+CountryProvider=113
+HomeNetworkNumber=354860
+Network=GPRS
+; GPRS
+GPRS=Internet Session
+APN=internet	
+; MMS
+MMS Center=http://mmsc
+MMS WapGw=10.20.5.34
+MMSOnly=1
+
+[C&W MMS Saint Kitts]
+; SAINT KITTS AND NEVIS
+IconFile=cable & wireless.ico
+IconIndex=-325
+CountryProvider=115
+HomeNetworkNumber=356110
+Network=GPRS
+; GPRS
+GPRS=Internet Session
+APN=internet	
+; MMS
+MMS Center=http://mmsc
+MMS WapGw=10.20.5.34
+MMSOnly=1
+
+[C&W MMS Saint Lucia]
+; SAINT LUCIA
+IconFile=cable & wireless.ico
+IconIndex=-325
+CountryProvider=122
+HomeNetworkNumber=358110
+Network=GPRS
+; GPRS
+GPRS=Internet Session
+APN=internet	
+; MMS
+MMS Center=http://mmsc
+MMS WapGw=10.20.5.34
+MMSOnly=1
+
+[C&W MMS Saint Vincent]
+; SAINT-VINCENT AND THE GRENADINES
+IconFile=cable & wireless.ico
+IconIndex=-325
+CountryProvider=116
+HomeNetworkNumber=360110
+Network=GPRS
+; GPRS
+GPRS=Internet Session
+APN=internet	
+; MMS
+MMS Center=http://mmsc
+MMS WapGw=10.20.5.34
+MMSOnly=1
+
+[C&W MMS Turk & Caicos]
+; TURK AND CAICOS ISLANDS
+IconFile=cable & wireless.ico
+IconIndex=-325
+CountryProvider=118
+HomeNetworkNumber=376350
+Network=GPRS
+; GPRS
+GPRS=Internet Session
+APN=internet	
+; MMS
+MMS Center=http://mmsc
+MMS WapGw=10.20.5.34
+MMSOnly=1
+
+[Celcom MMS]
+; MALAYSIA
+IconIndex=-130
+CountryProvider=60
+HomeNetworkNumber=50219
+Network=GPRS
+; GPRS
+GPRS=Celcom MMS
+APN=mms.celcom.net.my
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mms.celcom.net.my
+MMS WapGw=10.128.1.242
+MMSOnly=1
+
+[CellC MMS]
+; SOUTH AFRICA
+IconIndex=-233
+CountryProvider=27
+HomeNetworkNumber=65507
+Network=GPRS
+; GPRS
+GPRS=CellC MMS
+APN=mms
+; MMS
+MMS Center=http://mms.cmobile.co.za
+MMS WapGw=196.31.116.250
+MMSOnly=1
+
+[Centennial MMS]
+; PUERTO RICO
+CountryProvider=121
+Network=1xRTT
+; 1XRTT
+1xRTT=Centennial
+1xRTT PhoneNumber=#777
+1xRTT DNS1=66.231.171.2:80
+1xRTT DNS2=66.231.171.4:80
+; MMS
+MMS Center=http://mms.centennialpr.net:80/
+MMSOnly=1
+
+[Centennial MMS]
+; DOMINICA
+IconFile=centennial dominican republic.ico
+IconIndex=-326
+CountryProvider=109
+Network=1xRTT
+; 1XRTT
+1xRTT=Centennial MMS
+1xRTT PhoneNumber=#777
+1xRTT DNS1=66.231.171.2:80
+; MMS
+MMS Center=http://mmsc.centennialrd.dataonair.net:6672
+MMSOnly=1
+
+[China Mobile MMS]
+; CHINA
+IconIndex=-131
+CountryProvider=86
+HomeNetworkNumber=46000
+Network=GPRS
+; GPRS
+GPRS=China Mobile MMS
+APN=CMWAP
+; MMS
+MMS Center=http://mmsc.monternet.com
+MMS WapGw=10.0.0.172
+MMSOnly=1
+
+[Chunghwa MMS]
+; TAIWAN
+IconIndex=-133
+CountryProvider=886
+HomeNetworkNumber=46692
+Network=GPRS
+; GPRS
+GPRS=Chunghwa MMS
+APN=emome
+; MMS
+MMS Center=http://mms.emome.net:8002
+MMS WapGw=10.1.1.1
+MMSOnly=1
+
+[Cingular MMS]
+; UNITED STATES
+IconIndex=-134
+CountryProvider=1
+HomeNetworkNumber=31015,31017,31041
+Network=GPRS
+; GPRS
+GPRS=Cingular MMS
+APN=wap.cingular
+Username=WAP@CINGULARGPRS.COM
+Password=CINGULAR1
+; MMS
+MMS Center=http://mmsc.cingular.com
+MMS WapVersion=2.0
+MMS WapGw=wireless.cingular.com:80
+MMSOnly=1
+
+[CLARO MMS]
+; BRAZIL
+IconIndex=-227
+CountryProvider=55
+HomeNetworkNumber=72405
+Network=GPRS
+; GPRS
+GPRS=Claro Foto
+APN=mms.claro.com.br
+Username=claro
+Password=claro
+; MMS
+MMS Center=http://mms.claro.com.br
+MMS WapGw=200.169.126.10
+MMSOnly=1
+
+[Coriolis MMS]
+; FRANCE
+CountryProvider=33
+Network=GPRS
+; GPRS
+GPRS=Coriolis MMS
+APN=wapcoriolis
+; MMS
+MMS Center=http://mmscoriolis
+MMSOnly=1
+
+[CSL MMS]
+; HONG KONG
+IconFile=CSL hong kong.ico
+IconIndex=-228
+CountryProvider=852
+HomeNetworkNumber=45400
+Network=GPRS
+; GPRS
+GPRS=CSL MMS
+APN=hkcsl
+GPRS SplCmd=1
+; MMS
+MMS Center=http://192.168.58.171:8002
+MMS WapGw=192.168.59.51
+MMSOnly=1
+
+[CTBC MMS]
+; BRAZIL
+IconFile=ctbc brasil.ico
+IconIndex=-329
+CountryProvider=55
+HomeNetworkNumber=72432
+Network=GPRS
+; GPRS
+GPRS=CTBC
+APN=ctbc.br
+Username=ctbc
+Password=1212
+; MMS
+MMS Center=http://mms.ctbccelular.com.br/was
+MMS WapGw=172.29.7.70:9201
+MMSOnly=1
+
+[CTI Movil MMS]
+; ARGENTINA
+CountryProvider=54
+HomeNetworkNumber=722310
+Network=GPRS
+; GPRS
+GPRS=CTI MMS
+APN=mms.ctimovil.com.ar
+Username=ctimms
+Password=ctimms999
+; MMS
+MMS Center=http://mms.ctimovil.com.ar/
+MMS WapGw=170.51.255.240
+MMSOnly=1
+
+[CTM MMS]
+; MACAU
+IconFile=ctm macau.ico
+IconIndex=-330
+CountryProvider=853
+HomeNetworkNumber=45501
+Network=GPRS
+; GPRS
+GPRS=CTM MMS
+APN=ctmmms
+; MMS
+MMS Center=http://mms.wap.ctm.net:8002
+MMS WapGw=192.168.99.3
+MMSOnly=1
+
+[Cyta MMS]
+; CYPRUS
+IconIndex=-138
+CountryProvider=357
+HomeNetworkNumber=28001
+Network=GPRS
+; GPRS
+GPRS=Cyta MMS
+APN=cytamobile
+Username=user
+Password=pass
+; MMS
+MMS Center=http://mmsc.cyta.com.cy
+MMS WapGw=212.31.96.161
+MMSOnly=1
+
+[Dialog MMS - Postpaid]
+; SRI LANKA
+IconIndex=-318
+CountryProvider=94
+HomeNetworkNumber=41302
+Network=GPRS
+; GPRS
+GPRS=Dialog MMS
+APN=www.dialogsl.com
+; MMS
+MMS Center=http://mms.dialog.lk:3130/mmsc
+MMS WapGw=192.168.122.2
+MMSOnly=1
+
+[Dialog MMS - Prepaid]
+; SRI LANKA
+IconIndex=-318
+CountryProvider=94
+HomeNetworkNumber=41302
+Network=GPRS
+; GPRS
+GPRS=Dialog MMS
+APN=ppwap
+; MMS
+MMS Center=http://mms.dialog.lk:3130/mmsc
+MMS WapGw=192.168.122.2
+MMSOnly=1
+
+[DiGi MMS]
+; MALAYSIA
+IconIndex=-139
+CountryProvider=60
+HomeNetworkNumber=50216
+Network=GPRS
+; GPRS
+GPRS=DiGi MMS
+APN=digimms
+Username=mms
+Password=mms
+; MMS
+MMS Center=http://mms.digi.com.my/servlets/mms
+MMS WapGw=203.92.128.160
+MMSOnly=1
+
+[Digicel MMS]
+; JAMAICA
+CountryProvider=112
+Network=GPRS
+; GPRS
+GPRS=Digicel MMS
+APN=wap.digicelaruba.com
+Username=waparuba
+Password=wap03aruba
+; MMS
+MMS Center=http://mmc.digiceljamaica.com/servlets/mms
+MMS WapGw=172.016.007.012
+MMSOnly=1
+
+[Digitel MMS]
+; VENEZUELA
+CountryProvider=58
+HomeNetworkNumber=73402
+Network=GPRS
+; GPRS
+GPRS=Digitel TIM 2.0
+APN=gprsweb.digitel.ve
+; MMS
+MMS Center=http://expresate.digitel.com.ve/servlets/mms
+MMS WapGw=213.26.205.1:8080
+MMSOnly=1
+
+[Djezzy MMS]
+; ALGERIA
+IconIndex=-234
+CountryProvider=213
+HomeNetworkNumber=60302
+Network=GPRS
+; GPRS
+GPRS=Djezzy MMS
+APN=djezzy.mms
+; MMS
+MMS Center=http://172.24.97.1/mmsc
+MMS WapGw=172.24.97.1
+MMSOnly=1
+
+[DNA MMS]
+; FINLAND
+IconIndex=-303
+CountryProvider=358
+HomeNetworkNumber=24409
+Network=GPRS
+; GPRS
+GPRS=DNA MMS
+APN=mms
+Username=dna
+Password=mms
+; MMS
+MMS Center=http://mmsc.dnafinland.fi
+MMS WapGw=10.1.1.2
+MMSOnly=1
+
+[drei.at MMS]
+; AUSTRIA
+IconIndex=-229
+CountryProvider=43
+HomeNetworkNumber=23210
+Network=GPRS
+; GPRS
+GPRS=3 MMS
+APN=drei.at
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mmsc
+MMS HTTPGw=http://213.94.78.133:8799/mmsc
+MMSOnly=1
+
+[DST MMS]
+; BRUNEI DARUSSALAM
+IconIndex=-250
+CountryProvider=673
+HomeNetworkNumber=52811
+Network=GPRS
+; GPRS
+GPRS=DST MMS
+APN=dst.mms
+Username=mms
+Password=mms
+; MMS
+MMS Center=http://mms.dst.com.bn/mmsc
+MMS WapGw=10.100.6.101
+MMSOnly=1
+
+[DTAC MMS]
+; THAILAND
+IconIndex=-140
+CountryProvider=66
+HomeNetworkNumber=52018
+WAP Proxy=203.155.200.133:8080
+Network=GPRS
+; GPRS
+GPRS=Djuice MMS
+APN=mms
+Username=-
+Password=0
+; MMS
+MMS Center=http://mms.dtac.co.th:8002/
+MMS WapGw=203.155.200.133
+MMSOnly=1
+
+[Elisa MMS EE]
+; ESTONIA
+IconIndex=-251
+CountryProvider=372
+HomeNetworkNumber=24802
+Network=GPRS
+; GPRS
+GPRS=EMT MMS
+APN=mms
+; MMS
+MMS Center=http://194.204.2.10
+MMS WapGw=194.204.2.6
+MMSOnly=1
+
+[Elisa MMS FI]
+; FINLAND
+IconIndex=-251
+CountryProvider=358
+HomeNetworkNumber=24405
+Network=GPRS
+; GPRS
+GPRS=Elisa MMS
+APN=mms
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mms.elisa.fi
+MMS WapGw=213.161.41.57
+MMSOnly=1
+
+[EMT MMS]
+; ESTONIA
+IconIndex=-142
+CountryProvider=372
+HomeNetworkNumber=24801
+Network=GPRS
+; GPRS
+GPRS=EMT MMS
+APN=mms.emt.ee
+; MMS
+MMS Center=http://mms.emt.ee/servlets/mms
+MMS WapGw=217.71.32.82
+MMSOnly=1
+
+[Entel PCS MMS]
+; CHILE
+IconFile=PCS chili.ico
+IconIndex=-340
+CountryProvider=56
+HomeNetworkNumber=73010
+Network=GPRS,CSD
+; GPRS
+GPRS=Entel MMS
+APN=mms.entelpcs.cl
+Username=entelmms
+Password=entelpcs
+; CSD
+; MMS
+MMS Center=http://mmsc.entelpcs.cl
+MMS WapGw=10.99.0.10
+MMSOnly=1
+
+[E-Plus MMS]
+; GERMANY
+IconIndex=-143
+CountryProvider=49
+HomeNetworkNumber=26203
+Network=GPRS
+; GPRS
+GPRS=E-Plus MMS
+APN=mms.eplus.de
+Username=eplus
+Password=mms
+; MMS
+MMS Center=http://mms/eplus
+MMS WapGw=212.23.97.153
+MMSOnly=1
+
+[ERA MMS]
+; POLAND
+IconIndex=-145
+CountryProvider=48
+HomeNetworkNumber=26002
+WAP Proxy=213.158.194.226:8080
+Network=GPRS
+; GPRS
+GPRS=ERA
+APN=eramms
+Username=eramms
+Password=eramms
+; MMS
+MMS Center=http://mms.era.pl/servlets/mms
+MMS WapGw=213.158.194.57
+MMSOnly=1
+
+[Etisalat MMS]
+; UNITED ARAB EMIRATES
+IconIndex=-146
+CountryProvider=971
+HomeNetworkNumber=42402
+Network=GPRS
+; GPRS
+GPRS=Etisalat MMS
+APN=mms
+Username=mms
+Password=mms
+; MMS
+MMS Center=http:/mms/servlets/mms
+MMS WapGw=10.12.0.30
+MMSOnly=1
+
+[Eurotel MMS CZ]
+; CZEC REPUBLIC
+IconIndex=-147
+CountryProvider=420
+HomeNetworkNumber=23002
+Network=GPRS
+; GPRS
+GPRS=Eurotel MMS
+APN=mms
+Username=mms
+Password=mms
+; MMS
+MMS Center=http://mms.eurotel.cz:8002
+MMS WapGw=160.218.160.218
+MMSOnly=1
+
+[Eurotel MMS CZ Go]
+; CZEC REPUBLIC
+IconIndex=-147
+CountryProvider=420
+HomeNetworkNumber=23002
+Network=GPRS
+; GPRS
+GPRS=Eurotel MMS
+APN=gomms
+Username=mms
+Password=mms
+; MMS
+MMS Center=http://mms.eurotel.cz:8002
+MMS WapGw=160.218.160.218
+MMSOnly=1
+
+[F SFR MMS]
+; FRANCE
+IconIndex=-112
+CountryProvider=33
+HomeNetworkNumber=20810
+Network=GPRS
+; GPRS
+GPRS=MMS SFR
+APN=mmssfr
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mms1/
+MMS WapGw=10.151.0.1
+MMSOnly=1
+
+[FarEasTone MMS]
+; TAIWAN
+IconIndex=-149
+CountryProvider=886
+HomeNetworkNumber=46601
+Network=GPRS
+; GPRS
+APN=fetnet01
+; MMS
+MMS Center=http://mms
+MMS WapGw=210.241.199.199
+MMSOnly=1
+
+[Former AT&T Wireless Acct MMS]
+; UNITED STATES
+IconIndex=-123
+CountryProvider=1
+HomeNetworkNumber=31038
+Network=GPRS
+; GPRS
+GPRS=AT&T MMS
+APN=proxy
+; MMS
+MMS Center=http://mmsc.mymmode.com
+MMS WapGw=10.250.250.100
+MMSOnly=1
+
+[Globe MMS]
+; PHILIPPINES
+IconIndex=-151
+CountryProvider=63
+HomeNetworkNumber=51502
+Network=GPRS
+; GPRS
+GPRS=myGlobe MMS
+APN=mms.globe.com.ph
+; MMS
+MMS Center=http://192.40.100.22:10021/mmsc
+MMS WapGw=192.40.100.20
+MMSOnly=1
+
+[Globul MMS]
+; BULGARIA
+IconIndex=-254
+CountryProvider=359
+HomeNetworkNumber=28405
+Network=GPRS,CSD
+; GPRS
+GPRS=Globul MMS
+APN=mms.globul.bg
+Username=mms
+; CSD
+CSD PhoneNumber=+359891002
+CSD Username=mms
+; MMS
+MMS Center=http://mmsc1.mms.globul.bg:8002
+MMS WapGw=192.168.87.11
+MMSOnly=1
+
+[Gloworld MMS]
+; NIGERIA
+IconIndex=-316
+CountryProvider=234
+HomeNetworkNumber=62150
+Network=WAPGPRS
+; GPRS
+GPRS=Glo MMS
+APN=glomms
+Username=mms
+Password=mms
+; WAP GPRS
+; MMS
+MMS Center=http://mms.gloworld.com/mmsc
+MMS WapGw=20.100.82.4
+MMSOnly=1
+
+[Go Mobile MMS FI]
+; FINLAND
+IconIndex=-304
+CountryProvider=358
+HomeNetworkNumber=24409
+Network=GPRS
+; GPRS
+GPRS=DNA MMS
+APN=mms.gomobile.fi
+; MMS
+MMS Center=http://mmsc.gomobile.fi
+MMS WapGw=10.1.1.11
+MMSOnly=1
+
+[Golden Telecom]
+; UKRAINE
+CountryProvider=380
+HomeNetworkNumber=38039
+; GPRS
+GPRS=GT MMS
+; MMS
+MMS Center=http://mms.goldentele.com
+MMS WapGw=212.082.194.019
+MMSOnly=1
+
+[Hello MMS]
+; CAMBODIA
+IconIndex=-256
+CountryProvider=855
+HomeNetworkNumber=45602
+Network=GPRS
+; GPRS
+GPRS=Hello MMS
+APN=hellomms
+; MMS
+MMS Center=http://mms.iq2mobile.com
+MMS WapGw=192.168.205.20
+MMSOnly=1
+
+[Hutch MMS]
+; INDIA
+IconFile=Hutch india.ico
+IconIndex=-334
+CountryProvider=91
+HomeNetworkNumber=40405,40411,40430,40413,40486,40484,40401,40415,40460,40488,40566,40567,40420,40427, 40443, 40446
+Network=GPRS
+; GPRS
+GPRS=Hutch MMS
+APN=portalnmms
+; MMS
+MMS Center=http://mms1.hutchworld.co.in/mms/
+MMS WapGw=10.10.1.100
+MMSOnly=1
+
+[IAM MMS]
+; MOROCCO
+IconIndex=-257
+CountryProvider=212
+HomeNetworkNumber=60401
+Network=GPRS
+; GPRS
+GPRS=IAM MMS
+APN=mmsiam
+; MMS
+MMS Center=http://mms:8002
+MMS WapGw=10.16.35.50
+MMSOnly=1
+
+[IDEA MMS]
+; POLAND
+IconIndex=-156
+CountryProvider=48
+HomeNetworkNumber=26003
+Network=GPRS
+; GPRS
+GPRS=Idea MMS
+APN=mms
+Username=idea
+Password=idea
+; MMS
+MMS Center=http://mms.idea.pl
+MMS WapGw=192.168.6.104
+MMSOnly=1
+
+[IDEA MMS]
+; INDIA
+IconFile=idea india.ico
+IconIndex=-335
+CountryProvider=91
+HomeNetworkNumber=40404,40407,40412,40419,40422,40424,40456,40478
+Network=GPRS
+; GPRS
+GPRS=IDEA MMS
+APN=imis
+DNS1=10.4.42.15:9201
+; MMS
+MMS Center=http://10.4.42.21:8002
+MMS WapGw=10.4.42.15:9201
+MMSOnly=1
+
+[IM-3 MMS]
+; INDONESIA
+IconIndex=-308
+CountryProvider=62
+HomeNetworkNumber=51021
+Network=GPRS
+; GPRS
+GPRS=IM3 (MMS)
+APN=mms.indosat-m3.net
+Username=mms
+Password=im3
+; MMS
+MMS Center=http://mmsc.m3-access.com
+MMS WapGw=10.19.19.19
+MMSOnly=1
+
+[IUSACELL MMS]
+; MEXICO
+CountryProvider=52
+Network=1xRTT
+; 1XRTT
+1xRTT PhoneNumber=#777
+1xRTT Username=MDN@iusacell3g.com
+1xRTT Password=BJMPW504
+; MMS
+MMS Center=http://mms.iusacell3g.com/
+MMSOnly=1
+
+[K’Cell MMS]
+; KAZAKHSTAN
+IconIndex=-259
+CountryProvider=705
+HomeNetworkNumber=40102
+Network=GPRS
+; GPRS
+GPRS=K’Cell MMS
+APN=mms
+; MMS
+MMS Center=http://192.168.75.10:6001/MM1Servlet
+MMS WapGw=195.47.255.15
+MMSOnly=1
+
+[K’Mobile MMS]
+; KAZAKHSTAN
+IconIndex=-260
+CountryProvider=705
+HomeNetworkNumber=40101
+Network=GPRS
+; GPRS
+GPRS=K’Mobile MMS
+APN=mms.k-mobile
+Username=@mms.k-mobile
+Password=k-mobile
+; MMS
+MMS Center=http://mms.kartel.kz/mms/wapenc
+MMS WapGw=172.27.6.93
+MMSOnly=1
+
+[KG Telcom MMS]
+; TAIWAN
+IconIndex=-160
+CountryProvider=886
+HomeNetworkNumber=46688
+Network=GPRS
+; GPRS
+APN=kgtmms
+; MMS
+MMS Center=http://mms.kgtmms.net.tw/mms/wapenc
+MMS WapGw=172.28.33.5
+MMSOnly=1
+
+[KPN Mobile i-mode MMS]
+; NETHERLANDS
+IconIndex=-161
+CountryProvider=31
+HomeNetworkNumber=20408
+Network=GPRS
+; GPRS
+APN=portalmmm.nl
+; MMS
+MMS Center=http://mp.mobiel.kpn/mmsc
+MMS WapGw=10.10.100.10
+MMS HTTPGw=10.10.100.10:5080
+MMSOnly=1
+
+[KPN Mobile MMS]
+; NETHERLANDS
+IconIndex=-161
+CountryProvider=31
+HomeNetworkNumber=20408
+Network=GPRS
+; GPRS
+APN=portalmmm.nl
+; MMS
+MMS Center=http://mp.mobiel.kpn/mmsc
+MMS WapGw=10.10.100.20:5080
+MMSOnly=1
+
+[Kyivstar MMS]
+; UKRAINE
+IconIndex=-306
+CountryProvider=380
+HomeNetworkNumber=65503,38067,38096,38097
+Network=GPRS
+; GPRS
+GPRS=Kyivstar MMS
+APN=mms.kyivstar.net
+Username=mms
+Password=mms
+; MMS
+MMS Center=http://mms.kyivstar.net
+MMS WapGw=10.10.10.10
+MMSOnly=1
+
+[Life MMS]
+; UKRAINE
+IconIndex=-307
+CountryProvider=380
+HomeNetworkNumber=65505
+Network=GPRS
+; GPRS
+GPRS=Life MMS
+APN=mms
+; MMS
+MMS Center=http://mms.life.com.ua/cmmsc/post
+MMS WapGw=212.58.162.230
+MMS HTTPGw=212.58.162.230:8080
+MMSOnly=1
+
+[LUXGSM MMS]
+; LUXEMBOURG
+CountryProvider=352
+HomeNetworkNumber=27001
+Network=GPRS
+; GPRS
+GPRS=Lux MMS
+APN=mms.pt.lu
+; MMS
+MMS Center=http://mmsc.pt.lu
+MMS WapGw=194.154.192.88
+MMSOnly=1
+
+[M3 Wireless MMS]
+; BERMUDA
+CountryProvider=105
+Network=GPRS
+; GPRS
+GPRS=M3 Wireless GPRS
+APN=wap.bm
+; MMS
+MMS Center=http://mmsc.m3.dataonair.net:6672/
+MMS WapGw=209.4.229.39:9201
+MMSOnly=1
+
+[Magti MMS]
+; GEORGIA
+IconIndex=-265
+CountryProvider=995
+HomeNetworkNumber=28202
+Network=GPRS
+; GPRS
+GPRS=Magti MMS
+APN=mms.ge
+; MMS
+MMS Center=http://mms.magtigsm.ge
+MMS WapGw=81.95.160.16
+MMSOnly=1
+
+[Maxis MMS]
+; MALAYSIA
+IconIndex=-166
+CountryProvider=60
+HomeNetworkNumber=50212
+Network=GPRS
+; GPRS
+GPRS=Maxis MMS
+APN=net
+Username=maxis
+Password=wap
+GPRS SplCmd=1
+; MMS
+MMS Center=http://172.16.74.100:10021/mmsc
+MMS WapGw=202.75.133.49
+MMSOnly=1
+
+[Megafon MMS]
+; RUSSIA
+IconFile=megafon russia.ico
+IconIndex=-337
+CountryProvider=7
+HomeNetworkNumber=25002
+Network=GPRS
+; GPRS
+GPRS=Megafon MMS
+APN=internet.nw
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mmsc:8002
+MMS WapGw=10.137.3.1:1111
+MMSOnly=1
+
+[Miworld MMS]
+; SINGAPORE
+IconIndex=-263
+CountryProvider=65
+HomeNetworkNumber=52503
+Network=GPRS
+; GPRS
+GPRS=Miworld MMS
+APN=miworld
+Username=65
+Password=user123
+; MMS
+MMS Center=http://mmsgw:8002/
+MMS WapGw=172.16.14.10
+MMSOnly=1
+
+[Mobi’s MMS]
+; BOSNIA AND HERZEGOWINA
+IconIndex=-309
+CountryProvider=387
+HomeNetworkNumber=45602,21805
+Network=GPRS
+; GPRS
+GPRS=Mobi’s MMS
+APN=mms
+; MMS
+MMS Center=http://mms.065mobis.com/mms/wapenc
+MMS WapGw=192.168.61.11
+MMSOnly=1
+
+[MobileCom MMS JO]
+; JORDAN
+IconIndex=-168
+CountryProvider=962
+HomeNetworkNumber=41677
+Network=GPRS
+; GPRS
+GPRS=MobileCom MMS
+APN=mms.mobilecom.jo
+Username=mms
+Password=mms
+; MMS
+MMS Center=http://172.16.1.96/servlets/mms
+MMS WapGw=172.16.1.2
+MMSOnly=1
+
+[Mobilelife MMS]
+; THAILAND
+IconIndex=-310
+CountryProvider=66
+HomeNetworkNumber=52001
+Network=GPRS
+; GPRS
+GPRS=Mobilelife MMS
+APN=multimedia
+; MMS
+MMS Center=http://mms.mobilelife.co.th
+MMS WapGw=203.170.229.34
+MMSOnly=1
+
+[Mobilink GSM MMS]
+; PAKISTAN
+CountryProvider=92
+HomeNetworkNumber=41001
+WAP Proxy=172.24.97.29
+Network=GPRS
+; GPRS
+GPRS=Mobilink GSM MMS
+APN=mms.mobilinkworld.com
+; MMS
+MMS Center=http://mms/
+MMS WapGw=172.25.20.12
+MMSOnly=1
+
+[Mobilink GSM Prepaid MMS]
+; PAKISTAN
+CountryProvider=92
+Network=GPRS
+; GPRS
+GPRS=Mobilink GSM Prepaid MMS
+APN=mms.mobilinkworld.com
+; MMS
+MMS Center=http://mms/
+MMS WapGw=172.25.20.12
+MMSOnly=1
+
+[Mobilkom MMS FL1]
+; LIECHTENSTEIN
+IconIndex=-148
+CountryProvider=423
+HomeNetworkNumber=29505
+Network=GPRS
+; GPRS
+GPRS=FL1.net MMS
+APN=free.fl1.net
+Username=ppp@a1plus.at
+; MMS
+MMS Center=http://mmsc.a1.net
+MMS WapGw=194.48.124.71
+MMSOnly=1
+
+[Mobiltel MMS]
+; BULGARIA
+IconIndex=-230
+CountryProvider=359
+HomeNetworkNumber=28405
+Network=GPRS,CSD
+; GPRS
+GPRS=M-Tel MMS GPRS
+APN=mms-gprs.mtel.bg
+Username=mtel
+Password=mtel
+; CSD
+CSD=M-Tel MMS
+CSD PhoneNumber=+359881220
+CSD Username=mtel
+CSD Password=mtel
+; MMS
+MMS Center=http://mmsc/
+MMS WapGw=10.150.0.22
+MMSOnly=1
+
+[MobiNil MMS]
+; EGYPT
+IconIndex=-270
+CountryProvider=20
+HomeNetworkNumber=60201
+Network=GPRS
+; GPRS
+GPRS=MobiNil MMS
+APN=Mobinilmms
+; MMS
+MMS Center=http://10.7.13.24:8002
+MMS WapGw=10.7.13.24
+MMSOnly=1
+
+[Mobistar MMS Friends - Optimum]
+; BELGIUM
+IconIndex=-173
+CountryProvider=32
+HomeNetworkNumber=20610
+Network=GPRS
+; GPRS
+GPRS=Mobistar MMS Friends
+APN=mms.be
+Username=mobistar
+Password=mobistar
+; MMS
+MMS Center=http://mmsc.mobistar.be
+MMS WapGw=212.65.63.143
+MMSOnly=1
+
+[Mobistar MMS Tempo]
+; BELGIUM
+IconIndex=-173
+CountryProvider=32
+HomeNetworkNumber=20610
+Network=GPRS
+; GPRS
+GPRS=Mobistar MMS
+APN=tempomms.be
+Username=mobistar
+Password=mobistar
+; MMS
+MMS Center=http://mmsc.mobistar.be
+MMS WapGw=212.65.63.143
+MMSOnly=1
+
+[MoBiTai MMS]
+; TAIWAN
+IconIndex=-224
+CountryProvider=886
+HomeNetworkNumber=46693
+Network=GPRS
+; GPRS
+GPRS=MobeeMMS
+APN=gprs1
+Username=gprs
+Password=gprs
+; MMS
+MMS Center=http://mms.mobeelife.net/mms/wapenc
+MMS WapGw=192.168.77.5
+MMSOnly=1
+
+[Mobtel MMS]
+; YUGOSLAVIA
+IconIndex=-273
+CountryProvider=381
+HomeNetworkNumber=22001
+Network=GPRS
+; GPRS
+GPRS=Mobtel MMS
+APN=mms
+; MMS
+MMS Center=http://mms.mobtel.co.yu/servlets/mms
+MMS WapGw=217.65.192.33
+MMSOnly=1
+
+[Moldcell MMS]
+; MOLDOVA
+IconIndex=-274
+CountryProvider=373
+HomeNetworkNumber=25902
+Network=GPRS
+; GPRS
+GPRS=Moldcell MMS
+APN=mms
+; MMS
+MMS Center=http://mms.moldcell.md/cmmsc/post
+MMS WapGw=10.0.10.10
+MMSOnly=1
+
+[Monacell MMS]
+; MONACO
+IconIndex=-317
+CountryProvider=377
+Network=GPRS
+; GPRS
+GPRS=Monacell MMS
+APN=orange.acte
+Username=orange
+Password=orange
+; MMS
+MMS Center=http://mms.orange.fr
+MMS WapGw=192.168.1.2
+MMSOnly=1
+
+[Monet MMS]
+; YUGOSLAVIA
+IconIndex=-275
+CountryProvider=381
+HomeNetworkNumber=22004
+Network=GPRS
+; GPRS
+GPRS=Monet MMS
+APN=mms.monetcg.com
+; MMS
+MMS Center=http://192.168.180.100/servlets/mms
+MMS WapGw=10.0.5.19
+MMSOnly=1
+
+[Movilnet MMS]
+; VENEZUELA
+CountryProvider=58
+Network=1xRTT
+; 1XRTT
+1xRTT=Movilnet
+1xRTT PhoneNumber=#777
+; MMS
+MMS Center=http://mms.movilnet.com.ve/
+MMSOnly=1
+
+[Movistar MMS]
+; MEXICO
+IconFile=movistar.ico
+IconIndex=-221
+CountryProvider=52
+HomeNetworkNumber=33403
+Network=GPRS,CSD
+; GPRS
+APN=mms.itelcel.com
+Username=movistar
+Password=movistar
+; CSD
+; MMS
+MMS Center=http://mms.movistar.mx
+MMS WapGw=10.2.20.1
+MMSOnly=1
+
+[Movistar MMS]
+; ARGENTINA
+IconFile=movistar.ico
+IconIndex=-221
+CountryProvider=54
+HomeNetworkNumber=72207
+Network=GPRS
+; GPRS
+GPRS=MMS E-mocion
+APN=mms.gprs.unifon.com.ar
+Username=mms
+Password=mms
+; MMS
+MMS Center=http://mms.tmovil.cl/
+MMS WapGw=200.68.32.239
+MMSOnly=1
+
+[Movistar MMS Chile]
+; CHILE
+IconFile=movistar.ico
+IconIndex=-221
+CountryProvider=56
+HomeNetworkNumber=73002
+Network=GPRS
+; GPRS
+GPRS=MMS Telefonica
+APN=mms.tmovil.cl
+Username=mms
+Password=mms
+; MMS
+MMS Center=http://mms.tmovil.cl
+MMS WapGw=172.17.8.11
+MMSOnly=1
+
+[Movistar MMS Uruguay]
+; URUGUAY
+IconFile=movistar.ico
+IconIndex=-221
+CountryProvider=598
+HomeNetworkNumber=74807
+Network=GPRS
+; GPRS
+GPRS=MMS E-mocion
+APN=webapn.movistar.com.uy
+Username=wapuy
+Password=wapuy
+; MMS
+MMS Center=http://mmsc.movistar.com.uy
+MMSOnly=1
+
+[Movistar MMS Venezuela]
+; VENEZUELA
+IconFile=movistar.ico
+IconIndex=-221
+CountryProvider=58
+Network=1xRTT,CDMA
+; GPRS
+GPRS=MMS E-mocion
+; 1xRTT
+; CDMA
+; MMS
+MMS Center=http://mms.bellsouthim.net.ve:8088/mms
+MMSOnly=1
+
+[MTC MMS]
+; BAHRAIN
+CountryProvider=973
+HomeNetworkNumber=42602
+Network=GPRS
+; GPRS
+GPRS=MTC MMS
+APN=mms
+; MMS
+MMS Center=http://176.0.0.21
+MMS WapGw=176.0.0.65
+MMSOnly=1
+
+[MTC MMS Eezee]
+; BAHRAIN
+CountryProvider=973
+HomeNetworkNumber=42602
+Network=GPRS
+; GPRS
+GPRS=MTC MMS Eezee
+APN=pps
+Username=annyway
+Password=online
+; MMS
+MMS Center=http://176.0.0.21
+MMS WapGw=176.0.0.65
+MMSOnly=1
+
+[MTN MMS]
+; SOUTH AFRICA
+IconIndex=-175
+CountryProvider=27
+HomeNetworkNumber=65510
+Network=GPRS,CSD
+; GPRS
+GPRS=MTNdataLIVE (GPRS)
+APN=mms.mtn.net
+Username=mtnmms
+Password=mtnmms
+; CSD
+CSD=MTNdataLINK (CSD)
+CSD PhoneNumber=+2783
+CSD Username=mtnmms
+CSD Password=mtnmms
+; MMS
+MMS Center=http://mms.mtn.co.za/mms/wapenc
+MMS WapGw=196.11.240.241:9201
+MMSOnly=1
+
+[MTN Ng MMS]
+; NIGERIA
+IconIndex=-175
+CountryProvider=234
+HomeNetworkNumber=62130
+Network=GPRS
+; GPRS
+GPRS=MTN MMS
+APN=web.gprs.mtnnigeria.net
+Username=web
+Password=web
+; MMS
+MMS Center=http://10.199.212.8/servlets/mms
+MMS WapGw=10.199.212.2
+MMSOnly=1
+
+[Nawras MMS]
+; OMAN
+IconIndex=-278
+CountryProvider=968
+HomeNetworkNumber=42203
+Network=GPRS
+; GPRS
+GPRS=Nawras MMS
+APN=mms.nawras.com.om
+; MMS
+MMS Center=http://10.128.240.16/servlets/mms
+MMS WapGw=10.128.240.19
+MMSOnly=1
+
+[Nedjma MMS]
+; ALGERIA
+IconIndex=-235
+CountryProvider=213
+HomeNetworkNumber=60303
+Network=GPRS
+; GPRS
+GPRS=Nedjma MMS
+APN=nedjmamms
+Username=mms
+Password=mms
+; MMS
+MMS Center=http://10.10.111.1
+MMS WapGw=192.168.52.3
+MMSOnly=1
+
+[NetCom MMS]
+; NORWAY
+IconIndex=-177
+CountryProvider=47
+HomeNetworkNumber=24202
+Network=GPRS
+; GPRS
+GPRS=Netcom MMS
+APN=mms.netcom.no
+Username=mms
+Password=netcom
+; MMS
+MMS Center=http://mms/
+MMS WapGw=193.209.134.133
+MMSOnly=1
+
+[NetCom MMS]
+; BOUVET ISLAND
+IconIndex=-177
+CountryProvider=47
+HomeNetworkNumber=24202
+Network=GPRS
+; GPRS
+GPRS=Netcom MMS
+APN=mms.netcom.no
+Username=mms
+Password=netcom
+; MMS
+MMS Center=http://mms/
+MMS WapGw=193.209.134.133
+MMSOnly=1
+
+[New World Internet MMS]
+; HONG KONG
+IconIndex=-178
+CountryProvider=852
+HomeNetworkNumber=45410
+Network=GPRS
+; GPRS
+GPRS=New World GPRS (MMS)
+APN=mms
+; MMS
+MMS Center=http://mmsc.nwmobility.com:8002
+MMS WapGw=192.168.111.1
+MMSOnly=1
+
+[O2 DE - GENION MMS]
+; GERMANY
+IconIndex=-118
+CountryProvider=49
+HomeNetworkNumber=26207
+SMTP=mail.genion.de
+Network=GPRS
+; GPRS
+GPRS=02 Genion GPRS
+APN=internet
+; MMS
+MMS Center=http://10.81.0.7:8002
+MMS WapGw=195.182.114.52
+MMSOnly=1
+
+[O2 MMS DE]
+; GERMANY
+IconIndex=-118
+CountryProvider=49
+HomeNetworkNumber=26207
+Network=GPRS
+; GPRS
+GPRS=02 MMS
+APN=internet
+GPRS SplCmd=1
+; MMS
+MMS Center=http://10.81.0.7:8002
+MMS WapGw=195.182.114.52
+MMSOnly=1
+
+[O2 MMS UK]
+; UNITED KINGDOM
+IconIndex=-118
+CountryProvider=44
+HomeNetworkNumber=23410
+SMTP=smtp.O2.co.uk
+Network=GPRS
+; GPRS
+GPRS=O2 Mobile Web GPRS
+APN=mobile.o2.co.uk
+Username=O2wap
+Password=Password
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mmsc.mms.o2.co.uk:8002
+MMS WapGw=193.113.200.195
+MMSOnly=1
+
+[O2 MMS UK]
+; SCOTLAND
+IconIndex=-118
+CountryProvider=44
+HomeNetworkNumber=23410
+SMTP=smtp.O2.co.uk
+Network=GPRS
+; GPRS
+GPRS=O2 Mobile Web GPRS
+APN=mobile.o2.co.uk
+Username=O2wap
+Password=Password
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mmsc.mms.o2.co.uk:8002
+MMS WapGw=193.113.200.195
+MMSOnly=1
+
+[Oi MMS]
+; BRAZIL
+IconIndex=-179
+CountryProvider=55
+HomeNetworkNumber=72431
+Network=GPRS
+; GPRS
+GPRS=MMS GPRS
+APN=mmsgprs.oi.com.br
+Username=oimms
+Password=oioioi
+; MMS
+MMS Center=http://200.222.42.204:8002
+MMS WapGw=192.168.10.50
+MMSOnly=1
+
+[Oman Mobile MMS]
+; OMAN
+IconIndex=-279
+CountryProvider=968
+HomeNetworkNumber=42202
+Network=GPRS
+; GPRS
+GPRS=Oman Mobile MMS
+APN=mms
+Username=mms
+Password=mms
+; MMS
+MMS Center=http://mmsc.omanmobile.om:10021/mmsc
+MMS WapGw=192.168.203.35
+MMSOnly=1
+
+[Omnitel MMS LT]
+; LITHUANIA
+IconIndex=-180
+CountryProvider=370
+HomeNetworkNumber=24601
+Network=GPRS
+; GPRS
+GPRS=Omnitel MMS
+APN=mms.omnitel.net
+; MMS
+MMS Center=http://mms:8002
+MMS WapGw=10.16.35.50
+MMSOnly=1
+
+[One MMS]
+; AUSTRIA
+IconIndex=-281
+CountryProvider=43
+HomeNetworkNumber=23205
+SMTP=mail.i-one.at
+Network=GPRS,CSD,WAPGPRS,WAPCSD
+; GPRS
+GPRS=One GPRS
+APN=web.one.at
+Username=wap
+Password=wap
+; CSD
+; WAP GPRS
+; WAP CSD
+; MMS
+MMS Center=http://mmsc.one.at/mms/wapenc
+MMS WapGw=194.24.128.118
+MMSOnly=1
+
+[Orange MMS CH]
+; SWITZERLAND
+IconIndex=-111
+CountryProvider=41
+HomeNetworkNumber=22803
+Network=GPRS
+; GPRS
+GPRS=Orange MMS
+APN=mms
+GPRS SplCmd=1
+; MMS
+MMS Center=http://192.168.151.3:8002
+MMS WapGw=192.168.151.2
+MMSOnly=1
+
+[Orange MMS DO]
+; UNITED STATES
+IconIndex=-111
+CountryProvider=1
+HomeNetworkNumber=37001
+Network=GPRS
+; GPRS
+GPRS=Orange MMS
+APN=orangemi
+; MMS
+MMS Center=http://mmr.orangewi.com/servlets/mms
+MMS WapGw=172.16.126.70
+MMSOnly=1
+
+[Orange MMS F]
+; FRANCE
+IconIndex=-111
+CountryProvider=33
+HomeNetworkNumber=20801
+Network=GPRS,CSD
+; GPRS
+GPRS=Orange acte GPRS
+APN=orange.acte
+Username=orange
+Password=orange
+GPRS SplCmd=1
+; CSD
+CSD=Orange acte GSM
+CSD PhoneNumber=+33674501300
+CSD Username=orange
+CSD Password=orange
+CSD ExtraDialString=+CBST=71,0,1
+; MMS
+MMS Center=http://mms.orange.fr
+MMS WapGw=192.168.10.200
+MMSOnly=1
+
+[Orange MMS IL]
+; ISRAEL
+IconIndex=-111
+CountryProvider=972
+HomeNetworkNumber=42501
+Network=GPRS
+; GPRS
+APN=uwap.orange.co.il
+Username=orange
+Password=mobile54
+; MMS
+MMS Center=http://192.168.220.15/servlets/mms
+MMS WapGw=192.118.11.55:8080
+MMSOnly=1
+
+[Orange MMS NL]
+; NETHERLANDS
+CountryProvider=31
+HomeNetworkNumber=20420
+Network=GPRS
+; GPRS
+APN=mms
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mms.orange.nl:8002
+MMS WapGw=10.250.255.183
+MMS HTTPGw=10.250.255.183:5080
+MMSOnly=1
+
+[Orange MMS TH]
+; THAILAND
+IconIndex=-111
+CountryProvider=66
+HomeNetworkNumber=52099
+Network=GPRS
+; GPRS
+GPRS=Orange MMS
+APN=mms
+Username=orange
+Password=orange
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mms.orange.co.th:8002/
+MMS WapGw=10.4.7.39
+MMSOnly=1
+
+[Orange MMS UK]
+; UNITED KINGDOM
+IconIndex=-111
+CountryProvider=44
+Network=GPRS
+; GPRS
+GPRS=Orange MMS
+APN=orangemms
+Username=Orange
+Password=Multimedia
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mms.orange.co.uk/
+MMS WapGw=192.168.224.10
+MMSOnly=1
+
+[Orange MMS UK]
+; SCOTLAND
+IconIndex=-111
+CountryProvider=44
+Network=GPRS
+; GPRS
+GPRS=Orange MMS
+APN=orangemms
+Username=Orange
+Password=Multimedia
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mms.orange.co.uk/
+MMS WapGw=192.168.224.10
+MMSOnly=1
+
+[Orange PL MMS]
+; ZAMBIA
+IconIndex=-111
+CountryProvider=260
+HomeNetworkNumber=2603
+Network=GPRS
+; GPRS
+GPRS=Orange MMS
+APN=intenet
+Username=internet
+Password=internet
+; MMS
+MMS Center=http://mms.orange.pl
+MMS WapGw=192.168.6.104
+MMSOnly=1
+
+[Oskar MMS]
+; CZEC REPUBLIC
+IconIndex=-183
+CountryProvider=420
+HomeNetworkNumber=23003
+Network=GPRS
+; GPRS
+GPRS=Oskar MMS
+APN=mms
+Username=mms
+Password=mms
+; MMS
+MMS Center=http://mms
+MMS WapGw=10.11.10.111
+MMSOnly=1
+
+[P Optimus MMS]
+; PORTUGAL
+IconIndex=-182
+CountryProvider=351
+HomeNetworkNumber=26803
+SMTP=mms.optimus.pt
+Network=GPRS
+; GPRS
+GPRS=Optimus GPRS
+APN=mms
+Username=mms
+Password=mms
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mmsc:10021/mmsc
+MMS WapGw=62.169.66.1
+MMSOnly=1
+
+[Pannon MMS]
+; HUNGARY
+IconIndex=-184
+CountryProvider=36
+HomeNetworkNumber=21601
+SMTP=smtp.pannongsm.hu
+Network=GPRS
+; GPRS
+GPRS=Pannon MMS
+APN=Net
+; MMS
+MMS Center=http://mmsc.pgsm.hu
+MMS WapGw=193.225.154.22
+MMSOnly=1
+
+[Peoples MMS]
+; HONG KONG
+IconIndex=-185
+CountryProvider=852
+HomeNetworkNumber=45412
+Network=GPRS
+; GPRS
+GPRS=Peoples GPRS (MMS)
+APN=peoples.mms
+; MMS
+MMS Center=http://mms.peoples.com.hk/mms
+MMS WapGw=172.31.31.36:9201
+MMS HTTPGw=http://mms.peoples.com.hk/mms
+MMSOnly=1
+
+[Personal MMS]
+; ARGENTINA
+IconFile=Personal argentina.ico
+IconIndex=-341
+CountryProvider=54
+HomeNetworkNumber=72234
+Network=GPRS
+; GPRS
+GPRS=Personal MMS
+APN=mms
+Username=mms
+Password=mms
+; MMS
+MMS Center=http://172.25.7.31/
+MMS WapGw=172.25.7.31
+MMSOnly=1
+
+[PGFree MMS]
+; FINLAND
+IconIndex=-311
+CountryProvider=358
+HomeNetworkNumber=24409
+Network=GPRS
+; GPRS
+GPRS=PGFree MMS
+APN=mms.pgfree.com
+; MMS
+MMS Center=http://mmsc.pgfree.fi
+MMS WapGw=10.1.1.1
+MMSOnly=1
+
+[Plus MMS]
+; POLAND
+IconIndex=-186
+CountryProvider=48
+HomeNetworkNumber=26001
+Network=GPRS
+; GPRS
+GPRS=Plus MMS
+APN=mms.plusgsm.pl
+; MMS
+MMS Center=http://mms.plusgsm.pl:8002
+MMS WapGw=212.2.96.16
+MMSOnly=1
+
+[Porthable MMS]
+; PARAGUAY
+CountryProvider=595
+HomeNetworkNumber=74402
+Network=CSD
+; GPRS
+Username=mms
+Password=mms
+; CSD
+CSD=MMS
+CSD PhoneNumber=*667
+; MMS
+MMS Center=http://mms.porthable.com.py/
+MMS WapGw=192.100.50.95
+MMSOnly=1
+
+[Proximus MMS]
+; BELGIUM
+IconIndex=-187
+CountryProvider=32
+HomeNetworkNumber=20601
+Network=GPRS
+; GPRS
+GPRS=Proximus MMS
+APN=event.proximus.be
+Username=mms
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mmsc.proximus.be/mms
+MMS WapGw=10.55.14.75
+MMSOnly=1
+
+[proXL MMS]
+; INDONESIA
+IconIndex=-245
+CountryProvider=62
+HomeNetworkNumber=51011
+Network=GPRS
+; GPRS
+GPRS=proXL MMS
+APN=www.xlmms.net
+Username=xlgprs
+Password=proxl
+; MMS
+MMS Center=http://mmc.xl.net.id/servlets/mms
+MMS WapGw=202.152.240.50
+MMSOnly=1
+
+[Qtel MMS]
+; QATAR
+IconFile=qtel qatar.ico
+IconIndex=-343
+CountryProvider=974
+HomeNetworkNumber=42701
+Network=GPRS
+; GPRS
+GPRS=Qtel MMS
+APN=mms.qtel
+Username=mms
+Password=mms
+; MMS
+MMS Center=http://mmsr.qtelmms.qa
+MMS WapGw=10.23.8.3
+MMSOnly=1
+
+[Q-Telecom MMS]
+; GREECE
+IconIndex=-283
+CountryProvider=30
+HomeNetworkNumber=20209
+Network=GPRS
+; GPRS
+GPRS=Q-Telecom MMS
+APN=q-mms.myq.gr
+; MMS
+MMS Center=http://mms.myq.gr
+MMS WapGw=192.168.80.134
+MMSOnly=1
+
+[Reliance MMS]
+; INDIA
+IconFile=reliance india.ico
+IconIndex=-344
+CountryProvider=91
+HomeNetworkNumber=14655
+Network=1xRTT
+; 1XRTT
+1xRTT=Reliance
+1xRTT PhoneNumber=#777
+; MMS
+MMS Center=http://mms.wdsap.ricinfo.com:6081/mms
+MMS HTTPGw=192.168.105.26:8088
+MMSOnly=1
+
+[Rogers Wireless MMS]
+; CANADA
+IconFile=rogerswireless canada.ico
+IconIndex=-345
+CountryProvider=107
+HomeNetworkNumber=30272
+Network=GPRS
+; GPRS
+APN=media.com
+Username=media
+Password=mda01
+; MMS
+MMS Center=http://mms.gprs.rogers.com
+MMS WapGw=172.25.0.107
+MMSOnly=1
+
+[Sabafon MMS]
+; YEMEN
+IconIndex=-286
+CountryProvider=967
+HomeNetworkNumber=42101
+Network=GPRS,WAPGPRS
+; GPRS
+GPRS=Sabafon MMS
+APN=mms
+Username=wap
+Password=wap
+; WAP GPRS
+; MMS
+MMS Center=http://mms.sabafon.com/
+MMS WapGw=192.168.30.174
+MMSOnly=1
+
+[Safaricom MMS]
+; KENYA
+IconFile=safaricom kenya.ico
+IconIndex=-321
+CountryProvider=254
+HomeNetworkNumber=63902
+Network=GPRS
+; GPRS
+GPRS=Safaricom EDGE-GPRS
+APN=safaricom
+Username=mms@mms.safaricom.com
+Password=mms
+; MMS
+MMS Center=http://mms.gprs.safaricom.com
+MMS WapGw=172.22.2.38
+MMSOnly=1
+
+[Sat-C MMS]
+; INDONESIA
+IconIndex=-258
+CountryProvider=62
+HomeNetworkNumber=51001
+Network=GPRS
+; GPRS
+GPRS=Sat-C MMS
+APN=mms.satelindogprs.com
+Username=satmms
+Password=satmms
+; MMS
+MMS Center=http://mmsc.satelindogprs.com/
+MMS WapGw=202.152.162.88
+MMSOnly=1
+
+[Scancom Areeba MMS]
+; GHANA
+CountryProvider=233
+HomeNetworkNumber=62001
+Network=GPRS
+; GPRS
+GPRS=Areeba MMS
+APN=mms.areeba.com.gh
+; MMS
+MMS Center=http://172.17.3.7
+MMS WapGw=172.17.3.5
+MMSOnly=1
+
+[SingTel MMS]
+; SINGAPORE
+IconIndex=-192
+CountryProvider=65
+HomeNetworkNumber=52501,52502
+Network=GPRS
+; GPRS
+GPRS=IDEAS MMS
+APN=e-ideas
+Username=65IDEAS
+Password=IDEAS
+; MMS
+MMS Center=http://mms.singtel.com:10021/mmsc
+MMS WapVersion=2.0
+MMS WapGw=165.21.42.84:8080
+MMSOnly=1
+
+[Smart MMS]
+; PHILIPPINES
+IconIndex=-193
+CountryProvider=63
+HomeNetworkNumber=51503
+Network=GPRS
+; GPRS
+GPRS=Smart MMS
+APN=mms
+; MMS
+MMS Center=http://10.102.61.238:8002
+MMS WapGw=10.102.61.46
+MMSOnly=1
+
+[SmarTone MMS]
+; HONG KONG
+IconIndex=-194
+CountryProvider=852
+HomeNetworkNumber=45406
+Network=GPRS
+; GPRS
+GPRS=SmarTone GPRS (MMS)
+APN=SmarTone-Vodafone
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mms.smartone-vodafone.com.hk/server
+MMS WapGw=10.9.9.9
+MMSOnly=1
+
+[Smarts MMS]
+; RUSSIA
+IconIndex=-312
+CountryProvider=7
+HomeNetworkNumber=25007
+Network=GPRS
+; GPRS
+GPRS=MMS CMAPTC
+APN=mms.smarts.ru
+Username=wap
+Password=wap
+; MMS
+MMS Center=http://172.24.120.135/mms/wapenc
+MMS WapGw=172.24.128.5
+MMSOnly=1
+
+[Sonera MMS]
+; FINLAND
+IconIndex=-195
+CountryProvider=358
+HomeNetworkNumber=24491
+Network=GPRS
+; GPRS
+GPRS=Sonera MMS
+APN=wap.sonera.net
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mms.sonera.net:8002
+MMS WapGw=195.156.25.33
+MMSOnly=1
+
+[Sonofon MMS]
+; DENMARK
+IconIndex=-196
+CountryProvider=45
+HomeNetworkNumber=23802
+Network=GPRS
+; GPRS
+GPRS=Sonofon MMS
+APN=sonofon
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mms.sonofon.dk
+MMS WapGw=212.88.64.8
+MMSOnly=1
+
+[StarHub MMS]
+; SINGAPORE
+IconIndex=-197
+CountryProvider=65
+HomeNetworkNumber=52505
+Network=GPRS
+; GPRS
+GPRS=StarHub MMS
+APN=shmms
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mms.starhubgee.com.sg:8002
+MMS WapGw=10.12.1.80
+MMSOnly=1
+
+[SUN MMS]
+; PHILIPPINES
+IconFile=sun philippines.ico
+IconIndex=-347
+CountryProvider=63
+HomeNetworkNumber=51505
+Network=GPRS
+; GPRS
+GPRS=SUN MMS
+APN=mms
+; MMS
+MMS Center=http://mmscenter.suncellular.com.ph
+MMS WapGw=202.138.159.78
+MMSOnly=1
+
+[Sunday MMS]
+; HONG KONG
+IconFile=sunday hong kong.ico
+IconIndex=-198
+CountryProvider=852
+HomeNetworkNumber=45416
+Network=GPRS
+; GPRS
+GPRS=Sunday GPRS
+APN=smms
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mmsc.mms.sunday.com:8002
+MMS WapGw=10.131.2.1
+MMSOnly=1
+
+[Sunrise MMS]
+; SWITZERLAND
+IconIndex=-199
+CountryProvider=41
+HomeNetworkNumber=22802
+Network=GPRS
+; GPRS
+GPRS=Sunrise MMS
+APN=mms.sunrise.ch
+Username=mms
+Password=mms
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mmsc.sunrise.ch
+MMS WapGw=212.35.34.75
+MMSOnly=1
+
+[Swisscom MMS]
+; SWITZERLAND
+IconIndex=-201
+CountryProvider=41
+HomeNetworkNumber=22801
+Network=GPRS
+; GPRS
+GPRS=Swisscom MMS
+APN=event.swisscom.ch
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mms.natel.ch:8079
+MMS WapGw=192.168.210.2:9201
+MMSOnly=1
+
+[Syriatel MMS]
+; SYRIA
+IconIndex=-290
+CountryProvider=963
+HomeNetworkNumber=41701
+Network=GPRS
+; GPRS
+APN=mms.syriatel.com
+; MMS
+MMS Center=http://mymms.syriatel.com/
+MMS WapGw=172.20.5.6
+MMSOnly=1
+
+[Tango MMS]
+; LUXEMBOURG
+IconIndex=-203
+CountryProvider=352
+HomeNetworkNumber=27077
+Network=GPRS
+; GPRS
+GPRS=Tango MMS
+APN=mms
+Username=tango
+Password=tango
+; MMS
+MMS Center=http://mms.tango.lu
+MMS WapGw=212.66.75.3
+MMSOnly=1
+
+[Telcel GSM MMS]
+; MEXICO
+IconFile=telcel mexico.ico
+IconIndex=-348
+CountryProvider=52
+HomeNetworkNumber=33402
+Network=GPRS
+; GPRS
+GPRS=Telcel GPRS
+APN=mms.itelcel.com
+Username=mmsgprs
+Password=mmsgprs2003
+; MMS
+MMS Center=http://mms.itelcel.com/servlets/mms
+MMS WapGw=148.233.151.240
+MMSOnly=1
+
+[Tele Denmark MMS]
+; DENMARK
+IconIndex=-204
+CountryProvider=45
+HomeNetworkNumber=23801
+Network=GPRS
+; GPRS
+APN=mms
+GPRS SplCmd=1
+; MMS
+MMS Center=http://192.168.241.114:8002
+MMS WapGw=194.182.251.15
+MMSOnly=1
+
+[Tele.Ring MMS]
+; AUSTRIA
+IconIndex=-293
+CountryProvider=43
+HomeNetworkNumber=23207
+Network=GPRS
+; GPRS
+GPRS=Tele.ring MMS
+APN=mms
+Username=wap@telering.at
+Password=wap
+; MMS
+MMS Center=http://relay.mms.telering.at
+MMS WapGw=212.95.31.50
+MMSOnly=1
+
+[Tele2 Comviq MMS]
+; SWEDEN
+IconIndex=-291
+CountryProvider=46
+HomeNetworkNumber=24007
+Network=GPRS
+; GPRS
+APN=mms.swipnet.se
+Username=wap
+Password=wap
+; MMS
+MMS Center=http://mmsc.tele2.se
+MMS WapGw=130.244.202.30
+MMSOnly=1
+
+[Tele2 MMS EE]
+; ESTONIA
+IconIndex=-291
+CountryProvider=372
+HomeNetworkNumber=24801
+Network=GPRS
+; GPRS
+GPRS=Tele2 MMS
+APN=mms.tele2.ee
+; MMS
+MMS Center=http://mmsc.tele2.ee
+MMS WapGw=193.12.40.6
+MMSOnly=1
+
+[Telefonica MMS Nicaragua]
+; NICARAGUA
+CountryProvider=505
+Network=1xRTT,CDMA
+; 1xRTT
+; CDMA
+; MMS
+MMS Center=Telefonica Nicaragua
+MMSOnly=1
+
+[Telefonica Movistar MMS]
+; SPAIN
+IconIndex=-221
+CountryProvider=34
+HomeNetworkNumber=21407
+SMTP=smtp.movistar.com
+Network=GPRS
+; GPRS
+GPRS=Movistar GPRS
+APN=mms.movistar.es
+Username=MOVISTAR@mms
+Password=MOVISTAR
+; MMS
+MMS Center=http://mms.movistar.com
+MMS WapGw=10.138.255.1
+MMSOnly=1
+
+[Telekom MMS Srbija]
+; YUGOSLAVIA
+CountryProvider=381
+HomeNetworkNumber=22003
+Network=GPRS
+; GPRS
+GPRS=Mobtel MMS
+APN=mms
+Username=mts
+Password=064
+; MMS
+MMS Center=http://mms.mts064.telekom.yu/mms/wapenc
+MMS WapGw=172.17.85.131
+MMSOnly=1
+
+[Telenor MMS PK]
+; PAKISTAN
+IconIndex=-292
+CountryProvider=92
+HomeNetworkNumber=41006
+Network=GPRS
+; GPRS
+GPRS=Telenor MMS
+APN=mms
+Username=Telenor
+Password=Telenor
+; MMS
+MMS Center=http://mmstelenor
+MMS WapGw=172.18.19.11
+MMSOnly=1
+
+[Telenor Mobil MMS]
+; NORWAY
+IconIndex=-205
+CountryProvider=47
+HomeNetworkNumber=24201
+Network=GPRS
+; GPRS
+APN=mms
+Username=Std
+Password=mms
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mmsc/
+MMS WapGw=10.10.10.11:8080
+MMSOnly=1
+
+[Telenor Mobil MMS]
+; BOUVET ISLAND
+IconIndex=-205
+CountryProvider=47
+HomeNetworkNumber=24201
+Network=GPRS
+; GPRS
+APN=mms
+Username=Std
+Password=mms
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mmsc/
+MMS WapGw=10.10.10.11:8080
+MMSOnly=1
+
+[Telfort MMS Postpaid]
+; NETHERLANDS
+IconIndex=-319
+CountryProvider=31
+HomeNetworkNumber=20412
+Network=GPRS
+; GPRS
+GPRS=Telfort MMS
+APN=multimedia
+; MMS
+MMS Center=http://mms
+MMS WapGw=193.113.200.195
+MMS HTTPGw=193.113.200.195:8080
+MMSOnly=1
+
+[Telfort MMS Prepaid]
+; NETHERLANDS
+IconIndex=-319
+CountryProvider=31
+HomeNetworkNumber=20412
+Network=GPRS
+; GPRS
+GPRS=Telfort MMS
+APN=multimedia.prepay
+; MMS
+MMS Center=http://mms
+MMS WapGw=193.113.200.195
+MMS HTTPGw=193.113.200.195:8080
+MMSOnly=1
+
+[Telia MMS DK]
+; DENMARK
+IconIndex=-208
+CountryProvider=45
+HomeNetworkNumber=23820,23830
+Network=GPRS
+; GPRS
+GPRS=Telia MMS
+APN=www.mms.telia.dk
+Username=telia
+Password=1010
+; MMS
+MMS Center=http://mms.telia.dk
+MMS WapGw=193.209.134.131
+MMSOnly=1
+
+[Telia MMS Sweden]
+; SWEDEN
+IconIndex=-208
+CountryProvider=46
+HomeNetworkNumber=24001
+Network=GPRS
+; GPRS
+APN=mms.telia.se
+Username=mms
+Password=telia
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mmss/
+MMS WapGw=193.209.134.132
+MMSOnly=1
+
+[Telkomsel MMS]
+; INDONESIA
+IconFile=telkomsel indonesia.ico
+IconIndex=-350
+CountryProvider=62
+HomeNetworkNumber=51010
+Network=GPRS
+; GPRS
+GPRS=Telkomsel (MMS)
+APN=mms
+Username=wap
+Password=wap123
+; MMS
+MMS Center=http://mms.telkomsel.com
+MMS WapGw=10.1.89.150
+MMSOnly=1
+
+[Telsim MMS]
+; TURKEY
+IconIndex=-209
+CountryProvider=90
+HomeNetworkNumber=28602
+Network=GPRS
+; GPRS
+GPRS=Telsim MMS
+APN=mms
+Username=mms
+Password=mms
+; MMS
+MMS Center=http://mms:6001/MM1Servlet
+MMS WapGw=217.31.233.18
+MMSOnly=1
+
+[Telstra CDMA MMS]
+; AUSTRALIA
+IconIndex=-210
+CountryProvider=61
+Network=1xRTT
+; 1XRTT
+1xRTT=Telstra 1X (MMS)
+1xRTT PhoneNumber=#777
+1xRTT Username=user@telstra.brew
+1xRTT Password=telstra
+; MMS
+MMS Center=http://mmsc.telstra.com:8002
+MMS WapGw=10.1.1.180
+MMSOnly=1
+
+[Telstra MMS]
+; AUSTRALIA
+IconIndex=-210
+CountryProvider=61
+HomeNetworkNumber=50501
+Network=GPRS
+; GPRS
+GPRS=Telstra GPRS (MMS)
+APN=telstra.mms
+; MMS
+MMS Center=http://mmsc.telstra.com:8002
+MMS WapGw=10.1.1.155
+MMSOnly=1
+
+[TIM MMS]
+; ITALY
+IconIndex=-115
+CountryProvider=39
+HomeNetworkNumber=22201
+SMTP=mail.posta.tim.it
+Network=GPRS
+; GPRS
+GPRS=TIM MMS
+APN=mms.tim.it
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mms.tim.it/servlets/mms
+MMS WapGw=213.230.130.89
+MMSOnly=1
+
+[TIM MMS Brasil]
+; BRAZIL
+IconIndex=-115
+CountryProvider=55
+HomeNetworkNumber=72403,72402,72404
+Network=GPRS
+; GPRS
+GPRS=TIM WAP MMS
+APN=mms.tim.br
+Username=tim
+Password=tim
+; MMS
+MMS Center=http://mms.tim.br/
+MMS WapGw=200.179.66.242
+MMSOnly=1
+
+[TIM MMS GR]
+; GREECE
+IconIndex=-115
+CountryProvider=30
+HomeNetworkNumber=20210
+Network=GPRS
+; GPRS
+GPRS=TIM MMS
+APN=mnet.b-online.gr
+; MMS
+MMS Center=http://192.168.200.95/servlets/mms
+MMS WapGw=192.168.200.11
+MMSOnly=1
+
+[TMN MMS]
+; PORTUGAL
+IconIndex=-212
+CountryProvider=351
+HomeNetworkNumber=26806
+SMTP=mms.tmn.pt
+Network=GPRS
+; GPRS
+GPRS=TMN MMS
+APN=mmsc.tmn.pt
+Username=tmn
+Password=tmnnet
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mmsc/
+MMS WapGw=10.111.2.16
+MMSOnly=1
+
+[T-Mobile MMS A]
+; AUSTRIA
+IconIndex=-119
+CountryProvider=43
+HomeNetworkNumber=23203
+Network=GPRS
+; GPRS
+GPRS=T-Mobile MMS
+APN=gprsmms
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mmsc.t-mobile.at/servlets/mms
+MMS WapGw=10.12.0.2
+MMS HTTPGw=10.12.0.2:8080
+MMSOnly=1
+
+[T-Mobile MMS CZ]
+; CZEC REPUBLIC
+IconIndex=-119
+CountryProvider=420
+HomeNetworkNumber=23001
+Network=GPRS
+; GPRS
+GPRS=T-mobile MMS
+APN=mms.t-mobile.cz
+Username=mms
+Password=mms
+; MMS
+MMS Center=http://mms
+MMS WapGw=10.0.0.10:9201
+MMSOnly=1
+
+[T-Mobile MMS D]
+; GERMANY
+IconIndex=-119
+CountryProvider=49
+HomeNetworkNumber=26201
+WAP Proxy=172.28.23.131:8008
+Network=GPRS
+; GPRS
+GPRS=T-Mobile MMS
+APN=mms.t-D1.de
+Username=t-mobile
+Password=tm
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mms.t-mobile.de/servlets/mms
+MMS WapGw=193.254.160.3
+MMSOnly=1
+
+[T-mobile MMS H]
+; HUNGARY
+IconIndex=-218
+CountryProvider=36
+HomeNetworkNumber=21630
+SMTP=mail.westel900.net
+Network=GPRS
+; GPRS
+GPRS=MMS
+APN=internet
+Username=mms
+Password=mms
+GPRSUsernameNeeded=1
+GPRSPasswordNeeded=1
+; MMS
+MMS Center=http://mms.t-mobile.hu/servlets/mms:9201
+MMS WapGw=212.51.126.10
+MMSOnly=1
+
+[T-Mobile MMS HR]
+; CROATIA
+IconIndex=-119
+CountryProvider=385
+HomeNetworkNumber=21901
+Network=GPRS
+; GPRS
+GPRS=T-Mobile MMS
+APN=mms.htgprs
+; MMS
+MMS Center=http://mms.t-mobile.hr/servlets/mms
+MMS WapGw=10.12.0.4
+MMSOnly=1
+
+[T-Mobile MMS NL]
+; NETHERLANDS
+IconIndex=-119
+CountryProvider=31
+HomeNetworkNumber=20416
+Network=GPRS
+; GPRS
+APN=mms
+Username=tmobilemms
+Password=tmobilemms
+GPRS SplCmd=1
+; MMS
+MMS Center=http://t-mobilemms
+MMS WapGw=10.10.10.11
+MMS HTTPGw=10.10.10.11:8080
+MMSOnly=1
+
+[T-Mobile MMS SK]
+; SLOVAKIA
+IconIndex=-119
+CountryProvider=421
+HomeNetworkNumber=23102
+Network=GPRS
+; GPRS
+GPRS=T-Mobile MMS
+APN=mms
+Username=mms
+Password=mms
+; MMS
+MMS Center=http://mms
+MMS WapGw=192.168.1.1
+MMSOnly=1
+
+[T-Mobile MMS UK]
+; UNITED KINGDOM
+IconIndex=-119
+CountryProvider=44
+HomeNetworkNumber=23430
+WAP Proxy=149.254.201.135:8080
+Network=GPRS
+; GPRS
+GPRS=T-Mobile MMS
+APN=general.t-mobile.uk
+Username=user
+Password=one2one
+; MMS
+MMS Center=http://mmsc.t-mobile.co.uk:8002
+MMS WapGw=149.254.211.10
+MMSOnly=1
+
+[T-Mobile MMS UK]
+; SCOTLAND
+IconIndex=-119
+CountryProvider=44
+HomeNetworkNumber=23430
+WAP Proxy=149.254.201.135:8080
+Network=GPRS
+; GPRS
+GPRS=T-Mobile MMS
+APN=general.t-mobile.uk
+Username=user
+Password=one2one
+; MMS
+MMS Center=http://mmsc.t-mobile.co.uk:8002
+MMS WapGw=149.254.211.10
+MMSOnly=1
+
+[T-Mobile MMS US]
+; UNITED STATES
+IconIndex=-119
+CountryProvider=1
+HomeNetworkNumber=31016,31020,31021,31022,31023,31024,31025,31026,31027,31031,31058,31066,31080
+Network=GPRS
+; GPRS
+GPRS=T-Mobile MMS
+APN=wap.voicestream.com
+; MMS
+MMS Center=http://216.155.174.84/servlets/mms
+MMS WapGw=216.155.165.50
+MMSOnly=1
+
+[TransAsia MMS]
+; TAIWAN
+IconIndex=-226
+CountryProvider=886
+HomeNetworkNumber=46699
+Network=GPRS
+; GPRS
+GPRS=TransAsia MMS
+APN=hank
+; MMS
+MMS Center=http://mms
+MMS WapGw=211.78.224.100
+MMSOnly=1
+
+[Tuntel MMS]
+; TUNISIA
+CountryProvider=216
+HomeNetworkNumber=60502
+Network=GPRS
+; GPRS
+GPRS=Tuntel MMS
+APN=mms.t1
+Username=mms@tt1
+Password=mms
+; MMS
+MMS Center=http://mms
+MMS WapGw=213.150.186.106
+MMSOnly=1
+
+[Turkcell MMS]
+; TURKEY
+IconIndex=-215
+CountryProvider=90
+HomeNetworkNumber=28601
+Network=GPRS,CSD
+; GPRS
+GPRS=Turkcell MMS
+APN=mms
+Username=mms
+Password=mms
+; CSD
+CSD=Turkcell MMS CSD
+CSD PhoneNumber=+905327577555
+CSD Username=mms
+CSD Password=mms
+; MMS
+MMS Center=http://mms.turkcell.com.tr/servlets/mms
+MMS WapGw=212.252.169.217
+MMSOnly=1
+
+[TWN GSM MMS]
+; TAIWAN
+IconIndex=-225
+CountryProvider=886
+HomeNetworkNumber=46697
+Network=GPRS
+; GPRS
+GPRS=TWNGSM MMS
+APN=mms
+; MMS
+MMS Center=http://mms
+MMS WapGw=10.1.1.2
+MMSOnly=1
+
+[Ufone MMS]
+; PAKISTAN
+IconIndex=-297
+CountryProvider=92
+HomeNetworkNumber=41003
+Network=GPRS
+; GPRS
+GPRS=Ufone MMS
+APN=ufone.mms
+; MMS
+MMS Center=http://www.ufonemms.com:80
+MMS WapGw=172.16.13.27
+MMSOnly=1
+
+[UMC MMS]
+; UKRAINE
+IconIndex=-314
+CountryProvider=380
+HomeNetworkNumber=65501,38050,38095,38066
+Network=CSD
+; CSD
+CSD=UMC MMS CSD
+CSD PhoneNumber=959
+CSD Username=mms
+CSD Password=mms
+; MMS
+MMS Center=http://mmsc:8002/
+MMS WapGw=192.168.10.10
+MMSOnly=1
+
+[Unefon MMS]
+; MEXICO
+IconFile=unefon mexico.ico
+IconIndex=-352
+CountryProvider=52
+Network=1xRTT
+; 1XRTT
+1xRTT=Unefon
+1xRTT PhoneNumber=#777
+1xRTT Username=MDN@sip.unefondata.com
+1xRTT Password=sip"MDN"
+1xRTT DNS1=10.9.60.129
+1xRTT DNS2=10.9.60.130
+; MMS
+MMS Center=http://mmsc.unefondata.com:80/
+MMSOnly=1
+
+[Unifon MMS]
+; ARGENTINA
+CountryProvider=54
+HomeNetworkNumber=72207
+Network=GPRS
+; GPRS
+GPRS=MMS E-mocion
+APN=mms.gprs.unifon.com.ar
+Username=mms
+Password=mms
+; MMS
+MMS Center=http://mms.tmovil.cl/
+MMS WapGw=200.68.32.239
+MMSOnly=1
+
+[USI MMS]
+; RUSSIA
+IconIndex=-315
+CountryProvider=7
+HomeNetworkNumber=25039
+Network=GPRS
+; GPRS
+GPRS=USI MMS
+APN=mms.usi.ru
+; MMS
+MMS Center=http://mms/
+MMS WapGw=192.168.168.192:8080
+MMS HTTPGw=192.168.168.192:9201
+MMSOnly=1
+
+[Vibo (3G) MMS]
+; TAIWAN
+IconIndex=-149
+CountryProvider=886
+HomeNetworkNumber=46689
+Network=GPRS
+; GPRS
+GPRS=Vibo (3G) MMS
+APN=internet
+; MMS
+MMS Center=http://mms
+MMS WapGw=210.241.199.199
+MMSOnly=1
+
+[VIPnet MMS]
+; CROATIA
+IconIndex=-217
+CountryProvider=385
+HomeNetworkNumber=21910
+Network=GPRS
+; GPRS
+GPRS=VIPnet MMS
+APN=mms.vip.hr
+; MMS
+MMS Center=http://mms.vipnet.hr/servlets/mms
+MMS WapGw=212.91.99.91
+MMSOnly=1
+
+[Vodacom Congo MMS]
+; CONGO, THE DEMOCRATIC REPUBLIC
+IconIndex=-232
+CountryProvider=243
+HomeNetworkNumber=63001
+Network=GPRS
+; GPRS
+APN=Vodalive
+; MMS
+MMS Center=http:// 172.24.97.1/mmsc
+MMS WapGw=172.24.97.1
+MMSOnly=1
+
+[Vodacom MMS]
+; SOUTH AFRICA
+IconIndex=-232
+CountryProvider=27
+HomeNetworkNumber=65501
+Network=GPRS,CSD
+; GPRS
+GPRS=Vodacom MMS GPRS
+APN=mms.vodacom.net
+; CSD
+CSD=Vodacom MMS CSD
+CSD PhoneNumber=+27822491100
+CSD Username=mms
+CSD Password=mms
+; MMS
+MMS Center=http://mmsc.vodacom4me.co.za
+MMS WapGw=196.6.128.13
+MMSOnly=1
+
+[Vodacom Vlive! MMS]
+; SOUTH AFRICA
+IconIndex=-232
+CountryProvider=27
+HomeNetworkNumber=65501
+Network=GPRS
+; GPRS
+GPRS=Vodacom Vlive!MMS
+APN=mms.vodacom.net
+; MMS
+MMS Center=http://mmsc.vodacom4me.co.za
+MMS WapGw=192.6.128.6
+MMSOnly=1
+
+[Vodafone Albania MMS]
+; ALBANIA
+IconIndex=-117
+CountryProvider=355
+HomeNetworkNumber=27602
+Network=GPRS
+; GPRS
+GPRS=Vodafone Albania MMS
+APN=vfalmms
+; MMS
+MMS Center=http://mmsc.vodafone.al
+MMS WapGw=10.0.9.2
+MMSOnly=1
+
+[Vodafone DE MMS]
+; GERMANY
+IconIndex=-117
+CountryProvider=49
+HomeNetworkNumber=26202
+WAP Proxy=139.7.29.17:80
+SMTP=smtp.D2mail.de
+Network=GPRS
+; GPRS
+GPRS=D2 Vodafone GPRS
+APN=event.vodafone.de
+Username=vodafone
+Password=live
+DNS1=139.7.30.125
+DNS2=139.7.30.126
+GPRS SplCmd=1
+; MMS
+MMS Center=http://139.7.24.1/servlets/mms
+MMS WapGw=139.7.29.17
+MMSOnly=1
+
+[Vodafone MMS AU]
+; AUSTRALIA
+IconIndex=-117
+CountryProvider=61
+HomeNetworkNumber=50503
+Network=GPRS
+; GPRS
+GPRS=Vodafone MMS
+APN=live.vodafone.com
+GPRS SplCmd=1
+; MMS
+MMS Center=http://pxt.vodafone.net.au/pxtsend
+MMS WapGw=10.202.2.60
+MMSOnly=1
+
+[Vodafone MMS EG]
+; EGYPT
+IconIndex=-117
+CountryProvider=20
+HomeNetworkNumber=60202
+Network=GPRS
+; GPRS
+GPRS=Vodafone MMS
+APN=mms.vodafone.com.eg
+Username=mms
+Password=mms
+; MMS
+MMS Center=http://mms.vodafone.com.eg/servlets/mms
+MMS WapGw=163.121.178.2
+MMSOnly=1
+
+[Vodafone MMS ES]
+; SPAIN
+IconIndex=-117
+CountryProvider=34
+HomeNetworkNumber=21401
+Network=GPRS
+; GPRS
+GPRS=Vodafone MMS
+APN=airtelnet.es
+Username=wap@wap
+Password=wap125
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mmsc.vodafone.es/servlets/mms
+MMS WapGw=212.73.32.10
+MMSOnly=1
+
+[Vodafone MMS HU]
+; HUNGARY
+IconIndex=-117
+CountryProvider=36
+HomeNetworkNumber=21670
+Network=GPRS
+; GPRS
+GPRS=Vodafone MMS
+APN=internet.vodafone.net
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mms.vodafone.hu/servlets/mms
+MMS WapGw=80.244.97.2
+MMSOnly=1
+
+[Vodafone MMS IT]
+; ITALY
+IconIndex=-117
+CountryProvider=39
+HomeNetworkNumber=22210
+SMTP=smtpmail.vodafone.it
+Network=GPRS
+; GPRS
+GPRS=Vodafone MMS
+APN=mms.vodafone.it
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mms.vodafone.it/servlets/mms
+MMS WapGw=10.128.224.10
+MMSOnly=1
+
+[Vodafone MMS ML]
+; MALTA
+IconIndex=-117
+CountryProvider=356
+HomeNetworkNumber=27801
+Network=GPRS
+; GPRS
+GPRS=Vodafone MMS
+APN=mms.vodafone.com.mt
+; MMS
+MMS Center=http://mms.vodafone.com.mt/servlets/mms
+MMS WapGw=10.12.0.3
+MMSOnly=1
+
+[Vodafone MMS NL]
+; NETHERLANDS
+IconIndex=-117
+CountryProvider=31
+HomeNetworkNumber=20404
+Network=GPRS
+; GPRS
+GPRS=Vodafone MMS
+APN=live.vodafone.nl
+Username=vodafone
+Password=vodafone
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mmsc.mms.vodafone.nl
+MMS WapGw=192.168.251.150
+MMSOnly=1
+
+[Vodafone MMS NZ]
+; NEW ZEALAND
+IconIndex=-117
+CountryProvider=64
+HomeNetworkNumber=53001
+Network=GPRS
+; GPRS
+GPRS=Vodafone MMS
+APN=live.vodafone.com
+GPRS SplCmd=1
+; MMS
+MMS Center=http://pxt.vodafone.net.nz/pxtsend
+MMS WapGw=172.30.38.3
+MMSOnly=1
+
+[Vodafone MMS SE]
+; SWEDEN
+IconIndex=-117
+CountryProvider=46
+HomeNetworkNumber=24008
+Network=GPRS
+; GPRS
+GPRS=Vodafone MMS
+APN=services.vodafone.net
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mms/
+MMS HTTPGw=172.30.253.241:8799
+MMSOnly=1
+
+[Vodafone MMS UK]
+; UNITED KINGDOM
+IconIndex=-117
+CountryProvider=44
+HomeNetworkNumber=23415
+Network=GPRS
+; GPRS
+GPRS=Vodafone MMS
+APN=wap.vodafone.co.uk
+Username=wap
+Password=wap
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mms.vodafone.co.uk/servlets/mms
+MMS WapGw=212.183.137.12
+MMS HTTPGw=212.183.137.12:8799
+MMSOnly=1
+
+[Vodafone MMS UK]
+; SCOTLAND
+IconIndex=-117
+CountryProvider=44
+HomeNetworkNumber=23415
+Network=GPRS
+; GPRS
+GPRS=Vodafone MMS
+APN=wap.vodafone.co.uk
+Username=wap
+Password=wap
+GPRS SplCmd=1
+; MMS
+MMS Center=http://mms.vodafone.co.uk/servlets/mms
+MMS WapGw=212.183.137.12
+MMS HTTPGw=212.183.137.12:8799
+MMSOnly=1
+
+[VOX MMS LU]
+; LUXEMBOURG
+CountryProvider=352
+HomeNetworkNumber=35206
+Network=GPRS
+; GPRS
+GPRS=VOX MMS
+APN=vox.lu
+; MMS
+MMS Center=http://mms.vox.lu
+MMS WapGw=212.88.139.44
+MMSOnly=1
+
+[VOX MMS PY]
+; PARAGUAY
+IconFile=vox paraquay.ico
+IconIndex=-356
+CountryProvider=595
+HomeNetworkNumber=74401
+Network=GPRS
+; GPRS
+GPRS=VOX MMS
+APN=vox.mms
+; MMS
+MMS Center=http://srvvirtual.vox.com.py/mmsc
+MMS WapGw=172.24.97.29
+MMSOnly=1
+
+[Waird Telecom MMS]
+; PAKISTAN
+IconFile=warid pakistan.ico
+IconIndex=-331
+CountryProvider=92
+HomeNetworkNumber=41007
+Network=GPRS
+; GPRS
+GPRS=Waird Telecom MMS
+APN=mms.warid
+; MMS
+MMS Center=http://10.4.0.132/servlets/mms
+MMS WapGw=10.4.2.1:9201
+MMSOnly=1
+
+[WIND MMS]
+; ITALY
+IconIndex=-219
+CountryProvider=39
+HomeNetworkNumber=22288
+SMTP=mail.inwind.it
+Network=GPRS
+; GPRS
+GPRS=Wind MMS
+APN=mms.wind
+; MMS
+MMS Center=http://mms.wind.it
+MMS WapGw=212.245.244.110:9201
+MMSOnly=1
+
+[Yes Optus MMS]
+; AUSTRALIA
+IconIndex=-220
+CountryProvider=61
+HomeNetworkNumber=50502
+Network=GPRS
+; GPRS
+GPRS=Yes MMS
+APN=mms
+Username=411
+Password=optus
+; MMS
+MMS Center=http://mmsc.optus.com.au:8002
+MMS WapGw=61.88.190.10
+MMSOnly=1
+

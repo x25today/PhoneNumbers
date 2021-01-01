@@ -1,0 +1,66 @@
+
+  Accessing your applications via X.28 Dial Access
+  SITA site
+
+  Dial the local SITA access telephone number
+  when modem responds, enter three stops/periods (...)
+  followed by a carriage return
+  SITA Network: 123456
+  You may need to enter this more than once
+  ...CR
+  Enter NUI followed by a space  and your alphanumeric Network User ID
+  NUI ABCD1234<CR> SITA Network: password   At the XXXXXX  prompt,
+  enter your alphanumeric password. Please note that it  will not display
+  on screen for security reasons XXXXXX<CR>
+  SITA Network: network user identifier
+  XXXXXXXX active   Once
+  you have entered the correct security information, enter the address of
+  the application to which you wish to be connected 1234567
+  SITA Network: call connected to 123456
+
+
+  NUI:       NUI 19730001
+  PASSWORD:  KHS9NE
+
+  NUI:       NUI 06790263
+  PASSWORD:  ZERTYB
+
+  NUI:       NUI 37830001
+  PASSWORD:  98Z8VJ
+
+// SITATEX nuis ( MAIL )
+
+NUI 02520039
+0ZNL5I
+
+NUI 09640036
+8N4TYT
+
+NUI 02390001
+O6JL3Q
+
+NUI 03390056
+ECTNOP
+
+NUI 10910001
+R4X4RF
+
+// MISC
+
+NUI 42970009
+KQDQF0
+
+NUI 02760001
+IM0SHS
+
+NUI 21270014
+Z2DOQU
+
+
+  NUAs:
+
+  9001252001               www.i-wave.net Hong-Kong
+  9001131,windows 0001     AOLGLOBALnet NUA
+  2111855                  CIS Host
+  2123140001               I-PASS Host {PPP}
+
